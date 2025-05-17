@@ -20,7 +20,7 @@ const DefaultHeader = ({ title, content }) => {
       </div>
 
       {/* Custom animation style */}
-      <style jsx>{`
+      <style>{`
         @keyframes floating-dot {
           0% {
             left: 0%;

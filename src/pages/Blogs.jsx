@@ -30,8 +30,8 @@ const Blogs = () => {
             1024: { slidesPerView: 3 },
           }}
         >
-          {blogPosts.map((post) => (
-            <SwiperSlide key={post.id}>
+          {blogPosts.map((post, index) => (
+            <SwiperSlide key={index}>
               <div className="bg-white mb-5 shadow-lg rounded-lg overflow-hidden relative w-full h-[300px]">
                 <div className="absolute top-0 left-0 bg-primary text-white px-4 py-1 font-semibold">{post.date}</div>
                 <div className="p-4 pt-12 flex flex-col justify-between h-full">

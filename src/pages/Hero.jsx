@@ -14,6 +14,7 @@ const Hero = () => {
       setCurrentImage((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
     }, 5000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
