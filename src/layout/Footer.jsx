@@ -58,13 +58,16 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">{about.title}</h3>
           <p className="mb-4 text-sm">{about.description}</p>
           <div className="flex gap-3">
-            {about.socials.map(({ icon: Icon, link, id }) => (
-              <div key={id} className="bg-white p-1">
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  <Icon className="text-[20px] font-bold text-primary" />
-                </a>
-              </div>
-            ))}
+            {about.socials.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <div key={social.id || index} className="bg-white p-1">
+                  <a href={social.link} target="_blank" rel="noopener noreferrer">
+                    <Icon className="text-[20px] font-bold text-primary" />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
 
