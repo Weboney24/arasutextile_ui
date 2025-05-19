@@ -12,7 +12,7 @@ const AboutLanding = () => {
   return (
     <div>
       <CustomHero title="Know us" imagurl={IMAGE_HELPER.INSIDE_HERO2} />
-      <div className="relative bg-white mb-20  z-50 w-[80%] mx-auto h-[700px] shadow-lg p-10 font-primary">
+      <div className="relative !bg-white mb-20  z-50 w-[80%] mx-auto h-[700px] !shadow-lg p-10 font-primary">
         <div className="flex items-center justify-between  ">
           <div className="w-1/2 relative ">
             <div className="absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
@@ -21,8 +21,8 @@ const AboutLanding = () => {
           </div>
 
           <div className="w-1/2 space-y-[20px] top-0 -mt-[50px] ">
-            <DefaultHeader title="About Us" />
-            <h2 className="text-4xl -mt-[50px]">
+            <DefaultHeader title="About Us" position="start" />
+            <h2 className="text-4xl !-mt-[50px]">
               <span className="font-normal">One Of The Leaders in Textile</span> <br />
               <span className="text-black font-bold text-[30px]">
                 Market Since <span className="text-primary">1989</span>
@@ -39,8 +39,8 @@ const AboutLanding = () => {
                     <div className="flex flex-col items-start justify-center  space-x-2">
                       <Icon className="text-[40px] text-primary" />
                       <div>
-                        <p className="font-bold">{res.heading}</p>
-                        <p>{res.content}</p>
+                        <p className="font-bold !mt-2">{res.heading}</p>
+                        <p className="!-mt-2">{res.content}</p>
                       </div>
                     </div>
                     {index !== hero_about.length - 1 && <Divider type="vertical" className="!border-primary !h-[50px] mx-4" />}
@@ -58,9 +58,9 @@ const AboutLanding = () => {
 
             <div className="flex items-center justify-start gap-6 mt-10">
               <button className="bg-primary p-3 !text-white">KNOW MORE</button>
-              <p className="flex items-center justify-center gap-3 font-bold  ">
+              <p className="flex items-center !mt-2 justify-center gap-3 font-bold  ">
                 <ICON_HELPER.phone_icon className="text-2xl" />
-                0091-4324-233551
+                <div className="text-xl">0091-4324-233551</div>
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ const AboutLanding = () => {
         <Services />
       </div>
       <div>
-        <div className="w-[80%] mx-auto">
+        <div className="w-[80%] mx-auto !mb-[120px]">
           <DefaultHeader title="Our Commitment " content="" />
           <div className="flex flex-col gap-12 mb-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -103,7 +103,7 @@ const AboutLanding = () => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8 ">
               <div className=" border border-primary bg-primary text-white rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-[150px]">
                 <p>85% of our manufacturing is based on client specifications—highlighting our commitment to quality and client relationships.</p>
               </div>
@@ -126,9 +126,6 @@ const AboutLanding = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <Blogs />
       </div>
     </div>
   );

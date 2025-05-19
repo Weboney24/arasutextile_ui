@@ -7,11 +7,11 @@ import "swiper/css";
 
 const Collections = () => {
   return (
-    <div className="mb-20 w-[80%] mx-auto">
+    <div className="mb-20 ">
       <DefaultHeader title="Collections" content="Crafting Fashion & Stitching Style" />
 
       <Swiper
-        spaceBetween={10}
+        spaceBetween={20}
         slidesPerView={1}
         loop={true}
         autoplay={{
@@ -29,7 +29,7 @@ const Collections = () => {
       >
         {home_collections.map((res, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group w-[300px] h-[250px] mx-auto overflow-hidden border-4 border-white">
+            <div className="relative group w-[400px] h-[300px] mx-auto overflow-hidden border-4 border-white">
               <img src={res.image} alt="Images" className="w-full h-full object-cover" />
 
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
