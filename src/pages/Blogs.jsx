@@ -11,7 +11,7 @@ import { IMAGE_HELPER } from "../helper/imagehelper";
 
 const Blogs = () => {
   return (
-    <div className="mb-[200px] py-3  w-full mx-auto h-[550px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_BLOG})` }}>
+    <div className="mb-[200px] py-3 w-full mx-auto h-[650px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_BLOG})` }}>
       <DefaultHeader title="Stories" content="Explore insights, stories, and updates from our world." />
 
       <div className="mt-6 !mb-[20px] w-[80%] mx-auto px-4 md:px-16">
@@ -32,9 +32,13 @@ const Blogs = () => {
         >
           {blogPosts.map((post, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white mb-5 shadow-lg rounded-lg overflow-hidden relative w-full h-[300px]">
+              <div className="bg-white mb-5 shadow-lg rounded-2xl overflow-hidden relative w-full h-[420px]">
+                {/* Date Tag */}
                 <div className="absolute top-0 left-0 bg-primary text-white px-4 py-1 font-semibold">{post.date}</div>
+
+                {/* Card Content */}
                 <div className="p-4 pt-12 flex flex-col justify-between h-full">
+                  {/* Author & Comments */}
                   <div className="flex items-center space-x-4 text-gray-500 text-sm mb-2">
                     <span className="flex items-center space-x-1">
                       <FaUser />
@@ -45,9 +49,15 @@ const Blogs = () => {
                       <span>{post.comments} Comments</span>
                     </span>
                   </div>
-                  <h2 className="text-lg font-semibold text-gray-900 leading-snug !mb-4 !line-clamp-1">{post.title}</h2>
-                  <img src={post.image} alt={post.title} className="w-full h-32 object-cover rounded-md mb-2" />
-                  <a href="#" className="text-primary font-semibold inline-block mt-2 hover:underline">
+
+                  {/* Title */}
+                  <h2 className="text-xl font-bold text-gray-900 leading-snug mb-4 line-clamp-1">{post.title}</h2>
+
+                  {/* Image */}
+                  <img src={post.image} alt={post.title} className="w-full h-48 object-cover rounded-md mb-4" />
+
+                  {/* Read More */}
+                  <a href="#" className="text-primary font-semibold inline-block mt-auto hover:underline">
                     Read More →
                   </a>
                 </div>

@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       {/* bottom nav */}
       <div className=" h-[70px] flex items-center justify-around gap-[150px]">
-        <div className="flex items-center justify-center gap-8 font-bold text-primary">
+        <div className="flex items-center justify-center gap-8  text-primary">
           {bottom_menu.map((res, index) => {
             const isActive = location.pathname === res.link;
             return (

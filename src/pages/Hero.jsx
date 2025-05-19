@@ -14,7 +14,6 @@ const Hero = () => {
       setCurrentImage((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
     }, 5000);
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -51,13 +50,12 @@ const Hero = () => {
         <div className="flex items-center justify-between  ">
           <div className="w-1/2 relative ">
             <div className="absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
-
             <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-[500px] h-[600px] object-cover border-white border-[10px] ml-[20px] shadow-lg" />
           </div>
 
-          <div className="w-1/2 space-y-[20px] top-0 -mt-[50px] ">
-            <DefaultHeader title="About Us" />
-            <h2 className="text-4xl -mt-[50px]">
+          <div className="w-1/2 space-y-[20px] top-0  -mt-[28px]">
+            <DefaultHeader title="About Us" position="start" />
+            <h2 className="text-4xl !-mt-[50px]">
               <span className="font-normal">One Of The Leaders in Textile</span> <br />
               <span className="text-black font-bold text-[30px]">
                 Market Since <span className="text-primary">1989</span>
@@ -71,14 +69,14 @@ const Hero = () => {
                 const Icon = res.icon;
                 return (
                   <React.Fragment key={index}>
-                    <div className="flex flex-col items-start justify-center  space-x-2">
+                    <div className="flex flex-col items-start justify-center s space-x-2">
                       <Icon className="text-[40px] text-primary" />
                       <div>
-                        <p className="font-bold">{res.heading}</p>
-                        <p>{res.content}</p>
+                        <p className="font-bold !mt-3">{res.heading}</p>
+                        <p className="!-mt-[5px]">{res.content}</p>
                       </div>
                     </div>
-                    {index !== hero_about.length - 1 && <Divider type="vertical" className="!border-primary !h-[50px] mx-4" />}
+                    {index !== hero_about.length - 1 && <Divider type="vertical" className="!border-primary !h-[90px] mx-4" />}
                   </React.Fragment>
                 );
               })}
@@ -91,10 +89,12 @@ const Hero = () => {
               <p className="text-lg text-gray-700">we’ve recently launched the ability to shop fabrics online and shop poles & tracks online from our website too</p>
             </div>
 
-            <div className="flex items-center justify-start gap-6 mt-10">
+            <div className="flex items-center justify-start gap-6 ">
               <button className="bg-primary p-3 !text-white">KNOW MORE</button>
-              <p className="flex items-center justify-center gap-3 font-bold  ">
-                <ICON_HELPER.phone_icon className="text-2xl" />
+              <p className="flex items-center justify-center gap-3 font-bold text-2xl  !mt-7">
+                <div>
+                  <ICON_HELPER.phone_icon className="text-2xl" />
+                </div>
                 0091-4324-233551
               </p>
             </div>

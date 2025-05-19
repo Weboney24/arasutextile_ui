@@ -8,7 +8,7 @@ const Services = () => {
     <div className="w-[80%] mx-auto mb-20 font-primary">
       <DefaultHeader title="Our Process" content="Exclusive Quality" />
 
-      <div className="flex flex-wrap justify-center gap-10  bg-contain bg-no-repeat bg-center py-5" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_IMAGE})` }}>
+      <div className="flex flex-wrap justify-center gap-10  bg-contain bg-no-repeat bg-center py-5" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_IMAGE})`, backgroundPosition: "center 20%" }}>
         {" "}
         {servicesData.map((item, index) => (
           <div key={index} className={`flex flex-col items-center max-w-[250px] group ${index % 2 === 0 ? "mt-16" : "mt-4"}`}>
@@ -20,7 +20,7 @@ const Services = () => {
               <div className="absolute -top-3 left-[50px] bg-primary text-white font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm shadow-md">{String(index + 1).padStart(2, "0")}</div>
             </div>
 
-            <h3 className="text-center mt-4 font-semibold text-lg group-hover:text-primary transition duration-300">{item.title}</h3>
+            <h3 className="text-center !mt-6 font-semibold text-lg group-hover:text-primary transition duration-300">{item.title}</h3>
             <p className="text-lg text-center text-gray-600">{item.description}</p>
           </div>
         ))}

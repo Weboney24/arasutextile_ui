@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info Box */}
-        <div className="bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between shadow-lg font-bold hidden  ">
+        <div className="!bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between lg:shadow-lg font-bold hidden  ">
           {/* Address */}
           <div className="flex items-center gap-3 flex-1 ml-8">
             <FaMapMarkerAlt className="text-primary text-2xl mt-1" />
@@ -115,7 +115,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="text-center py-6 mt-10 border-t border-gray-700 text-sm">
-        © 2025 Developed by <span className="text-yellow-400 font-semibold">Weboney</span>
+        © 2025 Desgined & Developed by <span className="text-yellow-400 font-semibold">Weboney</span>
       </div>
     </footer>
   );
