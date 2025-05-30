@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { about, bottom_menu, footer_collection } from "../helper/datahelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
 import { Divider } from "antd";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { getblogs } from "../api";
+import _ from "lodash";
 
 const Footer = () => {
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  const fetchBlogData = async () => {
+    try {
+      const result = await getblogs();
+      const data = _.get(result, "data.data", []);
+      setBlogPosts(data);
+    } catch (error) {
+      console.log("Error fetching blogs:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchBlogData();
+  }, []);
+
   return (
     <footer className="bg-primary text-white  font-primary ">
       {/* Top Contact Section */}
@@ -98,11 +116,13 @@ const Footer = () => {
         {/* BLOGS */}
         <div>
           <h3 className="text-lg font-semibold mb-4">BLOGS</h3>
-          <ul className="space-y-2 text-sm">
-            <li className="cursor-pointer hover:underline">Latest Articles</li>
-            <li className="cursor-pointer hover:underline">Styling Tips</li>
-            <li className="cursor-pointer hover:underline">Fabric Guides</li>
-          </ul>
+          {blogPosts.slice(0, 3).map((res, index) => {
+            return (
+              <ul className="space-y-2 text-sm" key={index}>
+                <li className="cursor-pointer hover:underline">{res.blog_name}</li>
+              </ul>
+            );
+          })}
         </div>
 
         {/* NEWSLETTER */}
