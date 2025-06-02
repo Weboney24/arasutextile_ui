@@ -92,7 +92,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-start gap-4 sm:gap-6">
-              <button className="bg-primary px-5 py-2 text-white">KNOW MORE</button>
+              <button className="bg-primary px-5 py-2 !text-white">KNOW MORE</button>
               <p className="flex items-center gap-2 font-bold text-lg sm:text-2xl mt-2 sm:mt-7">
                 <ICON_HELPER.phone_icon className="text-xl sm:text-2xl" />
                 0091-4324-233551
