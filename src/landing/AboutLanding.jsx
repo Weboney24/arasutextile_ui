@@ -12,55 +12,59 @@ const AboutLanding = () => {
   return (
     <div>
       <CustomHero title="Know us" imagurl={IMAGE_HELPER.INSIDE_HERO2} />
-      <div className="relative !bg-white mb-20  -z-50 w-[80%] mx-auto h-[700px] !shadow-lg p-10 font-primary">
-        <div className="flex items-center justify-between  ">
-          <div className="w-1/2 relative ">
-            <div className="absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
-
-            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-[500px] h-[600px] object-cover border-white border-[10px] ml-[20px] shadow-lg" />
+      <div className="relative !bg-white mb-20 -z-50 w-[90%] mx-auto h-auto !shadow-lg p-5 sm:p-10 font-primary">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2 relative flex justify-center mb-10 lg:mb-0">
+            <div className="hidden lg:block absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
+            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-full max-w-[500px] h-[500px] sm:h-[600px] object-cover border-white border-[10px] shadow-lg" />
           </div>
 
-          <div className="w-1/2 space-y-[20px] top-0 -mt-[50px] ">
+          {/* Text Section */}
+          <div className="w-full lg:w-1/2 space-y-[20px] -mt-5">
             <DefaultHeader title="About Us" position="start" />
-            <h2 className="text-4xl !-mt-[50px]">
+            <h2 className="text-2xl sm:text-4xl !-mt-[30px]">
               <span className="font-normal">One Of The Leaders in Textile</span> <br />
-              <span className="text-black font-bold text-[30px]">
+              <span className="text-black font-bold text-[24px] sm:text-[30px]">
                 Market Since <span className="text-primary">1989</span>
               </span>
             </h2>
 
-            <p className="text-gray-600 text-lg">A professionally managed export company M/S Sri Arasu Tex has got exclusive manufacturing home textile furnishing items for many international buyers.</p>
+            <p className="text-gray-600 text-base sm:text-lg">A professionally managed export company M/S Sri Arasu Tex has got exclusive manufacturing home textile furnishing items for many international buyers.</p>
+
             <Divider className="!border-primary" />
-            <div className="flex items-center justify-between">
+
+            {/* Icons Row */}
+            <div className="flex flex-wrap sm:flex-nowrap items-start sm:items-center justify-start sm:justify-between gap-6">
               {hero_about.map((res, index) => {
                 const Icon = res.icon;
                 return (
                   <React.Fragment key={index}>
-                    <div className="flex flex-col items-start justify-center  space-x-2">
-                      <Icon className="text-[40px] text-primary" />
-                      <div>
-                        <p className="font-bold !mt-2">{res.heading}</p>
-                        <p className="!-mt-2">{res.content}</p>
-                      </div>
+                    <div className="flex flex-col items-start justify-center space-y-1">
+                      <Icon className="text-[30px] sm:text-[40px] text-primary" />
+                      <p className="font-bold">{res.heading}</p>
+                      <p className="text-sm sm:text-base">{res.content}</p>
                     </div>
-                    {index !== hero_about.length - 1 && <Divider type="vertical" className="!border-primary !h-[50px] mx-4" />}
+                    <div className="!sm:hidden !block">{index !== hero_about.length - 1 && <Divider type="vertical" className=" !border-primary !h-[50px] mx-4" />}</div>
                   </React.Fragment>
                 );
               })}
             </div>
 
-            <div className="flex items-center justify-between gap-5 mt-10">
-              <p className="text-4xl text-primary">
+            {/* CTA */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 mt-10">
+              <p className="text-3xl sm:text-4xl text-primary">
                 <ICON_HELPER.COTTON_ICON />
               </p>
-              <p className="text-lg text-gray-700">we’ve recently launched the ability to shop fabrics online and shop poles & tracks online from our website too</p>
+              <p className="text-base sm:text-lg text-gray-700">we’ve recently launched the ability to shop fabrics online and shop poles & tracks online from our website too</p>
             </div>
 
-            <div className="flex items-center justify-start gap-6 mt-10">
-              <button className="bg-primary p-3 !text-white">KNOW MORE</button>
-              <p className="flex items-center !mt-2 justify-center gap-3 font-bold  ">
-                <ICON_HELPER.phone_icon className="text-2xl" />
-                <div className="text-xl">0091-4324-233551</div>
+            {/* Button + Contact */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-6 mt-10">
+              <button className="bg-primary px-4 py-2 !text-white">KNOW MORE</button>
+              <p className="flex items-center gap-3 font-bold text-lg sm:text-xl">
+                <ICON_HELPER.phone_icon className="text-xl sm:text-2xl" />
+                0091-4324-233551
               </p>
             </div>
           </div>

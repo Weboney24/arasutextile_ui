@@ -1,7 +1,7 @@
 import React from "react";
 
 const DefaultHeader = ({ title, content, position = "center" }) => {
-  const alignment = position === "start" ? "items-start text-left !-ml-[50px]" : "items-center text-center";
+  const alignment = position === "start" ? "items-start text-left !ml-[50px] lg:!-ml-[50px]" : "items-center text-center";
   return (
     <div className="mt-10 w-[80%] mx-auto font-primary">
       <div className={`flex flex-col ${alignment} justify-center space-y-1`}>

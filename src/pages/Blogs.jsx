@@ -9,8 +9,8 @@ import "swiper/css";
 
 import { getblogs } from "../api";
 import _ from "lodash";
-import { IMAGE_HELPER } from "../helper/imagehelper";
 import { Link } from "react-router-dom";
+import { IMAGE_HELPER } from "../helper/imagehelper";
 
 const Blogs = () => {
   const [blogData, setBlogData] = useState([]);

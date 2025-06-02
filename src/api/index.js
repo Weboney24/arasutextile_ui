@@ -3,6 +3,8 @@ import { adminToken } from "../helper/notification_helper";
 
 const BASE_URL = import.meta.env.API_BASE_URL;
 const UPLOAD_BASE_URL = import.meta.env.API_UPLOAD_BASE_URL;
+
+console.log(BASE_URL, UPLOAD_BASE_URL);
 const MAIL_HELPER = import.meta.env.API_MAIL_URL;
 
 export const login = async (formData) => await axios.post(`${BASE_URL}/auth/login`, formData);
