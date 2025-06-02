@@ -12,7 +12,7 @@ const AboutLanding = () => {
   return (
     <div>
       <CustomHero title="Know us" imagurl={IMAGE_HELPER.INSIDE_HERO2} />
-      <div className="relative !bg-white mb-20  z-50 w-[80%] mx-auto h-[700px] !shadow-lg p-10 font-primary">
+      <div className="relative !bg-white mb-20  -z-50 w-[80%] mx-auto h-[700px] !shadow-lg p-10 font-primary">
         <div className="flex items-center justify-between  ">
           <div className="w-1/2 relative ">
             <div className="absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
@@ -90,7 +90,7 @@ const AboutLanding = () => {
         <Services />
       </div>
       <div>
-        <div className="w-[80%] mx-auto !mb-[120px]">
+        <div className="w-[80%] mx-auto !mb-[120px] ">
           <DefaultHeader title="Our Commitment " content="" />
           <div className="flex flex-col gap-12 mb-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
