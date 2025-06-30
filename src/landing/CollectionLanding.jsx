@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import DefaultHeader from "../components/DefaultHeader";
 import CustomHero from "../components/CustomHero";
-import { PRODUCT_COLLECTIONS_CATEGORIES, PRODUCT_COLLECTIONS_SUB_CATEGORIES, PRODUCTS } from "../helper/datahelper";
+import { PRODUCT_COLLECTIONS_CATEGORIES, PRODUCT_COLLECTIONS_SUB_CATEGORIES, PRODUCTS, GET_PRODUCT_IMAGE, GET_SUBCATEGORY_BY_CATEGORY } from "../helper/datahelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
+import { Card, Avatar } from "antd";
 
 const CollectionLanding = () => {
   const location = useLocation();
   const cat_id = location.state?.cat_id;
 
-  const filter_product_names = PRODUCT_COLLECTIONS_CATEGORIES.find((cat) => cat.category_name === cat_id)?.name;
+  // Get current selected category object
+  const currentCategory = PRODUCT_COLLECTIONS_CATEGORIES.find((cat) => cat.category_name === cat_id);
 
+  // Filter subcategories
   const filteredSubCategories = PRODUCT_COLLECTIONS_SUB_CATEGORIES.filter((sub) => sub.category_id === cat_id);
 
   const [activeSubCategory, setActiveSubCategory] = useState("");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentId, setCurrentId] = useState(cat_id);
 
   useEffect(() => {
     if (filteredSubCategories.length > 0) {
@@ -23,37 +27,52 @@ const CollectionLanding = () => {
     }
   }, [cat_id]);
 
-  const selectedProducts = PRODUCTS.filter((prod) => prod.sub_category_id.toLowerCase() === activeSubCategory.toLowerCase());
-
-  console.log("Active SubCategory:", activeSubCategory);
-  console.log("Selected Products:", selectedProducts);
+  const selectedProduct = PRODUCTS.find((prod) => prod.sub_category_id.toLowerCase() === activeSubCategory.toLowerCase());
 
   return (
     <div className="mb-40">
-      <CustomHero title="Product Vault" imagurl={IMAGE_HELPER.INSIDE_HERO4} />
-      <DefaultHeader title={filter_product_names} content="Explore our beautiful collection" />
+      {/* Hero Image from current category */}
+      <CustomHero title={currentCategory?.name || "Product Vault"} imagurl={currentCategory?.heroimage || IMAGE_HELPER.INSIDE_HERO4} />
 
-      {/* Sub-category Tabs */}
-      <div className="flex flex-wrap gap-4 px-4 sm:px-8 mb-8 justify-center">
-        {filteredSubCategories.map((sub, index) => (
-          <button key={index} onClick={() => setActiveSubCategory(sub.sub_category_id)} className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border-2 ${activeSubCategory === sub.sub_category_id ? "bg-primary !text-white border-primary shadow-lg scale-105" : "bg-white text-primary border-primary hover:bg-primary hover:!text-white"}`}>
-            {sub.name}
-          </button>
-        ))}
-      </div>
+      <DefaultHeader title={currentCategory?.name} content={"Explore our beautiful collection"} />
 
-      {/* Product Images */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 px-4 sm:px-8">
-        {selectedProducts.length > 0 ? (
-          selectedProducts.map((product, pIndex) =>
-            product.images?.map((img, iIndex) => (
-              <div key={`${pIndex}-${iIndex}`} className="relative group w-full h-[300px] mx-auto overflow-hidden rounded-2xl shadow-lg border border-white/30 transform transition-transform duration-500 hover:scale-[1.03] hover:rotate-[0.5deg]">
-                <img src={img} alt={`Image ${iIndex + 1}`} className="w-full h-full object-cover" />
+      <div className="flex w-[90%] mx-auto gap-10 mt-10">
+        {/* Sidebar */}
+        <div className="w-[250px] hidden md:block sticky top-32 h-fit">
+          <h2 className="text-xl font-semibold !text-primary mb-4 border-b border-white pb-2">Collections</h2>
+          <div className="flex flex-col gap-2 !text-primary">
+            {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, index) => (
+              <Link key={index} onMouseEnter={() => setCurrentId(res2.category_name)} to="/collections" state={{ cat_id: res2.category_name }}>
+                <Card className={`group w-full bg-primary !rounded-lg transition-all duration-200  border border-white/30 hover:!bg-primary ${res2.category_name === cat_id ? "!bg-primary scale-[1.02]" : ""}`}>
+                  <Card.Meta avatar={<Avatar className="!rounded-none  !-mt-[10px]" src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<div className={`!font-primary font-medium transition-colors duration-200 ${res2.category_name === cat_id ? "!text-white " : "text-primary group-hover:!text-white"}`}>{res2.name}</div>} />
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
 
-                {/* Overlay */}
+        {/* Main Content */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="space-y-4 !text-primary">
+            {/* Subcategory Buttons */}
+            <div className="flex flex-wrap gap-4 mt-6">
+              {filteredSubCategories.map((sub, index) => (
+                <button key={index} onClick={() => setActiveSubCategory(sub.sub_category_id)} className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border-2 ${activeSubCategory === sub.sub_category_id ? "bg-primary !text-white border-primary shadow-lg scale-105" : "bg-white text-primary border-primary hover:bg-primary hover:!text-white"}`}>
+                  {sub.name}
+                </button>
+              ))}
+            </div>
+
+            {/* Static common content from category */}
+            <p className="text-gray-400 whitespace-pre-line text-xl">{currentCategory?.content}</p>
+          </div>
+
+          {/* Product Images */}
+          <div className="grid grid-cols-2 gap-4 !mt-[28px]">
+            {selectedProduct?.images?.map((img, index) => (
+              <div key={index} className="relative group w-full h-[200px] overflow-hidden rounded-xl border border-white/30 shadow-lg transform transition-transform duration-500 hover:scale-[1.03] hover:rotate-[0.5deg]">
+                <img src={img} alt={`Product Image ${index + 1}`} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-
-                {/* View Button */}
                 <div onClick={() => setSelectedImage(img)} className="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer bg-white/80 p-3 rounded-full shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -61,14 +80,12 @@ const CollectionLanding = () => {
                   </svg>
                 </div>
               </div>
-            ))
-          )
-        ) : (
-          <p className="text-center col-span-full text-gray-500">No images available</p>
-        )}
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Modal View */}
+      {/* Full Image Modal */}
       {selectedImage && (
         <div onClick={() => setSelectedImage(null)} className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center cursor-zoom-out">
           <img src={selectedImage} alt="Full View" className="max-w-full max-h-full rounded-lg shadow-xl" />

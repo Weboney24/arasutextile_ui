@@ -16,24 +16,20 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navbar */}
-      <div className="bg-primary h-[100px] font-primary">
-        <div className="w-[80%] text-white h-full m-auto flex items-center justify-between">
-          <div>
-            <img src={IMAGE_HELPER.ARASU_LOGO} alt="Logo" className="w-[240px] h-[60px]" />
-          </div>
-
+      <div className="bg-blue h-[50px] font-primary">
+        <div className="w-[90%] text-white h-full m-auto flex items-center justify-end">
           <div className="hidden md:flex items-center gap-14">
             {top_nav.map((res, index) => {
               const Icon = res.icon;
               return (
                 <div key={index}>
                   <div className="flex items-center gap-4">
-                    <Icon className="text-[30px] font-bold text-white" />
-                    <div className="space-y-1">
+                    <Icon className="text-[20px] font-bold text-white" />
+                    <div className="space-y-1 mt-2">
                       <h1 className="text-sm text-white">{res.heading}</h1>
-                      <h1 className="text-[15px] text-white">{res.content}</h1>
+                      <h1 className="text-[12px] text-white">{res.content}</h1>
                     </div>
-                    {index !== top_nav.length - 1 && <Divider type="vertical" className="!border-white !h-[50px]" />}
+                    {index !== top_nav.length - 1 && <Divider type="vertical" className="!border-white !h-[20px]" />}
                   </div>
                 </div>
               );
@@ -43,9 +39,17 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Navbar */}
-      <div className="h-[70px] flex items-center justify-between px-5 md:px-[10%]">
+      <div className="h-[80px] flex items-center justify-between px-5 md:px-[5%]">
+        {/* Logo */}
+        <div className="w-fit p-[2px] border-[2px] border-primary ">
+          <div className="p-[6px] bg-blue">
+            <img src={IMAGE_HELPER.BG_REMOVE_LOGO} alt="Logo" className="w-[240px] h-[40px] object-contain" />
+          </div>
+        </div>
+
+        {/* Navigation */}
         {md ? (
-          <div className="flex items-center gap-10 text-primary">
+          <div className="flex items-center gap-10 text-primary justify-end mt-5">
             {bottom_menu.map((res, index) => {
               const isActive = location.pathname === res.link;
               const isProductVault = res.name === "Product Vault";
@@ -56,7 +60,6 @@ const Navbar = () => {
                     <p className={`${isActive ? "border-primary" : "!border-transparent hover:border-primary"}`}>{res.name}</p>
                   </Link>
 
-                  {/* Product Vault Dropdown for Desktop */}
                   {isProductVault && (
                     <div className="absolute hidden group-hover:flex flex-col min-w-[250px] left-0 text-black top-[100%] z-50">
                       {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, index) => (
@@ -76,7 +79,6 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-            {/* Mobile Hamburger Button */}
             <Button type="primary" icon={<MenuOutlined />} onClick={() => setDrawerVisible(true)} className="!bg-primary" />
             <Drawer title="Menu" placement="left" onClose={() => setDrawerVisible(false)} open={drawerVisible}>
               <Menu mode="vertical" selectable={false}>
@@ -109,33 +111,43 @@ const Navbar = () => {
                   }
                 })}
               </Menu>
+
+              {/* Mobile Buttons */}
+              <div className="mt-6 space-y-3">
+                <button className="bg-blue text-white w-full py-2 rounded">Get Touch</button>
+                <Link to="/login" onClick={() => setDrawerVisible(false)}>
+                  <button className="bg-blue text-white w-full py-2 rounded">Admin</button>
+                </Link>
+              </div>
             </Drawer>
           </>
         )}
 
-        {/* Contact and Social Icons */}
-        <div className="flex items-center gap-3">
-          <button className="bg-primary !text-white font-bold py-2 px-4">Get Touch</button>
-          <div className="hidden md:flex items-center gap-2">
-            {nav_links.map((res, index) => {
-              const MediaIcon = res.icon;
-              return (
-                <Tooltip key={index} title={res.name}>
-                  <Link to={res.link}>
-                    <div className="text-lg bg-gray-300 p-2 rounded-sm hover:bg-primary hover:text-white cursor-pointer">
-                      <MediaIcon />
-                    </div>
-                  </Link>
-                </Tooltip>
-              );
-            })}
+        {/* Buttons + Media Icons on md+ only */}
+        {md && (
+          <div className="flex items-center gap-3 justify-end">
+            <button className="bg-blue !text-white py-1 px-3">Get Touch</button>
+            <div className="flex items-center gap-2">
+              {nav_links.map((res, index) => {
+                const MediaIcon = res.icon;
+                return (
+                  <Tooltip key={index} title={res.name}>
+                    <Link to={res.link}>
+                      <div className="text-lg bg-gray-300 p-1 rounded-sm hover:bg-primary hover:text-white cursor-pointer">
+                        <MediaIcon />
+                      </div>
+                    </Link>
+                  </Tooltip>
+                );
+              })}
+            </div>
+            <div>
+              <Link to="/login">
+                <button className="bg-blue !text-white font-primary py-1 px-2 ml-2">Admin</button>
+              </Link>
+            </div>
           </div>
-          <div>
-            <Link to="/login">
-              <button className="bg-primary !text-white font-primary py-2 px-3 rounded-sm ml-2">Admin</button>
-            </Link>
-          </div>
-        </div>
+        )}
       </div>
     </>
   );

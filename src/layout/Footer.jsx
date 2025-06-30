@@ -6,6 +6,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { getblogs } from "../api";
 import _ from "lodash";
+import "@fontsource/poppins";
 
 const Footer = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -25,16 +26,20 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-primary text-white  font-primary ">
+    <footer className="bg-rose text-primary  font-primary ">
       {/* Top Contact Section */}
       <div className="flex w-[80%] mx-auto -mt-15 z-10 relative gap-5">
         {/* Logo Box */}
-        <div className="bg-primary border-2 border-white p-8 rounded-lg flex items-center justify-center w-[300px] shadow-lg">
-          <img src={IMAGE_HELPER.ARASU_LOGO} alt="logo" className="w-[180px] h-auto" />
+        <div className="bg-blue border-2 border-white px-4 py-0 rounded-lg flex items-center justify-center w-[300px] shadow-lg">
+          <h1 className="text-white text-center font-extrabold text-[46px] leading-none tracking-wider font-logo !mt-[20px]">
+            Sri Arasu
+            <br />
+            Tex
+          </h1>
         </div>
 
         {/* Contact Info Box */}
-        <div className="!bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between lg:shadow-lg font-bold hidden  ">
+        <div className="!bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between lg:!shadow-lg   font-bold hidden   ">
           {/* Address */}
           <div className="flex items-center gap-3 flex-1 ml-8">
             <FaMapMarkerAlt className="text-primary text-2xl mt-1" />
