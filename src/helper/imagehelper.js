@@ -1,4 +1,5 @@
 import ARASU_LOGO from "../assets/arasulogo.png";
+import BG_REMOVE_LOGO from "../assets/lg.png";
 
 import HERO_IMAGE from "../assets/hero.jpg";
 import HERO_IMAGE1 from "../assets/hero1.jpg";
@@ -31,6 +32,7 @@ import yarnimage from "../assets/icon.png";
 import zig1 from "../assets/zig1.jpg";
 import zig2 from "../assets/zig2.jpg";
 import zig3 from "../assets/zig3.jpg";
+import foundation from "../assets/foundation1.jpg";
 
 //kitchen set
 
@@ -235,6 +237,8 @@ import babythrows3 from "../assets/images/babythrows3.jpg";
 import babythrows4 from "../assets/images/babythrows4.jpg";
 
 export const IMAGE_HELPER = {
+  FOUNDATION_IMAGE: foundation,
+  BG_REMOVE_LOGO: BG_REMOVE_LOGO,
   ARASU_LOGO: ARASU_LOGO,
   HERO_IMAGE: HERO_IMAGE,
   HERO_IMAGE1: HERO_IMAGE1,

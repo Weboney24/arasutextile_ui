@@ -12,57 +12,30 @@ const AboutLanding = () => {
   return (
     <div>
       <CustomHero title="Know us" imagurl={IMAGE_HELPER.INSIDE_HERO2} />
-      <div className="relative !bg-white mb-20 -z-50 w-[90%] mx-auto h-auto !shadow-lg p-5 sm:p-10 font-primary">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          {/* Image Section */}
-          <div className="w-full lg:w-1/2 relative flex justify-center mb-10 lg:mb-0">
-            <div className="hidden lg:block absolute right-[215px] top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
-            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-full max-w-[500px] h-[500px] sm:h-[600px] object-cover border-white border-[10px] shadow-lg" />
+      <div className="w-[80%] mx-auto py-0 mb-[40px] font-primary">
+        <div className="flex flex-col lg:flex-row items-center gap-10 ">
+          {/* Image Left - Bigger Height */}
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Sri Arasu Tex" className="w-full max-w-[650px] h-[550px] lg:h-[550px] object-cover rounded-md shadow-md border-4 border-white" />
           </div>
 
-          {/* Text Section */}
-          <div className="w-full lg:w-1/2 space-y-[20px] -mt-5">
+          {/* Text Right */}
+          <div className="w-full lg:w-1/2 space-y-0 !-mt-[60px]">
             <DefaultHeader title="About Us" position="start" />
-            <h2 className="text-2xl sm:text-4xl !-mt-[30px]">
-              <span className="font-normal">One Of The Leaders in Textile</span> <br />
-              <span className="text-black font-bold text-[24px] sm:text-[30px]">
-                Market Since <span className="text-primary">1989</span>
-              </span>
-            </h2>
 
-            <p className="text-gray-600 text-base sm:text-lg">A professionally managed export company M/S Sri Arasu Tex has got exclusive manufacturing home textile furnishing items for many international buyers.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary">Exporting Excellence Since 1989</h2>
 
-            <Divider className="!border-primary" />
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700">
+              Sri Arasu Tex is a globally recognized manufacturer and exporter of premium home textile products. With a rich legacy spanning over <strong>36 years</strong>, we’ve built strong partnerships with clients across <strong>USA, UK, Germany, France, Italy, Australia, UAE</strong> and more.
+            </p>
 
-            {/* Icons Row */}
-            <div className="flex flex-wrap sm:flex-nowrap items-start sm:items-center justify-start sm:justify-between gap-6">
-              {hero_about.map((res, index) => {
-                const Icon = res.icon;
-                return (
-                  <React.Fragment key={index}>
-                    <div className="flex flex-col items-start justify-center space-y-1">
-                      <Icon className="text-[30px] sm:text-[40px] text-primary" />
-                      <p className="font-bold">{res.heading}</p>
-                      <p className="text-sm sm:text-base">{res.content}</p>
-                    </div>
-                    <div className="!sm:hidden !block">{index !== hero_about.length - 1 && <Divider type="vertical" className=" !border-primary !h-[50px] mx-4" />}</div>
-                  </React.Fragment>
-                );
-              })}
-            </div>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700">Our expertise lies in exclusively crafting a wide range of home textile products—from curtains and bed linen to kitchen, table, and living room furnishings.</p>
 
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 mt-10">
-              <p className="text-3xl sm:text-4xl text-primary">
-                <ICON_HELPER.COTTON_ICON />
-              </p>
-              <p className="text-base sm:text-lg text-gray-700">we’ve recently launched the ability to shop fabrics online and shop poles & tracks online from our website too</p>
-            </div>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700">With a commitment to innovation, we stay updated with global design trends and compliance standards, ensuring every product we ship meets international quality benchmarks.</p>
 
-            {/* Button + Contact */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-6 mt-10">
-              <button className="bg-primary px-4 py-2 !text-white">KNOW MORE</button>
-              <p className="flex items-center gap-3 font-bold text-lg sm:text-xl">
+            <div className="flex flex-col sm:flex-row items-center gap-6 pt-2">
+              <button className="bg-primary !text-white px-6 py-2 rounded-md hover:bg-primary/90 transition">Know More</button>
+              <p className="flex items-center gap-3 font-bold text-[18px] sm:text-[20px] text-gray-800 !mt-3 sm:mt-0">
                 <ICON_HELPER.phone_icon className="text-xl sm:text-2xl" />
                 0091-4324-233551
               </p>
@@ -128,6 +101,38 @@ const AboutLanding = () => {
                 <p>With a strong workforce, we handle dyeing, weaving, and finishing of large volume orders, delivering on time with precision.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-between w-[80%] mx-auto gap-10 my-10 !mb-[120px]">
+        {/* Image Section */}
+        <div className="w-1/2">
+          <img src={IMAGE_HELPER.FOUNDATION_IMAGE} alt="Foundation" className="rounded-xl shadow-lg w-full h-auto object-cover" />
+        </div>
+
+        {/* Content Section */}
+        <div className="w-1/2 space-y-6">
+          {/* Top Heading: Foundation Name in Two Lines */}
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-primary">
+              N <span className="text-green-700 ">CHELLA</span> APPA
+              <br />
+              FOUNDATION
+            </h1>
+          </div>
+
+          {/* Subheading: Live Green */}
+          <div>
+            <h2 className="text-3xl font-bold text-green-600 font-primary mb-2">LIVE GREEN</h2>
+            <p className="text-gray-700 font-medium text-lg">Caring about the environment is beautiful.</p>
+          </div>
+
+          {/* Quote */}
+          <p className="text-[18px] text-gray-800 font-semibold italic leading-relaxed">"Instead of being keen on making money, plant some trees to flourish the disease-free generation."</p>
+
+          {/* Donate Button */}
+          <div className="bg-green-600 text-white py-4 px-6 rounded-xl text-center shadow-md hover:bg-green-700 transition-all duration-300 w-max">
+            <button className="font-bold text-xl tracking-wide">DONATE YOUR CONTRIBUTION</button>
           </div>
         </div>
       </div>
