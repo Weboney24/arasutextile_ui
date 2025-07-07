@@ -86,12 +86,10 @@ const ContactLanding = () => {
                 </div>
               </div>
             </div>
-
             {/* Branch Office */}
             <div>
               <h3 className="text-xl font-bold">Branch Office</h3>
               <Divider className="!border-primary" />
-
               <div className="flex flex-col sm:flex-row sm:justify-between gap-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-primary/10 rounded-full p-3">

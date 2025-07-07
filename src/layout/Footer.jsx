@@ -30,7 +30,7 @@ const Footer = () => {
       {/* Top Contact Section */}
       <div className="flex w-[80%] mx-auto -mt-15 z-10 relative gap-5">
         {/* Logo Box */}
-        <div className="bg-blue border-2 border-white px-4 py-0 rounded-lg flex items-center justify-center w-[300px] shadow-lg">
+        <div className="bg-red border-2 border-white px-4 py-0 rounded-lg flex items-center justify-center w-[300px] shadow-lg">
           <h1 className="text-white text-center font-extrabold text-[46px] leading-none tracking-wider font-logo !mt-[20px]">
             Sri Arasu
             <br />
