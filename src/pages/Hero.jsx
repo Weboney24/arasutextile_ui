@@ -9,22 +9,22 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const HERO_IMAGES = [
     {
-      image: IMAGE_HELPER.HERO_IMAGE,
+      image: IMAGE_HELPER.MAIN_kitchen,
       title: "Decades of industry knowledge in",
       subtitle: "delivering precision-crafted textiles..",
     },
     {
-      image: IMAGE_HELPER.HERO_IMAGE1,
+      image: IMAGE_HELPER.MAIN_outdoor,
       title: "We use only premium fabrics and ",
       subtitle: "maintain strict quality control at every stage.",
     },
     {
-      image: IMAGE_HELPER.HERO_IMAGE2,
+      image: IMAGE_HELPER.MAIN_BATH,
       title: "Get tailored designs to suit your",
       subtitle: " brand, market, and customer needs",
     },
     {
-      image: IMAGE_HELPER.HERO_IMAGE3,
+      image: IMAGE_HELPER.MAIN_baby,
       title: "Eco-conscious processes and fair labor",
       subtitle: "practices are at the heart of what we do.",
     },
