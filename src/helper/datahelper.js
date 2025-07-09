@@ -265,28 +265,29 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     content: "Premium Cotton Kitchen Set – Designed for Global Markets Sri Arasu Tex presents a carefully crafted cotton kitchen set combining quality, durability, and style to meet the demands of discerning international buyers. Made from responsibly sourced, breathable cotton fabrics, this set includes an adjustable apron, heat-resistant oven gloves, a matching pot holder, an ultra-absorbent kitchen towel, and a decorative oven cover and a perfect kitchen clean ups dish cloth all every piece is made to make your cooking easier and more stylish.  Ideal for home chefs, retail, hospitality, and gifting sectors. our kitchen set offers customizable designs, private labeling, and flexible packaging options to suit your market requirements. Partner with us for reliable supply, superior quality, and products that resonate with eco-conscious consumers worldwide. ",
   },
   {
-    id: "2",
-    name: "Living Room",
-    category_name: "living_room",
-    imageurl: IMAGE_HELPER.HOME_COLLECTION1,
-    heroimage: IMAGE_HELPER.HOME_COLLECTION1,
-    content: "Transform your living space with our elegant living room set that blends comfort and style.The set includes premium curtains, soft cushions, cozy throws, large floor cushions, and a sturdy door stopper.Our curtains add privacy and sophistication while gently filtering natural light.Plush cushions and throws bring warmth and texture, perfect for relaxing or entertaining.Fat cushions offer casual seating and a cozy vibe for movie nights or guests.Crafted from high-quality fabrics for lasting softness and durability.Thoughtfully coordinated colors and patterns enhance any interior theme.The door stopper adds a functional yet stylish touch to keep your space draft-free.Every piece is designed to create a welcoming, cozy, and stylish atmosphere.Ideal for modern homes that value comfort with a designer look.",
-  },
-  {
     id: "3",
     name: "Table Lines",
     category_name: "table_line",
     imageurl: IMAGE_HELPER.HOME_COLLECTION2,
     heroimage: IMAGE_HELPER.OUT_TABLE2,
-    content: "Elevate your dining experience with our beautifully crafted table linen set.This collection includes tablecloths, runners, placemats, and coordinating napkins.Made from premium fabrics that are both durable and easy to maintain.Designed to protect your table while adding a touch of elegance and charm.Our linens feature refined textures and timeless prints for any occasion.Perfect for daily meals, festive gatherings, or formal dinners.The table runner adds a stylish centerpiece while placemats keep things neat.Soft napkins complete the look with both function and finesse.Available in a range of colors and styles to suit any décor.Turn every meal into a special occasion with our table linen collection.",
+    content: " Sri Arasu Tex presents an elegant collection of premium cotton table linens crafted for beauty, durability, and global appeal. Using eco-friendly, breathable cotton, our collection includes tablecloths, runners, placemats, and coordinating napkins – all designed to enhance dining experiences with timeless charm. Ideal for homes, restaurants, events, and gifting, our table linen range supports private labeling, custom patterns, and flexible packaging to match your brand’s needs. Partner with us for high-quality, stylish solutions that meet the expectations of eco-conscious consumers worldwide.",
   },
+  {
+    id: "2",
+    name: "Living Room",
+    category_name: "living_room",
+    imageurl: IMAGE_HELPER.HOME_COLLECTION1,
+    heroimage: IMAGE_HELPER.HOME_COLLECTION1,
+    content: " Elevate interiors with Sri Arasu Tex’s range of living room cotton textiles that blend style, comfort, and sustainability. From cushion covers and throws to curtains and decorative runners, each piece is thoughtfully designed using breathable, eco-responsible cotton. Perfect for residential and hospitality use, our living room products are customizable and available with private labeling. Count on us for premium craftsmanship, global appeal, and support for your retail and decor collections.",
+  },
+
   {
     id: "4",
     name: "Beddings",
     category_name: "bedding",
     imageurl: IMAGE_HELPER.HOME_COLLECTION3,
     heroimage: IMAGE_HELPER.B_DEUVET1,
-    content: "Create the perfect sleep sanctuary with our luxurious bedding collection.This set includes a flat bed cover, fitted bed cover, plush duvet, matching duvet cover, soft pillows, and pillow covers.Crafted from premium fabrics for unmatched comfort and breathability.The fitted bed cover ensures a snug fit, while the flat cover adds a layered finish.Our fluffy duvet offers warmth without the weight, ideal for all seasons.The duvet cover brings style and easy maintenance to your bedding.Pillows provide the right balance of softness and support for restful sleep.Coordinated pillow covers add a polished and elegant look to your bed.Available in a variety of textures, colors, and patterns to suit any décor.Enjoy hotel-style comfort and design in the comfort of your own home.",
+    content: "Sri Arasu Tex offers luxuriously soft and breathable cotton bedding solutions crafted for restful nights and international standards. Our bedding collection includes bed sheets, duvet covers, pillowcases, and comforters, all made with responsibly sourced cotton for unmatched comfort and long-lasting quality. Tailored for homes, hospitality, and retail, our bedding products are available with private label, custom sizing, and eco-friendly packaging. Trust us to deliver elegance, comfort, and reliability across global markets.",
   },
   {
     id: "5",
@@ -294,7 +295,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "bath",
     imageurl: IMAGE_HELPER.HOME_COLLECTION4,
     heroimage: IMAGE_HELPER.BATH_CU1,
-    content: "Indulge in spa-like comfort at home with our premium bath collection.This set includes soft towels, a cozy bathrobe, non-slip bath footwear, and stylish shower curtains.Made from highly absorbent, quick-drying fabrics for everyday luxury.Our plush towels are gentle on the skin and perfect for daily use.The bathrobe offers warmth and relaxation after every shower or bath.Durable and water-resistant, the shower curtains add both privacy and elegance.Breathable and lightweight bath footwear ensures safety and comfort.Designed with coordinated colors to enhance your bathroom décor.Each piece combines practicality with a touch of refined style.Perfect for creating a calm, refreshing, and organized bath space.",
+    content: "Wrap yourself in comfort with Sri Arasu Tex’s range of bath essentials, made from ultra-soft and absorbent cotton. Our collection includes bath towels, hand towels, washcloths, bath mats, and robes – all created for superior absorbency and long-lasting use. Ideal for home, spa, hotel, and gifting markets, these products offer private labeling, customizable colors, and sustainable packaging. Choose us for premium-quality bath textiles that align with modern, eco-aware lifestyles.",
   },
   {
     id: "6",
@@ -302,7 +303,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "outdoor",
     imageurl: IMAGE_HELPER.HOME_COLLECTION5,
     heroimage: IMAGE_HELPER.OUT_TABLE3,
-    content: "Enhance your outdoor living with our stylish and functional outdoor essentials.This collection features a durable table cloth, comfortable chair pads, and casual caps for sunny days.Our outdoor table cloth is weather-resistant and easy to clean, perfect for patios and picnics.Chair pads offer extra comfort and support, ideal for long lounging sessions.Each piece is made with fade-resistant fabric to withstand the elements.The caps provide sun protection while adding a sporty touch to your outdoor look.Designed to complement any garden, balcony, or outdoor seating area.Coordinated colors and patterns bring a refreshing and vibrant vibe.Perfect for weekend brunches, family gatherings, or quiet evenings outside.Make every outdoor moment comfortable, stylish, and sun-safe with our collection.",
+    content: "Sri Arasu Tex brings function and flair outdoors with our durable, weather-friendly cotton textile range. From picnic blankets and beach towels to outdoor cushions and table covers, each product is crafted to perform and please. Created with rugged yet soft cotton and fade-resistant finishes, our outdoor line suits the needs of travel, leisure, and décor brands worldwide. Customization, private labeling, and export-ready packaging options available.",
   },
   {
     id: "7",
@@ -310,7 +311,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "baby",
     imageurl: IMAGE_HELPER.HOME_COLLECTION6,
     heroimage: IMAGE_HELPER.BABY_BED1,
-    content: "Wrap your little one in comfort with our thoughtfully designed baby essentials collection.This set includes soft baby pillows, gentle towels, cozy throws, play mats, a snug sleeping bed, and cute bibs.Crafted from ultra-soft, hypoallergenic materials safe for delicate baby skin.Our baby pillows support proper posture and restful naps.The absorbent towels and bibs make cleanup easy during bath and mealtime.Plush throws offer warmth and comfort for cuddles and naps.The sleeping bed ensures a secure and peaceful sleep environment.Colorful, cushioned play mats encourage safe play and tummy time.Adorably designed with soft pastels and playful prints to delight both babies and parents.Perfect for gifting or daily use, this collection combines comfort, safety, and charm.",
+    content: "Sri Arasu Tex presents a baby textile collection crafted from the gentlest cotton for maximum comfort and care. Our product range includes baby blankets, swaddles, bibs, towels, and crib sheets – all made with ultra-soft, breathable, and hypoallergenic fabrics. Designed for new parents, gifting, and baby brands, our offerings come with full customization, baby-safe dyes, and eco-conscious packaging. Partner with us to deliver love and safety through every stitch.",
   },
 ];
 
@@ -349,7 +350,7 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
   {
     id: 6,
     category_id: "kitchen_set",
-    name: "Fridge Handle cover",
+    name: "Dish Cloth",
     sub_category_id: "fridge_cover",
   },
 
@@ -383,6 +384,12 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     category_id: "living_room",
     name: "Door Stopper",
     sub_category_id: "door",
+  },
+  {
+    id: 12,
+    category_id: "living_room",
+    name: "Floor Cushions ",
+    sub_category_id: "floor",
   },
 
   //Table Lines
@@ -433,6 +440,12 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     category_id: "table_line",
     name: "Chair Cover",
     sub_category_id: "chari_cover",
+  },
+  {
+    id: 20,
+    category_id: "table_line",
+    name: "Place mat",
+    sub_category_id: "place_mat",
   },
   //bedding
   {
@@ -523,17 +536,30 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     name: "Bags",
     sub_category_id: "bags",
   },
-  // {
-  //   id: 35,
-  //   category_id: "outdoor",
-  //   name: "Beach Wears",
-  //   sub_category_id: "beach_wears",
-  // },
+  {
+    id: 35,
+    category_id: "outdoor",
+    name: "Beach Wears",
+    sub_category_id: "beach_wears",
+  },
   {
     id: 36,
     category_id: "outdoor",
     name: "Caps(cotton)",
     sub_category_id: "caps",
+  },
+
+  {
+    id: 36,
+    category_id: "outdoor",
+    name: "Fouta",
+    sub_category_id: "fouta",
+  },
+  {
+    id: 36,
+    category_id: "outdoor",
+    name: "cushions",
+    sub_category_id: "outdoor_cushions",
   },
 
   //baby
@@ -573,18 +599,25 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     name: "Bib",
     sub_category_id: "bib",
   },
-  // {
-  //   id: 43,
-  //   category_id: "baby",
-  //   name: "Nursing Pillow",
-  //   sub_category_id: "nursing_pillow",
-  // },
+  {
+    id: 43,
+    category_id: "baby",
+    name: "Baby Tent",
+    sub_category_id: "baby_tent",
+  },
+  {
+    id: 44,
+    category_id: "baby",
+    name: "Cushions",
+    sub_category_id: "baby_cushions",
+  },
 ];
 
 export const PRODUCTS = [
   {
     id: 1,
     sub_category_id: "glove",
+    imageurl: [IMAGE_HELPER.MAIN_kitchen],
     images: [IMAGE_HELPER.GLOVE1_IMAGE, IMAGE_HELPER.GLOVE2_IMAGE, IMAGE_HELPER.GLOVE3_IMAGE, IMAGE_HELPER.GLOVE4_IMAGE],
     description: "High-quality kitchen gloves.\nDurable and heat-resistant.\nPerfect for everyday use.\nOffers firm grip and comfort.\nMachine washable and reusable.",
   },
@@ -621,6 +654,7 @@ export const PRODUCTS = [
   {
     id: 7,
     sub_category_id: "curtains",
+    imageurl: [IMAGE_HELPER.MAIN_living],
     images: [IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
     description: "Elegant window curtains.\nBlocks light effectively.\nEnhances room decor.\nEasy to hang and clean.\nAvailable in various designs.",
   },
@@ -651,6 +685,7 @@ export const PRODUCTS = [
   {
     id: 12,
     sub_category_id: "table_cloth",
+    imageurl: [IMAGE_HELPER.MAIN_table],
     images: [IMAGE_HELPER.TABLE1, IMAGE_HELPER.TABLE2, IMAGE_HELPER.TABLE3, IMAGE_HELPER.TABLE4],
     description: "Elegant table cloths.\nProtects surfaces from stains.\nBeautiful prints and patterns.\nPerfect for everyday use.\nMachine washable fabric.",
   },
@@ -699,6 +734,7 @@ export const PRODUCTS = [
   {
     id: 20,
     sub_category_id: "flat_bed",
+    imageurl: [IMAGE_HELPER.MAIN_bedding],
     images: [IMAGE_HELPER.BB_COVER1, IMAGE_HELPER.BB_COVER2, IMAGE_HELPER.BB_COVER3, IMAGE_HELPER.BB_COVER4],
     description: "Soft flat bed sheets.\nSmooth and breathable.\nAvailable in all sizes.\nPerfect for restful sleep.\nEasy to maintain fabric.",
   },
@@ -735,6 +771,7 @@ export const PRODUCTS = [
   {
     id: 27,
     sub_category_id: "bath_towels",
+    imageurl: [IMAGE_HELPER.MAIN_BATH],
     images: [IMAGE_HELPER.BATH_TOWEL1, IMAGE_HELPER.BATH_TOWEL2, IMAGE_HELPER.BATH_TOWEL3, IMAGE_HELPER.BATH_TOWEL4],
     description: "Highly absorbent towels.\nSoft and skin-friendly.\nPerfect for everyday use.\nDries quickly after use.\nComes in multiple colors.",
   },
@@ -759,6 +796,7 @@ export const PRODUCTS = [
   {
     id: 31,
     sub_category_id: "outdoor_table_cloth",
+    imageurl: [IMAGE_HELPER.MAIN_outdoor],
     images: [IMAGE_HELPER.OUT_TABLE1, IMAGE_HELPER.OUT_TABLE2, IMAGE_HELPER.OUT_TABLE3, IMAGE_HELPER.OUT_TABLE4],
     description: "Outdoor tablecloths.\nPerfect for garden setups.\nResistant to weather.\nAttractive patterns and colors.\nEasy to clean material.",
   },
@@ -783,6 +821,7 @@ export const PRODUCTS = [
   {
     id: 36,
     sub_category_id: "baby_towels",
+    imageurl: [IMAGE_HELPER.MAIN_baby],
     images: [IMAGE_HELPER.BABY_TOWEL1, IMAGE_HELPER.BABY_TOWEL2, IMAGE_HELPER.BABY_TOWEL3, IMAGE_HELPER.BABY_TOWEL4],
     description: "Soft baby towels.\nMade with gentle fabric.\nQuick absorbency.\nIdeal for delicate skin.\nAvailable in cute prints.",
   },
