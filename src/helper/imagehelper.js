@@ -66,6 +66,11 @@ import apron2 from "../assets/images/apron2.jpg";
 import apron3 from "../assets/images/apron3.jpg";
 import apron4 from "../assets/images/apron4.jpg";
 
+import floor1 from "../assets/images/floor1.webp";
+import floor2 from "../assets/images/floor2.jpg";
+import floor3 from "../assets/images/floor3.jpg";
+import floor4 from "../assets/images/floor4.jpg";
+
 import lvcur1 from "../assets/images/lvcur1.jpg";
 import lvcur2 from "../assets/images/lvcur2.jpg";
 import lvcur3 from "../assets/images/lvcur3.jpg";
@@ -236,16 +241,25 @@ import babythrows2 from "../assets/images/babythrows2.jpg";
 import babythrows3 from "../assets/images/babythrows3.jpg";
 import babythrows4 from "../assets/images/babythrows4.jpg";
 
+import place1 from "../assets/images/place1.webp";
+import place2 from "../assets/images/place2.jpg";
+import place3 from "../assets/images/place3.jpg";
+import place4 from "../assets/images/place4.jpg";
+
+import fouta1 from "../assets/images/fouta1.jpg";
+import fouta2 from "../assets/images/fouta2.jpg";
+import fouta3 from "../assets/images/fouta3.jpg";
+import fouta4 from "../assets/images/fouta4.jpg";
 
 //main category connect
 
-import mainbaby from "../assets/baby1.png"
-import mainbath from "../assets/bath1.png"
-import mainbedding from "../assets/bedding1.png"
-import mainoutdoor from "../assets/outdoor1.png"
-import mainliving from "../assets/living1.png"
-import maintable from "../assets/table1.jpeg"
-import mainkitchen from "../assets/kitchen2.jpeg"
+import mainbaby from "../assets/baby1.png";
+import mainbath from "../assets/bath1.png";
+import mainbedding from "../assets/bedding1.png";
+import mainoutdoor from "../assets/outdoor1.png";
+import mainliving from "../assets/living1.png";
+import maintable from "../assets/table1.jpeg";
+import mainkitchen from "../assets/kitchen2.jpeg";
 
 export const IMAGE_HELPER = {
   //main images
@@ -255,10 +269,9 @@ export const IMAGE_HELPER = {
   MAIN_bedding: mainbedding,
   MAIN_living: mainliving,
   MAIN_outdoor: mainoutdoor,
-  MAIN_table:maintable,
+  MAIN_table: maintable,
   MAIN_kitchen: mainkitchen,
 
-  
   FOUNDATION_IMAGE: foundation,
   BG_REMOVE_LOGO: BG_REMOVE_LOGO,
   ARASU_LOGO: ARASU_LOGO,
@@ -322,6 +335,11 @@ export const IMAGE_HELPER = {
   APRON3: apron3,
   APRON4: apron4,
 
+  FLOOR1: floor1,
+  FLOOR2: floor2,
+  FLOOR3: floor3,
+  FLOOR4: floor4,
+
   LVCUR1: lvcur1,
   LVCUR2: lvcur2,
   LVCUR3: lvcur3,
@@ -357,10 +375,20 @@ export const IMAGE_HELPER = {
   TRUNNER3: trunner3,
   TRUNNER4: trunner4,
 
+  PLACE1: place1,
+  PLACE2: place2,
+  PLACE3: place3,
+  PLACE4: place4,
+
   NAP1_MAGE: tnap1,
   NAP2_MAGE: tnap2,
   NAP3_MAGE: tnap3,
   NAP4_MAGE: tnap4,
+
+  FOUTA1: fouta1,
+  FOUTA2: fouta2,
+  FOUTA3: fouta3,
+  FOUTA4: fouta4,
 
   BRED_BASKET1: bread1,
   BRED_BASKET2: bread2,
