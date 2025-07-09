@@ -236,7 +236,29 @@ import babythrows2 from "../assets/images/babythrows2.jpg";
 import babythrows3 from "../assets/images/babythrows3.jpg";
 import babythrows4 from "../assets/images/babythrows4.jpg";
 
+
+//main category connect
+
+import mainbaby from "../assets/baby1.png"
+import mainbath from "../assets/bath1.png"
+import mainbedding from "../assets/bedding1.png"
+import mainoutdoor from "../assets/outdoor1.png"
+import mainliving from "../assets/living1.png"
+import maintable from "../assets/table1.jpeg"
+import mainkitchen from "../assets/kitchen2.jpeg"
+
 export const IMAGE_HELPER = {
+  //main images
+
+  MAIN_BATH: mainbath,
+  MAIN_baby: mainbaby,
+  MAIN_bedding: mainbedding,
+  MAIN_living: mainliving,
+  MAIN_outdoor: mainoutdoor,
+  MAIN_table:maintable,
+  MAIN_kitchen: mainkitchen,
+
+  
   FOUNDATION_IMAGE: foundation,
   BG_REMOVE_LOGO: BG_REMOVE_LOGO,
   ARASU_LOGO: ARASU_LOGO,

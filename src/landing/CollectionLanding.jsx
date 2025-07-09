@@ -18,15 +18,16 @@ const CollectionLanding = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentId, setCurrentId] = useState(cat_id);
 
-  // Don't auto-select subcategory
   useEffect(() => {
     setActiveSubCategory("");
   }, [cat_id]);
 
-  // Main product without subcategory
-  const mainProduct = PRODUCTS.find((prod) => prod.category_id === cat_id && !prod.sub_category_id);
+  // ✅ New logic to get main product by category (via subcategory relationship)
+  const mainProduct = PRODUCTS.find((prod) => {
+    const matchedSub = PRODUCT_COLLECTIONS_SUB_CATEGORIES.find((sub) => sub.sub_category_id === prod.sub_category_id);
+    return matchedSub?.category_id === cat_id;
+  });
 
-  // Subcategory product
   const selectedProduct = activeSubCategory ? PRODUCTS.find((prod) => prod.sub_category_id?.toLowerCase() === activeSubCategory.toLowerCase()) : null;
 
   return (
@@ -63,14 +64,15 @@ const CollectionLanding = () => {
               ))}
             </div>
 
-            {/* Static common content from category */}
-            <p className="text-gray-400 whitespace-pre-line text-xl">{currentCategory?.content}</p>
+            {/* Static category content */}
+            <p className="text-gray-400 whitespace-pre-line text-xl">{activeSubCategory && selectedProduct?.description ? selectedProduct.description : currentCategory?.content ?? ""}</p>
           </div>
 
           {/* Right Side - Image Display */}
-          <div className="grid grid-cols-2 gap-4 !mt-[28px]">
-            {selectedProduct
-              ? selectedProduct?.images?.map((img, index) => (
+          <div className="w-full flex justify-center !mt-[28px]">
+            {selectedProduct ? (
+              <div className="grid grid-cols-2 gap-4 w-full">
+                {selectedProduct?.images?.map((img, index) => (
                   <div key={index} className="relative group w-full h-[200px] overflow-hidden rounded-xl border border-white/30 shadow-lg transform transition-transform duration-500 hover:scale-[1.03] hover:rotate-[0.5deg]">
                     <img src={img} alt={`Product Image ${index + 1}`} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
@@ -81,12 +83,16 @@ const CollectionLanding = () => {
                       </svg>
                     </div>
                   </div>
-                ))
-              : mainProduct?.heroimage && (
-                  <div className="relative w-full h-[250px] overflow-hidden rounded-xl border border-white/30 shadow-lg">
-                    <img src={mainProduct.heroimage} alt="Main Product" className="w-full h-full object-cover" />
-                  </div>
-                )}
+                ))}
+              </div>
+            ) : mainProduct?.imageurl ? (
+              // SINGLE LARGE IMAGE VIEW
+              <div className="relative w-full md:w-[100%] h-[400px] md:h-[500px] overflow-hidden rounded-2xl border border-white/30 shadow-xl">
+                <img src={mainProduct.imageurl[0]} alt="Main Product Image" className="w-full h-full object-cover" />
+              </div>
+            ) : (
+              <div className="text-gray-400 text-center w-full">No product images available.</div>
+            )}
           </div>
         </div>
       </div>
