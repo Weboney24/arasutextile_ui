@@ -38,10 +38,10 @@ import foundation from "../assets/foundation1.jpg";
 
 //glove
 
-import glove1 from "../assets/glove1.jpg";
-import glove2 from "../assets/glove2.jpg";
-import glove3 from "../assets/glove3.jpg";
-import glove4 from "../assets/glove4.jpg";
+import glove1 from "../assets/images/glove1.webp";
+import glove2 from "../assets/images/glove2.webp";
+import glove3 from "../assets/images/glove3.jpg";
+import glove4 from "../assets/images/glove4.jpg";
 
 //potholder
 
@@ -173,8 +173,8 @@ import FOOT4 from "../assets/images/foot4.jpg";
 
 import babytowel1 from "../assets/images/babytow1.jpeg";
 import babytowel2 from "../assets/images/babytow2.jpeg";
-import babytowel3 from "../assets/images/babytow3.jpeg";
-import babytowel4 from "../assets/images/babytow4.jpeg";
+import babytowel3 from "../assets/images/babytow3.webp";
+import babytowel4 from "../assets/images/babytow4.jpg";
 
 import outtab1 from "../assets/images/outtab1.jpeg";
 import outtab2 from "../assets/images/outtab2.jpeg";
@@ -215,6 +215,11 @@ import babybib1 from "../assets/images/bib1.jpeg";
 import babybib2 from "../assets/images/bib2.jpeg";
 import babybib3 from "../assets/images/bib3.jpeg";
 import babybib4 from "../assets/images/bib4.jpeg";
+
+import babycu1 from "../assets/images/babycu1.jpg";
+import babycu2 from "../assets/images/babycu2.avif";
+import babycu3 from "../assets/images/babycu3.jpg";
+import babycu4 from "../assets/images/babycu4.webp";
 
 import duvetcover1 from "../assets/images/duvetcover1.jpg";
 import duvetcover2 from "../assets/images/duvetcover2.jpg";
@@ -489,6 +494,11 @@ export const IMAGE_HELPER = {
   BABY_BED2: babybed2,
   BABY_BED3: babybed3,
   BABY_BED4: babybed4,
+
+  BABBY_CU1: babycu1,
+  BABBY_CU2: babycu2,
+  BABBY_CU3: babycu3,
+  BABBY_CU4: babycu4,
 
   BABY_BIB1: babybib1,
   BABY_BIB2: babybib2,

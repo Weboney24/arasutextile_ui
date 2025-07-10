@@ -261,7 +261,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     name: "Kitchen Set",
     category_name: "kitchen_set",
     imageurl: IMAGE_HELPER.HOME_COLLECTION7,
-    heroimage: IMAGE_HELPER.GLOVE1_IMAGE,
+    heroimage: IMAGE_HELPER.KTOWEL1,
     content: "Premium Cotton Kitchen Set – Designed for Global Markets Sri Arasu Tex presents a carefully crafted cotton kitchen set combining quality, durability, and style to meet the demands of discerning international buyers. Made from responsibly sourced, breathable cotton fabrics, this set includes an adjustable apron, heat-resistant oven gloves, a matching pot holder, an ultra-absorbent kitchen towel, and a decorative oven cover and a perfect kitchen clean ups dish cloth all every piece is made to make your cooking easier and more stylish.  Ideal for home chefs, retail, hospitality, and gifting sectors. our kitchen set offers customizable designs, private labeling, and flexible packaging options to suit your market requirements. Partner with us for reliable supply, superior quality, and products that resonate with eco-conscious consumers worldwide. ",
   },
   {
@@ -693,7 +693,7 @@ export const PRODUCTS = [
     sub_category_id: "table_cloth",
     imageurl: [IMAGE_HELPER.MAIN_table],
     images: [IMAGE_HELPER.TABLE1, IMAGE_HELPER.TABLE2, IMAGE_HELPER.TABLE3, IMAGE_HELPER.TABLE4],
-    description: "Elegant table cloths.\nProtects surfaces from stains.\nBeautiful prints and patterns.\nPerfect for everyday use.\nMachine washable fabric.",
+    description: "Elevate your dining experience with our premium table cloths, crafted from high-quality, wrinkle-resistant fabric blends for a refined and durable finish. Designed to protect your table from spills, stains, and scratches while enhancing your décor with elegant colors, patterns, and textures. Suitable for everyday dining, special occasions, hospitality, gifting, and promotional use. Customization options for fabric, size, design, branding, and packaging are available to meet your specific requirements.",
   },
   {
     id: "",
@@ -873,6 +873,18 @@ export const PRODUCTS = [
     sub_category_id: "baby_pillows",
     images: [IMAGE_HELPER.BABY_PILLOW1, IMAGE_HELPER.BABY_PILLOW2, IMAGE_HELPER.BABY_PILLOW3, IMAGE_HELPER.BABY_PILLOW4],
     description: "Support your baby’s comfort and posture with our premium baby pillows, crafted from ultra-soft, breathable fabrics and gentle filling suitable for delicate heads and necks. Designed to provide ergonomic support during sleep, travel, or feeding time. Available in adorable shapes, soothing colors, and child-safe materials. Ideal for nurseries, travel, gifting, and baby care essentials. Customization options for fabric, size, embroidery, branding, and packaging are available to meet your specific needs.",
+  },
+  {
+    id: 43,
+    sub_category_id: "baby_cushions",
+    images: [IMAGE_HELPER.BABBY_CU1, IMAGE_HELPER.BABBY_CU2, IMAGE_HELPER.BABBY_CU3, IMAGE_HELPER.BABBY_CU4],
+    description: "Add comfort and charm to your nursery with our premium baby cushions, made from soft, skin-friendly fabrics and plush filling for gentle support. Designed in playful shapes and soothing colors to enhance both comfort and décor. Perfect for cribs, play areas, feeding zones, or as decorative accents. Ideal for baby rooms, gifting, and promotional sets. Customization options for fabric, size, embroidery, shape, branding, and packaging are available to suit your specific needs.",
+  },
+  {
+    id: 44,
+    sub_category_id: "baby_tent",
+    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4],
+    description: "Create a playful and cozy space for your little one with our premium baby tents, crafted from soft, breathable, and child-safe materials. Designed to encourage imaginative play and provide a private nook for reading, resting, or playtime. Easy to set up, fold, and carry—perfect for nurseries, indoor play areas, or outdoor use. Available in adorable designs and calming colors. Ideal for home, gifting, and promotional sets. Customization options for fabric, size, print, branding, and packaging are available to meet your specific needs.",
   },
 ];
 
