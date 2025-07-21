@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { about, bottom_menu, footer_collection } from "../helper/datahelper";
+import { about, bottom_menu, footer_collection, PRODUCT_COLLECTIONS_CATEGORIES } from "../helper/datahelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
 import { Divider } from "antd";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -41,9 +41,9 @@ const Footer = () => {
         {/* Contact Info Box */}
         <div className="!bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between lg:!shadow-lg   font-bold hidden   ">
           {/* Address */}
-          <div className="flex items-center gap-3 flex-1 ml-8">
-            <FaMapMarkerAlt className="text-primary text-2xl mt-1" />
-            <div className="text-gray-700 text-sm">19, Kamarajapuram west, 1st Street Karur - 639002.</div>
+          <div className="flex items-center gap-5 flex-1 ml-8">
+            <FaMapMarkerAlt className="text-primary text-5xl mt-1" />
+            <div className="text-gray-700 text-sm">19, Kamarajapuram west, 1st Street ,sengunthapuram 4th cross,Karur - 639002.</div>
           </div>
 
           {/* Divider */}
@@ -56,6 +56,8 @@ const Footer = () => {
               Phone
               <br />
               0091-4324-233551
+              <br />
+              +91 9677773551
             </div>
           </div>
 
@@ -69,6 +71,8 @@ const Footer = () => {
               Send Mail
               <br />
               vijayan@sriarasutex.in
+              <br />
+              sales@sriarasutex.in
             </div>
           </div>
         </div>
@@ -99,8 +103,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4 ">QUICK LINKS</h3>
           <ul className="space-y-2 text-sm">
             {bottom_menu.map((item, idx) => (
-              <li key={idx} className="cursor-pointer hover:underline">
-                {item.name}
+              <li key={idx}>
+                <Link to={item.link} className="cursor-pointer hover:underline">
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -110,9 +116,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">COLLECTIONS</h3>
           <ul className="space-y-2 text-sm">
-            {footer_collection.map((res, index) => (
-              <li key={index} className="hover:underline cursor-pointer">
-                {res.name}
+            {PRODUCT_COLLECTIONS_CATEGORIES.slice(0, 5).map((res, index) => (
+              <li key={index}>
+                <Link to="/collections" state={{ cat_id: res.category_name }} className="hover:underline cursor-pointer">
+                  {res.name}
+                </Link>
               </li>
             ))}
           </ul>

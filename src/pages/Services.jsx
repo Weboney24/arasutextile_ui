@@ -21,7 +21,7 @@ const Services = () => {
             </div>
 
             <h3 className="text-center !mt-6 font-semibold text-lg group-hover:text-primary transition duration-300">{item.title}</h3>
-            <p className="text-lg text-center text-gray-600">{item.description}</p>
+            {/* <p className="text-lg text-center text-gray-600">{item.description}</p> */}
           </div>
         ))}
       </div>

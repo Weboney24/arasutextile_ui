@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
 import DefaultHeader from "../components/DefaultHeader";
 import { home_collections } from "../helper/datahelper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Collections = () => {
+  const swiperRef = useRef(null);
+
   return (
-    <div className="mb-20 ">
+    <div className="mb-20 relative">
       <DefaultHeader title="Collections" content="Crafting Fashion & Stitching Style" />
 
+      {/* Navigation Buttons */}
+      <button onClick={() => swiperRef.current?.slidePrev()} className="absolute left-2 !mt-[150px] -translate-y-1/2 z-30 bg-primary text-white p-3 rounded-full shadow-md hover:bg-primary/80">
+        <FaChevronLeft size={24} />
+      </button>
+
+      <button onClick={() => swiperRef.current?.slideNext()} className="absolute right-2 !mt-[150px] -translate-y-1/2 z-30 bg-primary text-white p-3 rounded-full shadow-md hover:bg-primary/80">
+        <FaChevronRight size={24} />
+      </button>
+
       <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 2000, // Delay between slides in ms
+          delay: 2000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation]}
         breakpoints={{
           640: { slidesPerView: 1.2 },
           768: { slidesPerView: 2 },
