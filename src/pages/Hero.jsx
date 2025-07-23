@@ -4,6 +4,7 @@ import { Divider } from "antd";
 import { hero_about } from "../helper/datahelper";
 import { ICON_HELPER } from "../helper/iconhelper";
 import DefaultHeader from "../components/DefaultHeader";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -30,6 +31,14 @@ const Hero = () => {
     },
   ];
 
+  const goToPrev = () => {
+    setCurrentImage((prev) => (prev === 0 ? HERO_IMAGES.length - 1 : prev - 1));
+  };
+
+  const goToNext = () => {
+    setCurrentImage((prev) => (prev === HERO_IMAGES.length - 1 ? 0 : prev + 1));
+  };
+
   const { image, title, subtitle } = HERO_IMAGES[currentImage];
 
   useEffect(() => {
@@ -50,9 +59,16 @@ const Hero = () => {
           <h1 className="text-3xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">{title}</h1>
           <h1 className="text-lg md:text-6xl font-extrabold drop-shadow-md">{subtitle}</h1>
         </div>
+        <button onClick={goToNext} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full z-10">
+          <FaArrowRight />
+        </button>
+
+        <button onClick={goToPrev} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full z-10">
+          <FaArrowLeft />
+        </button>
       </div>
       {/* About Section */}
-      <div className="relative bg-white mb-10 sm:mb-20 mt-[40px] z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto min-h-[500px] md:h-[700px] shadow-lg p-5 sm:p-10 font-primary">
+      <div className="relative bg-white mb-10 sm:mb-20 mt-[40px]  w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto min-h-[500px] md:h-[700px] shadow-lg p-5 sm:p-10 font-primary">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="w-full lg:w-1/2 relative">
             <div className="absolute right-[20px] sm:right-[100px] lg:right-[215px] top-[300px] lg:top-[400px] -translate-y-1/2 -translate-x-full bg-primary text-white text-xs sm:text-sm font-bold px-2 py-1 rotate-[-90deg] origin-top-left">25 Years Of Experience!</div>
@@ -102,10 +118,6 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-start gap-4 sm:gap-6 -mt-[25px]">
               <button className="bg-primary px-5 py-2 !text-white">KNOW MORE</button>
-              <p className="flex items-center gap-2 font-bold text-lg sm:text-2xl !mt-[25px] sm:mt-7 ">
-                <ICON_HELPER.phone_icon className="text-xl sm:text-2xl" />
-                0091-4324-233551
-              </p>
             </div>
           </div>
         </div>

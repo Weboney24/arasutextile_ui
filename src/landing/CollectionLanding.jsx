@@ -22,7 +22,6 @@ const CollectionLanding = () => {
     setActiveSubCategory("");
   }, [cat_id]);
 
-  // ✅ New logic to get main product by category (via subcategory relationship)
   const mainProduct = PRODUCTS.find((prod) => {
     const matchedSub = PRODUCT_COLLECTIONS_SUB_CATEGORIES.find((sub) => sub.sub_category_id === prod.sub_category_id);
     return matchedSub?.category_id === cat_id;

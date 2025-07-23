@@ -18,7 +18,7 @@ export const top_nav = [
     id: "3",
     icon: ICON_HELPER.phone_icon,
     heading: "Have any Questions?",
-    content: "0091-4324-233551",
+    content: "+91 9677773551",
   },
 ];
 
@@ -81,6 +81,7 @@ export const footer_collection = [
   {
     id: "1",
     name: "Kitchen Set",
+    category_name: "kitchen_set",
   },
   {
     id: "2",
@@ -182,19 +183,19 @@ export const home_collections = [
 
 export const servicesData = [
   {
-    title: "Fabric Sourcing",
+    title: " Sourcing",
     description: "We offer high-quality, sustainable fabrics from trusted global suppliers.",
     icon: IMAGE_HELPER.HOME_PROCESS1,
   },
   {
     title: "Custom Textile Design",
     description: "Get exclusive patterns and prints tailored to your brand identity.",
-    icon: IMAGE_HELPER.HOME_PROCESS2,
+    icon: IMAGE_HELPER.HOME_PROCESS3,
   },
   {
     title: "Manufacturing & Delivery",
     description: "Efficient production with on-time delivery and strict quality assurance.",
-    icon: IMAGE_HELPER.HOME_PROCESS3,
+    icon: IMAGE_HELPER.HOME_PROCESS2,
   },
   {
     title: "Quality Control & Support",
