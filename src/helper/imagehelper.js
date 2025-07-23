@@ -14,10 +14,10 @@ import HOME_COLLECTION5 from "../assets/bath.jpg";
 import HOME_COLLECTION6 from "../assets/pillow-sofa.jpg";
 import HOME_COLLECTION7 from "../assets/kitcenset.jpg";
 
-import PROCCESS1 from "../assets/fabric.jpg";
+import PROCCESS1 from "../assets/sewing-is-just-work-it-is-flair-creative-designer-working-with-sewing-machine-her-new-garment-line-being-focused-putting-efforts-make-it-look-great-while-being-her-own-workshop.jpg";
 import PROCCESS2 from "../assets/delivery.jpg";
 import PROCCESS3 from "../assets/customdesgins.jpg";
-import PROCCESS4 from "../assets/images/process4.jpg";
+import PROCCESS4 from "../assets/portrait-senior-male-fashion-designer-inviting-someone-his-shop.jpg";
 import bgthread from "../assets/bgthread.png";
 import blog1 from "../assets/blog1.jpg";
 import blog2 from "../assets/blog2.jpg";

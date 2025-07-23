@@ -35,11 +35,26 @@ const AboutLanding = () => {
 
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-2">
               <button className="bg-primary !text-white px-6 py-2 rounded-md hover:bg-primary/90 transition">Know More</button>
-              <p className="flex items-center gap-3 font-bold text-[18px] sm:text-[20px] text-gray-800 !mt-3 sm:mt-0">
-                <ICON_HELPER.phone_icon className="text-xl sm:text-2xl" />
-                0091-4324-233551
-              </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[80%] mx-auto my-10 font-primary">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-6">
+          <div className="flex-1 px-6 py-6 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition duration-300">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Fabric Types</h2>
+            <p className="text-gray-600 leading-relaxed line-clamp-2">Cotton, Cotton or Polyester, Cotton or Linen, Cotton or Bamboo, Cotton or Viscose, Cotton or Modal, Polyester, Linen, Bamboo, Viscose, Modal, Woolen</p>
+          </div>
+
+          <div className="flex-1 px-6 py-6 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition duration-300">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Wearing Types</h2>
+            <p className="text-gray-600 leading-relaxed line-clamp-2">Plain, Dobby, Jacquard, Waffle, Terry, and Velvet</p>
+          </div>
+
+          <div className="flex-1 px-6 py-6 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition duration-300">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Inner Filling</h2>
+            <p className="text-gray-600 leading-relaxed line-clamp-2">Cotton, Recycled Cotton, Polyester, Recycled Polyester, Wool Polyester</p>
           </div>
         </div>
       </div>

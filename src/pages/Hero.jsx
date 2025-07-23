@@ -5,6 +5,7 @@ import { hero_about } from "../helper/datahelper";
 import { ICON_HELPER } from "../helper/iconhelper";
 import DefaultHeader from "../components/DefaultHeader";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -117,7 +118,9 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-start gap-4 sm:gap-6 -mt-[25px]">
-              <button className="bg-primary px-5 py-2 !text-white">KNOW MORE</button>
+              <Link to={"/aboutus"} className="bg-primary px-5 py-2 !text-white">
+                KNOW MORE
+              </Link>
             </div>
           </div>
         </div>
