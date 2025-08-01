@@ -9,7 +9,6 @@ const { Panel } = Collapse;
 
 const Navbar = () => {
   const location = useLocation();
-  const [current_id, setCurrentId] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const { md } = Grid.useBreakpoint();
 
@@ -52,27 +51,11 @@ const Navbar = () => {
           <div className="flex items-center gap-10 text-primary justify-end mt-5">
             {bottom_menu.map((res, index) => {
               const isActive = location.pathname === res.link;
-              const isProductVault = res.name === "Product Vault";
-
               return (
                 <div key={index} className="text-lg relative group cursor-pointer font-primary">
-                  <Link to={!isProductVault ? res.link : "#"} className="pb-1 border-b-2 transition-all duration-300">
+                  <Link to={res.link} className="pb-1 border-b-2 transition-all duration-300">
                     <p className={`${isActive ? "border-primary" : "!border-transparent hover:border-primary"}`}>{res.name}</p>
                   </Link>
-
-                  {isProductVault && (
-                    <div className="absolute hidden group-hover:flex flex-col min-w-[250px] left-0 text-black top-[100%] z-50">
-                      {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, index) => (
-                        <div className="relative group/item" key={index}>
-                          <Link onMouseEnter={() => setCurrentId(res2.category_name)} to="/collections" state={{ cat_id: res2.category_name }}>
-                            <Card className="w-full !rounded-none h-[50px] hover:!bg-primary group-hover/item:!bg-primary">
-                              <Card.Meta avatar={<Avatar className="!rounded-none !-mt-[10px]" src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<div className="!font-primary group-hover/item:!text-white">{res2.name}</div>} />
-                            </Card>
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </div>
               );
             })}
@@ -83,32 +66,11 @@ const Navbar = () => {
             <Drawer title="Menu" placement="left" onClose={() => setDrawerVisible(false)} open={drawerVisible}>
               <Menu mode="vertical" selectable={false}>
                 {bottom_menu.map((res, index) => {
-                  const isProductVault = res.name === "Product Vault";
-                  if (!isProductVault) {
-                    return (
-                      <Menu.Item key={index} onClick={() => setDrawerVisible(false)}>
-                        <Link className="!font-primary font-semibold !text-primary" to={res.link}>
-                          {res.name}
-                        </Link>
-                      </Menu.Item>
-                    );
-                  } else {
-                    return (
-                      <Collapse key={index} ghost expandIconPosition="end" className="mb-2">
-                        <Panel header={res.name} className="!font-primary font-semibold !text-primary" key="1">
-                          {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, catIndex) => (
-                            <div key={catIndex} className="mb-2">
-                              <Link to="/collections" state={{ cat_id: res2.category_name }} onClick={() => setDrawerVisible(false)}>
-                                <Card className="hover:bg-primary !font-primary font-semibold !text-primary">
-                                  <Card.Meta avatar={<Avatar src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<span className="font-primary">{res2.name}</span>} />
-                                </Card>
-                              </Link>
-                            </div>
-                          ))}
-                        </Panel>
-                      </Collapse>
-                    );
-                  }
+                  <Menu.Item key={index} onClick={() => setDrawerVisible(false)}>
+                    <Link className="!font-primary font-semibold !text-primary" to={res.link}>
+                      {res.name}
+                    </Link>
+                  </Menu.Item>;
                 })}
               </Menu>
 

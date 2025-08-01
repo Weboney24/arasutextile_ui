@@ -3,7 +3,7 @@ import DefaultHeader from "../components/DefaultHeader";
 import { servicesData } from "../helper/datahelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
 
-const Services = () => {
+const Services = ({ dis }) => {
   return (
     <div className="w-[80%] mx-auto mb-20 font-primary">
       <DefaultHeader title="Our Process" content="Exclusive Quality" />
@@ -21,7 +21,7 @@ const Services = () => {
             </div>
 
             <h3 className="text-center !mt-6 font-semibold text-lg group-hover:text-primary transition duration-300">{item.title}</h3>
-            {/* <p className="text-lg text-center text-gray-600">{item.description}</p> */}
+            {dis && <p className="text-lg text-center text-gray-600">{item.description}</p>}
           </div>
         ))}
       </div>

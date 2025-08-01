@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Address */}
           <div className="flex items-center gap-5 flex-1 ml-8">
             <FaMapMarkerAlt className="text-primary text-5xl mt-1" />
-            <div className="text-gray-700 text-sm">19, Kamarajapuram west, 1st Street ,sengunthapuram 4th cross,Karur - 639002.</div>
+            <div className="text-gray-700 text-sm">19, Kamarajapuram west, 1st Street, sengunthapuram 4th cross, Karur - 639002.</div>
           </div>
 
           {/* Divider */}
