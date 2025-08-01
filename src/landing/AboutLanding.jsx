@@ -7,6 +7,8 @@ import { Divider } from "antd";
 import { ICON_HELPER } from "../helper/iconhelper";
 import Services from "../pages/Services";
 import Blogs from "../pages/Blogs";
+import { FaHandHoldingHeart } from "react-icons/fa";
+import { TbActivityHeartbeat } from "react-icons/tb";
 
 const AboutLanding = () => {
   return (
@@ -79,7 +81,7 @@ const AboutLanding = () => {
         </div>
       </div>
       <div>
-        <Services />
+        <Services dis={true} />
       </div>
       <div>
         <div className="w-[80%] mx-auto !mb-[120px] ">
@@ -91,7 +93,7 @@ const AboutLanding = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2 rounded-md text-2xl font-bold shadow-md">Global Fabric Needs</div>
               </div>
               <div className="bg-white border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-xl w-full">
-                <p>International clients have varied needs in fabric selection, style, design, colors, and finish. But all demand: quality, price, and delivery.</p>
+                <p>We deliver globally trusted fabrics that balance quality, price, innovation, and on-time delivery.</p>
               </div>
             </div>
 
@@ -113,43 +115,95 @@ const AboutLanding = () => {
               </div>
 
               <div className="bg-white border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-xl w-full">
-                <p>With a strong workforce, we handle dyeing, weaving, and finishing of large volume orders, delivering on time with precision.</p>
+                <p>We have a skilled team dedicated to dying, weaving, and finishing. We handle the large volume order with precision. We consistently work to meet our deadlines</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between w-[80%] mx-auto gap-10 my-10 !mb-[120px]">
-        {/* Image Section */}
-        <div className="w-1/2">
-          <img src={IMAGE_HELPER.FOUNDATION_IMAGE} alt="Foundation" className="rounded-xl shadow-lg w-full h-auto object-cover" />
+
+      <div className="bg-[#0e1a1f] min-h-screen py-12 px-6 text-white font-sans space-y-20 !mb-[120px] ">
+        {/* Top Section: Hero */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left: Impact */}
+          <div className="bg-[#13262f] rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+            <div className="absolute -top-8 -left-8 w-32 h-32 bg-green-500 opacity-20 rounded-full blur-2xl animate-ping"></div>
+            <h2 className="text-5xl font-extrabold text-green-400 mb-4 flex items-center gap-2">
+              <TbActivityHeartbeat /> 14.5%
+            </h2>
+            <p className="text-xl text-gray-200 font-medium">of the world’s population is living in poverty</p>
+            <p className="mt-4 italic text-sm text-green-100">“Change doesn’t happen overnight, but it starts with a single act of kindness.”</p>
+            <div className="mt-8 border-t border-gray-600 pt-4 text-sm text-gray-400">💚 Caring about the environment is powerful. Let’s grow together.</div>
+          </div>
+
+          {/* Right: CTA */}
+          <div className="bg-gradient-to-tr from-green-600 to-lime-400 rounded-3xl p-10 shadow-2xl text-[#0e1a1f]">
+            <h1 className="text-4xl font-black mb-3">N Chella Appa Foundation</h1>
+            <p className="text-lg font-medium mb-6">We plant trees. We fight poverty. We change lives.</p>
+
+            <button className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#13262f] to-lime-500 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:scale-105 hover:shadow-xl">
+              💖
+              <span>Donate Now</span>
+            </button>
+
+            <div className="mt-6 text-sm font-semibold">
+              📞 For info, call <span className="underline">9487506551</span>
+            </div>
+          </div>
         </div>
 
-        {/* Content Section */}
-        <div className="w-1/2 space-y-6">
-          {/* Top Heading: Foundation Name in Two Lines */}
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-primary">
-              N <span className="text-green-700 ">CHELLA</span> APPA
-              <br />
-              FOUNDATION
-            </h1>
+        {/* Mission Section */}
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-green-400 mb-4">🌱 Our Mission</h2>
+          <p className="text-gray-300 text-lg">Our goal is to create a sustainable future by addressing poverty, promoting environmental care, and empowering communities to thrive. Every donation helps plant a seed of hope and change.</p>
+        </div>
+
+        {/* Goals Section */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+          <div className="bg-[#1a2a33] p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold text-green-300">🌳 10,000+ Trees</h3>
+            <p className="text-sm text-gray-400 mt-2">Planted across rural villages.</p>
           </div>
-
-          {/* Subheading: Live Green */}
-          <div>
-            <h2 className="text-3xl font-bold text-green-600 font-primary mb-2">LIVE GREEN</h2>
-            <p className="text-gray-700 font-medium text-lg">Caring about the environment is beautiful.</p>
+          <div className="bg-[#1a2a33] p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold text-green-300">🏫 50+ Scholarships</h3>
+            <p className="text-sm text-gray-400 mt-2">For underprivileged children.</p>
           </div>
-
-          {/* Quote */}
-          <p className="text-[18px] text-gray-800 font-semibold italic leading-relaxed">"Instead of being keen on making money, plant some trees to flourish the disease-free generation."</p>
-
-          {/* Donate Button */}
-          <div className="bg-green-600 text-white py-4 px-6 rounded-xl text-center shadow-md hover:bg-green-700 transition-all duration-300 w-max">
-            <button className="font-bold text-xl tracking-wide">DONATE YOUR CONTRIBUTION</button>
+          <div className="bg-[#1a2a33] p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold text-green-300">💧 Clean Water</h3>
+            <p className="text-sm text-gray-400 mt-2">Projects funded in 15 villages.</p>
           </div>
         </div>
+
+        {/* Testimonials */}
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl font-bold text-green-400">🗣️ What People Say</h2>
+          <div className="bg-[#1f2f37] p-6 rounded-xl">
+            <p className="text-gray-200 italic">"This foundation changed the future of my village. They gave us trees, water, and most importantly, hope."</p>
+            <p className="mt-2 text-sm text-gray-400">— Lakshmi, Beneficiary</p>
+          </div>
+        </div>
+
+        {/* Donation Tiers */}
+        <div className="max-w-6xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl font-bold text-green-400">💳 Choose Your Impact</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-[#1a2a33] p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-lime-300">₹100</h3>
+              <p className="text-sm text-gray-400 mt-1">Plant 1 tree</p>
+            </div>
+            <div className="bg-[#1a2a33] p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-lime-300">₹500</h3>
+              <p className="text-sm text-gray-400 mt-1">Fund 1 child’s monthly education</p>
+            </div>
+            <div className="bg-[#1a2a33] p-6 rounded-xl">
+              <h3 className="text-xl font-bold text-lime-300">₹1000+</h3>
+              <p className="text-sm text-gray-400 mt-1">Support full village initiative</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center text-gray-500 text-sm pt-12 border-t border-gray-700">N Chella Appa Foundation © {new Date().getFullYear()} | Together for a greener tomorrow 🌍</div>
       </div>
     </div>
   );

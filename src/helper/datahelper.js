@@ -36,7 +36,7 @@ export const bottom_menu = [
   {
     id: "3",
     name: "Product Vault",
-    link: "/collections",
+    link: "/products",
   },
   {
     id: "4",
@@ -74,6 +74,12 @@ export const nav_links = [
     icon: ICON_HELPER.PRINTEREST_ICON,
     name: "Printerest",
     link: "https://dk.pinterest.com/Arasu_/",
+  },
+  {
+    id: "5",
+    icon: ICON_HELPER.WHATSAPP_ICON,
+    name: "Whatsapp",
+    link: "https://wa.me/9677773551",
   },
 ];
 
@@ -124,6 +130,12 @@ export const about = {
       icon: ICON_HELPER.PRINTEREST_ICON,
       name: "Printerest",
       link: "https://dk.pinterest.com/Arasu_/",
+    },
+    {
+      id: "5",
+      icon: ICON_HELPER.WHATSAPP_ICON,
+      name: "Whatsapp",
+      link: "https://wa.me/9677773551",
     },
   ],
 };

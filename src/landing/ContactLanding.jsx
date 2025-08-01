@@ -1,12 +1,48 @@
-import React from "react";
-import { Input, Button, Checkbox, Divider } from "antd";
+import React, { useState } from "react";
+import { Input, Button, Checkbox, Divider, message } from "antd";
 import CustomHero from "../components/CustomHero";
 import DefaultHeader from "../components/DefaultHeader";
 import "antd/dist/reset.css";
 import { ICON_HELPER } from "../helper/iconhelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
+import { CiMail } from "react-icons/ci";
 
 const ContactLanding = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    subject: "",
+    message: "",
+    agree: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm({ ...form, [name]: type === "checkbox" ? checked : value });
+  };
+
+  const handleSubmit = () => {
+    if (!form.name || !form.email || !form.phone || !form.company || !form.subject || !form.message || !form.agree) {
+      message.error("Please fill out all fields and agree to the terms.");
+      return;
+    }
+
+    // Submit logic here — API call etc.
+    console.log("Form Submitted:", form);
+    message.success("Message sent successfully!");
+    // Reset
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      subject: "",
+      message: "",
+      agree: false,
+    });
+  };
   return (
     <div>
       <CustomHero title=" " imagurl={IMAGE_HELPER.INSIDE_HERO1} />
@@ -18,27 +54,27 @@ const ContactLanding = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Input placeholder="Your Name*" className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
-          <Input placeholder="Your Email*" className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
-          <Input placeholder="Phone Number*" className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
-          <Input placeholder="Company Name*" className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input name="name" placeholder="Your Name*" value={form.name} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input name="email" placeholder="Your Email*" value={form.email} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input name="phone" placeholder="Phone Number*" value={form.phone} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input name="company" placeholder="Company Name*" value={form.company} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <Input placeholder="Subject*" className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input name="subject" placeholder="Subject*" value={form.subject} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
         <div className="mt-6">
-          <Input.TextArea rows={4} placeholder="Message*" className="!h-[150px] !rounded-none !bg-gray-100 hover:!border-primary" />
+          <Input.TextArea name="message" rows={4} placeholder="Message*" value={form.message} onChange={handleChange} className="!h-[150px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
         <div className="mt-4 flex items-start gap-2">
-          <Checkbox />
+          <Checkbox name="agree" checked={form.agree} onChange={handleChange} />
           <span className="text-gray-500 text-sm">I agree that my submitted data is being collected and stored.</span>
         </div>
 
         <div className="mt-10 flex items-center justify-center">
-          <Button type="primary" className="!bg-primary font-bold !rounded-none text-white w-[140px] h-12">
+          <Button type="primary" className="!bg-primary font-bold !rounded-none text-white w-[140px] h-12" onClick={handleSubmit} icon={<CiMail />}>
             SEND NOW!
           </Button>
         </div>

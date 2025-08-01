@@ -10,6 +10,7 @@ import Login from "../components/auth/Login";
 import Blogs from "../Admin/pages/blogs/Blogs";
 import AdminLayout from "../Admin/AdminLayout";
 import Changepassword from "../Admin/pages/profile/Changepassword";
+import Products from "../landing/Products";
 
 let client_routes = [
   {
@@ -31,6 +32,11 @@ let client_routes = [
     path: "/collections",
     element: <Layout />,
     children: [{ path: "/collections", element: <CollectionLanding /> }],
+  },
+  {
+    path: "/products",
+    element: <Layout />,
+    children: [{ path: "/products", element: <Products /> }],
   },
   {
     path: "/blogs",

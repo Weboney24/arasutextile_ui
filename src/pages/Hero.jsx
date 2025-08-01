@@ -60,12 +60,12 @@ const Hero = () => {
           <h1 className="text-3xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">{title}</h1>
           <h1 className="text-lg md:text-6xl font-extrabold drop-shadow-md">{subtitle}</h1>
         </div>
-        <button onClick={goToNext} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full z-10">
-          <FaArrowRight />
+        <button onClick={goToNext} className="absolute top-1/2 right-4 transform -translate-y-1/2 hover:bg-black/50 text-white p-3 rounded-full z-10">
+          <FaArrowRight className="text-white" />
         </button>
 
-        <button onClick={goToPrev} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full z-10">
-          <FaArrowLeft />
+        <button onClick={goToPrev} className="absolute top-1/2 left-4 transform -translate-y-1/2 hover:bg-black/50 text-white p-3 rounded-full z-10">
+          <FaArrowLeft className="text-white" />
         </button>
       </div>
       {/* About Section */}
