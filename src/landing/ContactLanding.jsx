@@ -6,6 +6,7 @@ import "antd/dist/reset.css";
 import { ICON_HELPER } from "../helper/iconhelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
 import { CiMail } from "react-icons/ci";
+import { Addenquire } from "../api";
 
 const ContactLanding = () => {
   const [form, setForm] = useState({
@@ -28,10 +29,9 @@ const ContactLanding = () => {
       message.error("Please fill out all fields and agree to the terms.");
       return;
     }
-
-    // Submit logic here — API call etc.
+    const result = Addenquire(form);
     console.log("Form Submitted:", form);
-    message.success("Message sent successfully!");
+    message.success("Message sent successfully!", result);
     // Reset
     setForm({
       name: "",
