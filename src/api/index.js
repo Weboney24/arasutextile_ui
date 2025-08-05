@@ -40,3 +40,5 @@ export const getblogsId = async (id) => await custom_request.get(`${BASE_URL}/bl
 
 export const deleteblogs = async (id) => await custom_request.delete(`${BASE_URL}/blog/delete_blog/${id}`);
 export const editblogs = async (formData, id) => await custom_request.put(`${BASE_URL}/blog/edit_blog/${id}`, formData);
+
+export const Addenquire = async (formData) => await axios.post(`${BASE_URL}/help/enquire_detals`, formData);
