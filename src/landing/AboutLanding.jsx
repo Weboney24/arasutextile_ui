@@ -18,7 +18,7 @@ const AboutLanding = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 ">
           {/* Image Left - Bigger Height */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Sri Arasu Tex" className="w-full max-w-[650px] h-[550px] lg:h-[550px] object-cover rounded-md shadow-md border-4 border-white" />
+            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Sri Arasu Tex" className="w-full max-w-[650px] h-[550px] lg:h-[650px] object-cover rounded-md shadow-md border-4 border-white" />
           </div>
 
           {/* Text Right */}
@@ -26,10 +26,23 @@ const AboutLanding = () => {
             <DefaultHeader title="About Us" position="start" />
 
             <h2 className="text-3xl sm:text-4xl font-bold text-primary">Exporting Excellence Since 1989</h2>
-            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">
-              Sri Arasu Tex is a globally recognized manufacturer and exporter of premium home textile products. With a rich legacy spanning over <strong>36 years</strong>, we’ve built strong partnerships with clients across <strong>USA, UK, Germany, France, Italy, Australia, UAE</strong> and more.
-            </p>
-            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">Our expertise lies in exclusively crafting a wide range of home textile products—from curtains and bed linen to kitchen, table, and living room furnishings.</p>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">Sri Arasu Tex is a globally recognized manufacturer and exporter of premium home textile products. With a rich legacy spanning over 36 years, we’ve built strong partnerships with clients across USA, UK, Germany, France, Italy, Australia, UAE and more.</p>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We specialize in the exclusive design and manufacture of a comprehensive range of home textile products. Our offerings encompass:</p>
+
+            {/* Bullet Points */}
+            <ul className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify grid grid-cols-2 list-disc list-inside">
+              <li>Curtains & Draperies</li>
+              <li>Bed Linen</li>
+              <li>Kitchen Linens</li>
+              <li>Table Linens</li>
+              <li>Living Room Furnishings</li>
+              <li>Cushions & Throws</li>
+              <li>Bath Textiles</li>
+              <li>Upholstery & Outdoor Textiles</li>
+              <li>Baby & Nursery Essentials</li>
+            </ul>
+
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We are committed to delivering products that combine aesthetic appeal with functional excellence, ensuring comfort, quality, and style for every home.</p>
             <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">Dedicated to continuous improvement, we stay well-informed of global design trends and adhere to international compliance standards. This commitment ensures that every product we deliver meets stringent quality benchmarks, aligning with the evolving preferences of our global clientele.</p>
           </div>
         </div>
