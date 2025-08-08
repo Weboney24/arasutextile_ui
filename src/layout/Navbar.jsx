@@ -21,10 +21,10 @@ const Navbar = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="w-fit p-[2px] border-[2px] border-primary">
             <div className="p-[6px] bg-primary">
-              <img src={IMAGE_HELPER.BG_REMOVE_LOGO} alt="Logo" className="h-[40px] object-contain" />
+              <img src={IMAGE_HELPER.BG_REMOVE_LOGO} alt="Logo" className="h-[30px] object-contain" />
             </div>
           </div>
-          <h1 className="font-logo !font-semibold text-primary !m-0 hidden lg:block">Sri Arasu Tex</h1>
+          <h1 className="font-logo text-2xl !font-semibold text-primary !m-0 hidden lg:block">Sri Arasu Tex</h1>
         </div>
 
         {/* Desktop menu */}
