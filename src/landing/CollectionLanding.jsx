@@ -32,9 +32,7 @@ const CollectionLanding = () => {
   return (
     <div className="mb-40">
       {/* Hero Image */}
-      <CustomHero title={currentCategory?.name || "Product Vault"} imagurl={currentCategory?.heroimage || IMAGE_HELPER.INSIDE_HERO4} />
-
-      <DefaultHeader title={currentCategory?.name} content={"Explore our beautiful collection"} />
+      <CustomHero title={currentCategory?.name || "Product Vault"} imagurl={currentCategory?.heroimage || IMAGE_HELPER.INSIDE_HERO4} content={"Explore our beautiful collection"} />
 
       <div className="flex w-[90%] mx-auto gap-10 mt-10">
         {/* Sidebar */}
@@ -64,7 +62,7 @@ const CollectionLanding = () => {
             </div>
 
             {/* Static category content */}
-            <p className="text-gray-400 whitespace-pre-line text-xl">{activeSubCategory && selectedProduct?.description ? selectedProduct.description : currentCategory?.content ?? ""}</p>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">{activeSubCategory && selectedProduct?.description ? selectedProduct.description : currentCategory?.content ?? ""}</p>
           </div>
 
           {/* Right Side - Image Display */}

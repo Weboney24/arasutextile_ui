@@ -52,7 +52,7 @@ let client_routes = [
 
 let admin_routes = [
   {
-    path: "/login",
+    path: "/admin-login",
     element: <Login />,
   },
   {

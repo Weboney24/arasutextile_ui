@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import DefaultHeader from "../components/DefaultHeader";
 import { FaUser, FaComments } from "react-icons/fa";
-
-// Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
-
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { getblogs } from "../api";
 import _ from "lodash";
 import { Link } from "react-router-dom";
@@ -30,17 +29,17 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="mb-[200px] py-3 w-full mx-auto h-[650px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_BLOG})` }}>
+    <div className="mb-[100px] py-10 w-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${IMAGE_HELPER.BG_BLOG})` }}>
       <DefaultHeader title="Stories" content="Explore insights, stories, and updates from our world." />
 
-      <div className="mt-6 !mb-[20px] w-[80%] mx-auto px-4 md:px-16">
+      <div className="mt-4 w-[90%] md:w-[80%] mx-auto">
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation, Pagination]}
           slidesPerView={1}
           spaceBetween={30}
-          loop={true}
+          loop
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -50,23 +49,37 @@ const Blogs = () => {
           }}
         >
           {blogData.map((post, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white mb-5 shadow-lg rounded-2xl overflow-hidden relative w-full h-[420px] flex flex-col">
-                <div className="absolute top-0 left-0 bg-primary text-white px-4 py-1 font-semibold z-10">{new Date(post.createdAt).toLocaleDateString()}</div>
-                <img src={post.blog_image || "/default.jpg"} alt={post.blog_name || "Blog Image"} className="w-full h-44 object-cover hover:scale-105 transition duration-300" />
-                <div className="p-4 flex flex-col justify-between flex-grow">
-                  <div className="flex items-center space-x-4 text-gray-500 text-sm mb-2">
-                    <span className="flex items-center space-x-1">
-                      <FaUser />
-                      <span>Admin</span>
+            <SwiperSlide key={index} className="py-10 px-3">
+              <div className="group bg-white rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300">
+                {/* Date Tag */}
+                <div className="absolute z-10 bg-primary text-white px-3 py-1 text-xs font-bold rounded-br-lg">
+                  {new Date(post.createdAt).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </div>
+
+                {/* Image */}
+                <div className="overflow-hidden relative h-48 md:h-56">
+                  <img src={post.blog_image || "/default.jpg"} alt={post.blog_name || "Blog Image"} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                </div>
+
+                {/* Content */}
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center space-x-4 text-gray-500 text-xs md:text-sm mb-3">
+                    <span className="flex items-center gap-1">
+                      <FaUser /> Admin
                     </span>
-                    <span className="flex items-center space-x-1">
-                      <FaComments />
-                      <span>0 Comments</span>
+                    <span className="flex items-center gap-1">
+                      <FaComments /> 0 Comments
                     </span>
                   </div>
-                  <h2 className="text-lg font-bold text-gray-900 leading-snug mb-2 truncate">{post.short_description}</h2>
-                  <Link to={`/blogsdetails/${post._id}`} className="text-primary font-semibold mt-auto hover:underline">
+
+                  <h2 className="text-lg font-bold text-gray-900 leading-snug mb-2 line-clamp-2">{post.blog_name}</h2>
+                  <p className="text-gray-600 text-sm line-clamp-2 mb-4">{post.short_description}</p>
+
+                  <Link to={`/blogsdetails/${post._id}`} className="mt-auto text-primary font-semibold hover:underline">
                     Read More →
                   </Link>
                 </div>
