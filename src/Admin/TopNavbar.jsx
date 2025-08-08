@@ -31,7 +31,7 @@ const TopNavbar = () => {
     try {
       localStorage.removeItem(adminToken);
       dispatch(assignRole({}));
-      navigate("/login");
+      navigate("/admin-login");
     } catch (err) {
       console.log(err);
     }

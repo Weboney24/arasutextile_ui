@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { about, bottom_menu, footer_collection, PRODUCT_COLLECTIONS_CATEGORIES } from "../helper/datahelper";
-import { IMAGE_HELPER } from "../helper/imagehelper";
-import { Divider } from "antd";
+import { about, bottom_menu, PRODUCT_COLLECTIONS_CATEGORIES } from "../helper/datahelper";
+import { Button, Divider, Input, Modal } from "antd";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { getblogs } from "../api";
@@ -25,13 +24,30 @@ const Footer = () => {
     fetchBlogData();
   }, []);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [email, setEmail] = useState("");
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleSubscribe = () => {
+    console.log("Subscribed Email:", email);
+    // TODO: API call to subscribe email
+    setIsModalOpen(false);
+  };
+
   return (
-    <footer className="bg-rose text-primary  font-primary ">
+    <footer className="bg-rose text-primary font-primary">
       {/* Top Contact Section */}
-      <div className="flex w-[80%] mx-auto -mt-15 z-10 relative gap-5">
+      <div className="flex flex-col lg:flex-row w-full lg:w-[80%] mx-auto -mt-10 z-10 relative gap-5 px-4">
         {/* Logo Box */}
-        <div className="bg-primary border-2 border-white px-4 py-0 rounded-lg flex items-center justify-center w-[300px] shadow-lg">
-          <h1 className="text-white text-center font-extrabold text-[46px] leading-none tracking-wider font-logo !mt-[20px]">
+        <div className="bg-primary border-2 border-white px-4 py-4 rounded-lg flex items-center justify-center w-full lg:w-[300px] shadow-lg">
+          <h1 className="text-white !mb-0 text-center font-extrabold text-3xl lg:text-[46px] leading-none tracking-wider font-logo">
             Sri Arasu
             <br />
             Tex
@@ -39,19 +55,18 @@ const Footer = () => {
         </div>
 
         {/* Contact Info Box */}
-        <div className="!bg-white   flex-1 p-6 rounded-lg lg:flex items-center justify-between lg:!shadow-lg   font-bold hidden   ">
+        <div className="bg-white flex-1 p-6 rounded-lg hidden lg:flex items-center justify-between shadow-lg font-bold">
           {/* Address */}
-          <div className="flex items-center gap-5 flex-1 ml-8">
-            <FaMapMarkerAlt className="text-primary text-5xl mt-1" />
+          <div className="flex items-center gap-5 flex-1">
+            <FaMapMarkerAlt className="text-primary text-2xl lg:text-5xl mt-1" />
             <div className="text-gray-700 text-sm">19, Kamarajapuram west, 1st Street, sengunthapuram 4th cross, Karur - 639002.</div>
           </div>
 
-          {/* Divider */}
-          <Divider type="vertical" className="!border-primary !h-[50px] ml-3" />
+          <Divider type="vertical" className="!border-primary !h-[50px] mx-3" />
 
           {/* Phone */}
-          <div className="flex items-center gap-3 flex-1 ml-6">
-            <FaPhoneAlt className="text-primary text-xl mt-1" />
+          <div className="flex items-center gap-3 flex-1">
+            <FaPhoneAlt className="text-primary text-lg lg:text-xl mt-1" />
             <div className="text-gray-700 text-sm">
               Phone
               <br />
@@ -61,12 +76,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Divider */}
-          <Divider type="vertical" className="!border-primary !h-[50px]" />
+          <Divider type="vertical" className="!border-primary !h-[50px] mx-3" />
 
           {/* Email */}
-          <div className="flex items-center gap-3 flex-1 ml-6">
-            <FaEnvelope className="text-primary text-xl mt-1" />
+          <div className="flex items-center gap-3 flex-1">
+            <FaEnvelope className="text-primary text-lg lg:text-xl mt-1" />
             <div className="text-gray-700 text-sm">
               Send Mail
               <br />
@@ -79,7 +93,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Grid */}
-      <div className="w-[80%] mx-auto grid md:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-[50px] pt-20 ">
+      <div className="w-full lg:w-[80%] mx-auto grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-10 pt-10 px-4">
         {/* ABOUT US */}
         <div>
           <h3 className="text-lg font-semibold mb-4">{about.title}</h3>
@@ -88,7 +102,7 @@ const Footer = () => {
             {about.socials.map((social, index) => {
               const Icon = social.icon;
               return (
-                <div key={social.id || index} className="bg-white p-1">
+                <div key={social.id || index} className="bg-white p-1 rounded">
                   <a href={social.link} target="_blank" rel="noopener noreferrer">
                     <Icon className="text-[20px] font-bold text-primary" />
                   </a>
@@ -99,12 +113,12 @@ const Footer = () => {
         </div>
 
         {/* QUICK LINKS */}
-        <div className="lg:ml-10">
-          <h3 className="text-lg font-semibold mb-4 ">QUICK LINKS</h3>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">QUICK LINKS</h3>
           <ul className="space-y-2 text-sm">
             {bottom_menu.map((item, idx) => (
               <li key={idx}>
-                <Link to={item.link} className="cursor-pointer hover:underline">
+                <Link to={item.link} className="hover:underline">
                   {item.name}
                 </Link>
               </li>
@@ -118,7 +132,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             {PRODUCT_COLLECTIONS_CATEGORIES.slice(0, 5).map((res, index) => (
               <li key={index}>
-                <Link to="/collections" state={{ cat_id: res.category_name }} className="hover:underline cursor-pointer">
+                <Link to="/collections" state={{ cat_id: res.category_name }} className="hover:underline">
                   {res.name}
                 </Link>
               </li>
@@ -129,26 +143,44 @@ const Footer = () => {
         {/* BLOGS */}
         <div>
           <h3 className="text-lg font-semibold mb-4">BLOGS</h3>
-          {blogPosts.slice(0, 3).map((res, index) => {
-            return (
-              <ul className="space-y-2 text-sm" key={index}>
-                <li className="cursor-pointer hover:underline">{res.blog_name}</li>
-              </ul>
-            );
-          })}
+          <ul className="space-y-2 text-sm">
+            {blogPosts
+              .slice(-5)
+              .reverse()
+              .map((res, index) => (
+                <li key={index} className="hover:underline cursor-pointer">
+                  {res.blog_name}
+                </li>
+              ))}
+          </ul>
         </div>
 
         {/* NEWSLETTER */}
         <div>
           <h3 className="text-lg font-semibold mb-4">STAY IN STYLE WITH US</h3>
           <p className="mb-4 text-sm">Subscribe to our newsletter for the latest fabric trends, offers, and exclusive textile collections.</p>
-          <button className="w-full py-2 bg-white !text-primary font-semibold rounded transition">Join our fabric family</button>
+
+          <div>
+            {/* JOIN BUTTON */}
+            <button className="w-full py-2 bg-white text-primary hover:cursor-pointer font-semibold rounded transition" onClick={showModal}>
+              Join our family
+            </button>
+
+            {/* MODAL */}
+            <Modal title="Subscribe to our Newsletter" open={isModalOpen} onCancel={handleCancel} footer={null}>
+              <p className="mb-4 text-sm">Enter your email to get the latest updates, offers, and collections.</p>
+              <Input placeholder="Your email address" value={email} onChange={(e) => setEmail(e.target.value)} className="!mb-4" />
+              <Button type="primary" block onClick={handleSubscribe}>
+                Subscribe
+              </Button>
+            </Modal>
+          </div>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="text-center py-6 mt-10 border-t border-gray-700 text-sm">
-        © 2025 Desgined & Developed by <span className="text-yellow-400 font-semibold">Weboney</span>
+        © 2025 Designed & Developed by <span className="text-yellow-400 font-semibold">Weboney</span>
       </div>
     </footer>
   );

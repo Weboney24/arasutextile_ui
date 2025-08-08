@@ -7,11 +7,11 @@ import { GoDotFill } from "react-icons/go";
 import { RiTwitterXLine } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaUpload } from "react-icons/fa";
-import { MdAdminPanelSettings, MdDelete } from "react-icons/md";
+import { MdAdminPanelSettings, MdDelete, MdOutlineMailOutline } from "react-icons/md";
 import { IoMdLogOut } from "react-icons/io";
 
 export const ICON_HELPER = {
-  MAIL_ICON: CiMail,
+  MAIL_ICON: MdOutlineMailOutline,
   CLOCK_ICON: FaRegClock,
   phone_icon: FiPhoneCall,
   TWITTER_ICON: RiTwitterXLine,

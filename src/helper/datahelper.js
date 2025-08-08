@@ -8,18 +8,6 @@ export const top_nav = [
     heading: "Send Email",
     content: "vijayan@sriarasutex.in",
   },
-  {
-    id: "2",
-    icon: ICON_HELPER.CLOCK_ICON,
-    heading: "Working Hours",
-    content: "Mon-Sat 09:00 am to 07:00 pm",
-  },
-  {
-    id: "3",
-    icon: ICON_HELPER.phone_icon,
-    heading: "Have any Questions?",
-    content: "+91 9677773551",
-  },
 ];
 
 export const bottom_menu = [
