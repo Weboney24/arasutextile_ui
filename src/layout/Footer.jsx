@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { about, bottom_menu, PRODUCT_COLLECTIONS_CATEGORIES } from "../helper/datahelper";
-import { Button, Divider, Input, Modal } from "antd";
+import { Button, Divider, Input, message, Modal } from "antd";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { getblogs } from "../api";
+import { getblogs, sendmail } from "../api";
 import _ from "lodash";
 import "@fontsource/poppins";
 
@@ -35,10 +35,21 @@ const Footer = () => {
     setIsModalOpen(false);
   };
 
-  const handleSubscribe = () => {
-    console.log("Subscribed Email:", email);
-    // TODO: API call to subscribe email
-    setIsModalOpen(false);
+  const handleSubscribe = async () => {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      message.warning("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const res = await sendmail({ email: email });
+      message.success("Thank you for subscribing!", res);
+      setEmail("");
+      setIsModalOpen(false);
+    } catch (error) {
+      console.error("Subscription failed:", error);
+      message.error("Something went wrong. Please try again later.");
+    }
   };
 
   return (

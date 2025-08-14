@@ -21,7 +21,6 @@ const Services = ({ dis }) => {
             </div>
 
             <h3 className="text-center !mt-6 font-semibold text-lg group-hover:text-primary transition duration-300">{item.title}</h3>
-            {dis && <p className="text-lg text-center text-gray-600">{item.description}</p>}
           </div>
         ))}
       </div>

@@ -62,7 +62,7 @@ const Blogs = () => {
     <div className="p-6">
       <TitleHelper title={"Blogs"} />
 
-      <DefaultHeader icon={<ICON_HELPER.COTTON_ICON />} add={true} model={true} setAddStatus={setAddStatus} addStatus={addStatus} setSearch={setSearch} text="Add Blogs" pageName="Blogs" />
+      <DefaultHeader icon={<ICON_HELPER.COTTON_ICON />} add={true} model={true} setAddStatus={setAddStatus} addStatus={addStatus} setSearch={setSearch} text="Add Blogs" search="true" pageName="Blogs" />
 
       <Drawer onClose={handleCancel} width={"100%"} open={addStatus} title={`${id ? "Update" : "Add"} Blog`}>
         <AddBlogs setAddStatus={setAddStatus} setLoading={setLoading} fetchData={fetchData} id={id} blogData={blogData} setId={setId} />

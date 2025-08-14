@@ -11,6 +11,7 @@ import Blogs from "../Admin/pages/blogs/Blogs";
 import AdminLayout from "../Admin/AdminLayout";
 import Changepassword from "../Admin/pages/profile/Changepassword";
 import Products from "../landing/Products";
+import Mail from "../Admin/pages/mail/Mail";
 
 let client_routes = [
   {
@@ -34,11 +35,6 @@ let client_routes = [
     children: [{ path: "/collections", element: <CollectionLanding /> }],
   },
   {
-    path: "/products",
-    element: <Layout />,
-    children: [{ path: "/products", element: <Products /> }],
-  },
-  {
     path: "/blogs",
     element: <Layout />,
     children: [{ path: "/blogs", element: <BlogSingle /> }],
@@ -59,6 +55,11 @@ let admin_routes = [
     path: "/admin-blogs",
     element: <AdminLayout />,
     children: [{ path: "/admin-blogs", element: <Blogs /> }],
+  },
+  {
+    path: "/admin-mail",
+    element: <AdminLayout />,
+    children: [{ path: "/admin-mail", element: <Mail /> }],
   },
   {
     path: "/change-password",
