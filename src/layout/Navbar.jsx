@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { bottom_menu, nav_links, top_nav } from "../helper/datahelper";
+import { bottom_menu, GET_PRODUCT_IMAGE, GET_SUBCATEGORY_BY_CATEGORY, nav_links, PRODUCT_COLLECTIONS_CATEGORIES, top_nav } from "../helper/datahelper";
 import { IMAGE_HELPER } from "../helper/imagehelper";
-import { Button, Divider, Drawer, Grid, Menu, Tooltip } from "antd";
+import { Avatar, Button, Card, Collapse, Divider, Drawer, Grid, Menu, Tooltip } from "antd";
 import { Link, useLocation } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
+import Panel from "antd/es/splitter/Panel";
 
 const Navbar = () => {
   const location = useLocation();
+  const [current_id, setCurrentId] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const { lg } = Grid.useBreakpoint();
 
@@ -32,20 +34,34 @@ const Navbar = () => {
           <div className="flex items-center gap-10 text-primary font-primary">
             {bottom_menu.map((res, index) => {
               const isActive = location.pathname === res.link;
+              const isProductVault = res.name === "Product Vault";
+
               return (
-                <Link key={index} to={res.link} className={`pb-1 border-b-2 text-lg font-semibold transition-all duration-300 ${isActive ? "border-primary" : "border-transparent hover:border-primary"}`}>
-                  {res.name}
-                </Link>
+                <div key={index} className="text-lg relative group cursor-pointer font-primary">
+                  <Link to={isProductVault ? "#" : res.link} className="pb-1 border-b-2 transition-all duration-300">
+                    <p className={`${isActive ? "border-primary" : "!border-transparent hover:border-primary"}  !m-0`}>{res.name}</p>
+                  </Link>
+                  {isProductVault && (
+                    <div className="absolute hidden group-hover:flex flex-col min-w-[250px] left-0 text-black top-[100%] z-50">
+                      {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, index) => (
+                        <div className="relative group/item" key={index}>
+                          <Link onMouseEnter={() => setCurrentId(res2.category_name)} to="/collections" state={{ cat_id: res2.category_name }}>
+                            <Card className="w-full !rounded-none h-[50px] hover:!bg-primary group-hover/item:!bg-primary">
+                              <Card.Meta avatar={<Avatar className="!rounded-none !-mt-[10px]" src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<div className="!font-primary group-hover/item:!text-white">{res2.name}</div>} />
+                            </Card>
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
         )}
 
-        {/* Mobile menu button */}
-        {!lg && <Button type="primary" icon={<MenuOutlined />} onClick={() => setDrawerVisible(true)} className="!bg-primary rounded" />}
-
         {/* Right side - icons + top_nav */}
-        {lg && (
+        {lg ? (
           <div className="flex items-center gap-8">
             {/* Social Icons */}
             <div className="flex items-center gap-2">
@@ -80,21 +96,44 @@ const Navbar = () => {
               })}
             </div>
           </div>
+        ) : (
+          <>
+            <Button type="primary" icon={<MenuOutlined />} onClick={() => setDrawerVisible(true)} className="!bg-primary" />
+            <Drawer title="Menu" placement="left" onClose={() => setDrawerVisible(false)} open={drawerVisible}>
+              <Menu mode="vertical" selectable={false}>
+                {bottom_menu.map((res, index) => {
+                  const isProductVault = res.name === "Product Vault";
+                  if (!isProductVault) {
+                    return (
+                      <Menu.Item key={index} onClick={() => setDrawerVisible(false)}>
+                        <Link className="!font-primary font-semibold !text-primary" to={res.link}>
+                          {res.name}
+                        </Link>
+                      </Menu.Item>
+                    );
+                  } else {
+                    return (
+                      <Collapse key={index} ghost expandIconPosition="end" className="mb-2">
+                        <Panel header={res.name} className="!font-primary font-semibold !text-primary" key="1">
+                          {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, catIndex) => (
+                            <div key={catIndex} className="mb-2">
+                              <Link to="/collections" state={{ cat_id: res2.category_name }} onClick={() => setDrawerVisible(false)}>
+                                <Card className="hover:bg-primary !font-primary font-semibold !text-primary">
+                                  <Card.Meta avatar={<Avatar src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<span className="font-primary">{res2.name}</span>} />
+                                </Card>
+                              </Link>
+                            </div>
+                          ))}
+                        </Panel>
+                      </Collapse>
+                    );
+                  }
+                })}
+              </Menu>
+            </Drawer>
+          </>
         )}
       </div>
-
-      {/* Drawer for mobile menu */}
-      <Drawer title="Menu" placement="left" onClose={() => setDrawerVisible(false)} open={drawerVisible}>
-        <Menu mode="vertical" selectable={false}>
-          {bottom_menu.map((res, index) => (
-            <Menu.Item key={index} onClick={() => setDrawerVisible(false)}>
-              <Link className="font-primary font-semibold text-primary" to={res.link}>
-                {res.name}
-              </Link>
-            </Menu.Item>
-          ))}
-        </Menu>
-      </Drawer>
     </>
   );
 };

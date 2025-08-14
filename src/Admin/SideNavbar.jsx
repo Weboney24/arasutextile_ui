@@ -13,19 +13,40 @@ const SideNavbar = () => {
   };
 
   return (
-    <div className="h-screen w-full overflow-scroll pb-20 gap-y-4 flex flex-col !bg-primary">
-      <Link to="/admin-blogs" className="!pl-2 !pt-4 !pb-2">
-        <img src={IMAGE_HELPER.ARASU_LOGO} alt="Logo" className="h-[40px] w-auto mt-4" />
-      </Link>
+    <div className="h-screen w-full overflow-y-auto pb-10 flex flex-col bg-primary scrollbar-thin scrollbar-thumb-white/40 scrollbar-track-transparent">
+      {/* Logo */}
+      <div className="flex justify-center items-center py-6 border-b border-white/20">
+        <Link to="/admin-blogs">
+          <img src={IMAGE_HELPER.BG_REMOVE_LOGO} alt="Logo" className="h-10 w-auto" />
+        </Link>
+      </div>
 
-      <Menu className="w-full !border-none !bg-primary" mode="vertical" openKeys={openKeys} onOpenChange={onOpenChange}>
-        {MENU_ITEMS.map((item) => (
-          <Menu.Item key={item.id} className={`border-b border-t !mt-8 !border-white !h-[60px] ${item.to === path ? "!bg-primary" : "!bg-white"} !rounded-none`}>
-            <Link to={item.to || "#"} className="!font-primary !text-white !text-lg !pt-10">
-              {item.name}
-            </Link>
-          </Menu.Item>
-        ))}
+      {/* Menu */}
+      <Menu mode="vertical" openKeys={openKeys} onOpenChange={onOpenChange} className="w-full bg-transparent !border-none text-white font-medium px-2">
+        {MENU_ITEMS.map((item) => {
+          const isActive = item.to === path;
+
+          return (
+            <Menu.Item
+              key={item.id}
+              className={`
+                !h-14 
+                px-4 
+                rounded-md 
+                mt-3 
+                transition-all 
+                duration-200 
+                font-primary 
+                text-base 
+                ${isActive ? "!bg-primary !text-white font-semibold shadow-md" : "hover:!bg-white/20"}
+              `}
+            >
+              <Link to={item.to || "#"} className="w-full block h-full leading-[56px]">
+                {item.name}
+              </Link>
+            </Menu.Item>
+          );
+        })}
       </Menu>
     </div>
   );

@@ -16,15 +16,8 @@ const AboutLanding = () => {
       <CustomHero title="Know us" imagurl={IMAGE_HELPER.INSIDE_HERO2} />
       <div className="w-[80%] mx-auto py-0 mb-[40px] font-primary">
         <div className="flex flex-col lg:flex-row items-center gap-10 ">
-          {/* Image Left - Bigger Height */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Sri Arasu Tex" className="w-full max-w-[650px] h-[550px] lg:h-[650px] object-cover rounded-md shadow-md border-4 border-white" />
-          </div>
-
           {/* Text Right */}
-          <div className="w-full lg:w-1/2 space-y-0 !-mt-[60px]">
-            <DefaultHeader title="About Us" position="start" />
-
+          <div className="w-full space-y-0 ">
             <h2 className="text-3xl sm:text-4xl font-bold text-primary">Exporting Excellence Since 1989</h2>
             <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">Sri Arasu Tex is a globally recognized manufacturer and exporter of premium home textile products. With a rich legacy spanning over 36 years, we’ve built strong partnerships with clients across USA, UK, Germany, France, Italy, Australia, UAE and more.</p>
             <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We specialize in the exclusive design and manufacture of a comprehensive range of home textile products. Our offerings encompass:</p>
@@ -53,6 +46,7 @@ const AboutLanding = () => {
           <div className="flex-1 px-6 py-6 rounded-2xl bg-white transition duration-300">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">Fabric Types</h2>
             <ul className="list-disc list-inside text-gray-600 leading-relaxed">
+              <li>Cotton</li>
               <li>Cotton/Polyester blend</li>
               <li>Cotton/Linen blend</li>
               <li>Cotton/Bamboo blend</li>
@@ -63,7 +57,7 @@ const AboutLanding = () => {
           </div>
 
           <div className="flex-1 px-6 py-6 rounded-2xl bg-white transition duration-300">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Wearing Types</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Weaving Types</h2>
             <ul className="list-disc list-inside text-gray-600 leading-relaxed">
               <li>Plain</li>
               <li>Dobby</li>
@@ -82,6 +76,7 @@ const AboutLanding = () => {
               <li>Polyester</li>
               <li>Recycled Polyester</li>
               <li>Wool Polyester</li>
+              <li>Surgical Cotton</li>
             </ul>
           </div>
         </div>
@@ -101,13 +96,13 @@ const AboutLanding = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2 rounded-md text-2xl font-bold shadow-md">Global Fabric Needs</div>
               </div>
               <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-[150px]">
-                <p>We deliver globally trusted fabrics that balance quality, price, innovation, and on-time delivery.</p>
+                <p>We deliver globally trusted fabrics that combine quality, competitive pricing, innovation, and on-time delivery.</p>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-8 ">
               <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-[150px]">
-                <p>Our manufacturing is based on client specifications—highlighting our commitment to quality and client relationships.</p>
+                <p>Our manufacturing is based on client specifications, reflecting our commitment to quality and strong client relationships.</p>
               </div>
               <div className="relative w-full md:w-1/2 h-[150px]">
                 <img src={IMAGE_HELPER.ZIG_ZAG_IMAGES2} alt="Client satisfaction" className="w-full h-[150px] object-cover rounded-xl shadow-lg brightness-60" />
@@ -123,7 +118,7 @@ const AboutLanding = () => {
               </div>
 
               <div className="bg-white border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-xl w-full">
-                <p>We have a skilled team dedicated to dying, weaving, and finishing. We handle the large volume order with precision. We consistently work to meet our deadlines</p>
+                <p>We have a skilled team dedicated to dyeing, weaving, and finishing. We handle large-volume orders with precision and consistently strive to meet deadlines.</p>
               </div>
             </div>
           </div>
@@ -141,7 +136,7 @@ const AboutLanding = () => {
           <div className="space-y-12">
             <div>
               <h2 className="text-4xl font-black text-primary mb-4">🌱 Our Mission</h2>
-              <p className="text-gray-800 leading-relaxed">‘Our goal is to create a sustainable future by addressing poverty, promoting environmental care, and empowering communities to thrive. Every donation helps plant a seed of hope and changemoting environmental care, and empowering communities to thrive. Every donation helps plant a seed of hope and change.We plant treea, we fight poverty . we change lives’</p>
+              <p className="text-gray-800 leading-relaxed">‘Our goal is to create a sustainable future by addressing poverty, promoting environmental care, and empowering communities to thrive. Every donation plants a seed of hope and change. We plant trees, fight poverty, and change lives.’</p>
             </div>
 
             {/* Stats Grid */}
@@ -149,7 +144,7 @@ const AboutLanding = () => {
               {[
                 { title: "🌳 10,000+ Trees", desc: "Planted across rural villages." },
                 { title: "🏫 50+ Scholarships", desc: "For underprivileged children." },
-                { title: "💧 Clean Water", desc: "Projects funded in 15 villages." },
+                { title: "💧 Clean Water", desc: "Projects funded in villages." },
               ].map((item, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 hover:border-primary hover:shadow-primary transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-xl">
                   <h3 className="text-xl font-semibold text-primary">{item.title}</h3>
