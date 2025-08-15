@@ -78,7 +78,7 @@ import lvcur3 from "../assets/images/lvcur3.jpg";
 import lvcur4 from "../assets/images/lvcur4.jpg";
 
 import lvcu1 from "../assets/images/lvcu1.jpg";
-import lvcu2 from "../assets/images/lvcu2.jpg";
+import lvcu2 from "../assets/SRI-ARASU-TEX/livingroom/cushions/Roisin+Square+Pillow+Insert.webp";
 import lvcu3 from "../assets/images/lvcu3.jpg";
 import lvcu4 from "../assets/images/lvcu4.jpg";
 
@@ -127,10 +127,10 @@ import tchairpad2 from "../assets/images/tchairpad2.jpg";
 import tchairpad3 from "../assets/images/tchairpad3.jpg";
 import tchairpad4 from "../assets/images/tchairpad4.jpg";
 
-import bbcover1 from "../assets/images/bbcover.jpg";
-import bbcover2 from "../assets/images/bbcover2.jpg";
-import bbcover3 from "../assets/images/bbcover3.jpg";
-import bbcover4 from "../assets/images/bbcover4.jpg";
+import bbcover1 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/5.jpg";
+import bbcover2 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread (2).png";
+import bbcover3 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread (3).png";
+import bbcover4 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread (4).png";
 
 import fbcover1 from "../assets/images/fbcover1.jpg";
 import fbcover2 from "../assets/images/fbcover2.jpg";
@@ -159,8 +159,8 @@ import bathtowel4 from "../assets/images/bathto4.jpeg";
 
 import bathrope1 from "../assets/images/bathrope1.jpeg";
 import bathrope2 from "../assets/images/bathrope2.jpeg";
-import bathrope3 from "../assets/images/bathrope3.jpeg";
-import bathrope4 from "../assets/images/bathrope4.jpeg";
+import bathrope3 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/OIP (1).webp";
+import bathrope4 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/OIP (2).webp";
 
 import batcu1 from "../assets/images/bathcu1.jpeg";
 import batcu2 from "../assets/images/bathcu2.jpeg";
@@ -187,7 +187,7 @@ import outchair2 from "../assets/images/outchair2.jpeg";
 import outchair3 from "../assets/images/outchair3.jpeg";
 import outchair4 from "../assets/images/outchair4.jpeg";
 
-import outbag1 from "../assets/images/outbags.jpeg";
+import outbag1 from "../assets/SRI-ARASU-TEX/outdoor/bags/Tote bag.png";
 import outbag2 from "../assets/images/outbags2.jpeg";
 import outbag3 from "../assets/images/outbags3.jpeg";
 import outbag4 from "../assets/images/outbags4.jpeg";
@@ -259,13 +259,301 @@ import fouta4 from "../assets/images/fouta4.jpg";
 
 //main category connect
 
-import mainbaby from "../assets/baby1.png";
+import mainbaby from "../assets/SRI-ARASU-TEX/baby/baby-tent/ten.jpeg";
 import mainbath from "../assets/bath1.png";
 import mainbedding from "../assets/bedding1.png";
 import mainoutdoor from "../assets/outdoor1.png";
 import mainliving from "../assets/living1.png";
 import maintable from "../assets/table1.jpeg";
 import mainkitchen from "../assets/kitchen2.jpeg";
+
+import img1 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/dish.webp";
+import img2 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish2.jpg";
+import img3 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish3.jpg";
+import img4 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish5.jpg";
+import img5 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish6.jpg";
+import img6 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish7.jpg";
+import img7 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish8.jpg";
+import img8 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dish9.jpg";
+import img9 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/Dishcloth1.jpeg";
+import img10 from "../assets/SRI-ARASU-TEX/kitchenlinens/dishcloth/R.jpeg";
+
+import img11 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/007 GLOVE.png";
+import img12 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/008 GLOVE.png";
+import img13 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/019 GLOVE FRONT.png";
+import img14 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/GLOVE cad (6).png";
+import img15 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/GLOVE cad (8).png";
+import img16 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/GLOVE cad.png";
+import img17 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/glove-1.png";
+import img18 from "../assets/SRI-ARASU-TEX/kitchenlinens/glove/glove002.png";
+
+import img19 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/007 POTHOLDER-1.png";
+import img20 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/007 POTHOLDER-2.png";
+import img21 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/007 POTHOLDER.png";
+import img22 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/POTHOLDER cad (6).png";
+import img23 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/POTHOLDER cad.png";
+import img24 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/Potholder-001 (2).png";
+import img25 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/Potholder-001.png";
+import img26 from "../assets/SRI-ARASU-TEX/kitchenlinens/potholder/Potholder.png";
+
+import img27 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD (2).png";
+import img28 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/Kt Mockup-1.png";
+import img29 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD (6).png";
+import img30 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/004 -KT.jpg";
+import img31 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD.png";
+import img32 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD-1.png";
+import img33 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/DSC02305.JPG";
+import img34 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/halloween-kitchen-decor-64ad811e5ca9c.jpg";
+
+import img35 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/713FB3uNxpL._SL1200_.jpg";
+import img36 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/cf8549c08d55f571f5177f5eaffbba20.jpg";
+import img37 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/71C1B8l76CL._SL1500_.jpg";
+import img38 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/d2396f95ce201a58618348b469e702fd0656c01e_original.jpeg";
+import img39 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/ove 2.jpeg";
+import img40 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/oveec.jpeg";
+import img41 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/oven 1.jpeg";
+import img42 from "../assets/SRI-ARASU-TEX/kitchenlinens/ovencover/oven 3.jpeg";
+
+import img43 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/007 apron cad.png";
+import img44 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/021  apron CAD.jpg";
+import img45 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/apron (3).png";
+import img46 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/apron cad-1 (10).png";
+import img47 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/apron cad-1 (6).png";
+import img48 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/apron cad-1 (8).png";
+import img49 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/Apron cad-1-1.png";
+import img50 from "../assets/SRI-ARASU-TEX/kitchenlinens/apron/Apron cad-1-2 (2).png";
+
+import img51 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/003.jpg";
+import img52 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/007.jpg";
+import img53 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/008.jpg";
+import img54 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/008 TABLE CLOTH.png";
+import img55 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/010.jpg";
+import img56 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/011.jpg";
+import img57 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/02..jpg";
+import img58 from "../assets/SRI-ARASU-TEX/tablelinens/tablecloth/T.Cloth  CAD (2).png";
+
+import img59 from "../assets/SRI-ARASU-TEX/tablelinens/runner/004-TR.jpg";
+import img60 from "../assets/SRI-ARASU-TEX/tablelinens/runner/006-TR.png";
+import img61 from "../assets/SRI-ARASU-TEX/tablelinens/runner/008-RUNNER-1.png";
+import img62 from "../assets/SRI-ARASU-TEX/tablelinens/runner/009 RUNNER CAD.png";
+import img63 from "../assets/SRI-ARASU-TEX/tablelinens/runner/RUNNER (2).png";
+import img64 from "../assets/SRI-ARASU-TEX/tablelinens/runner/Runner (3).png";
+import img65 from "../assets/SRI-ARASU-TEX/tablelinens/runner/RUNNER 007 CAD-1 (2).png";
+import img66 from "../assets/SRI-ARASU-TEX/tablelinens/runner/RUNNER 007 CAD-1.png";
+
+import img67 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/004 - NK.jpg";
+import img68 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/007 NAPKIN-1.png";
+import img69 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/008 NAPKIN.png";
+import img70 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/008-1.png";
+import img71 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/017  NAPKIN.png";
+import img72 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/05.jpg";
+import img73 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/06.jpg";
+import img74 from "../assets/SRI-ARASU-TEX/tablelinens/napkin/f2ec46f86881c307bfea7e451c07a124.jpg";
+
+import img75 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/07-11.22.jpg";
+import img76 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Basket.png";
+import img77 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Bread Basket-1 (2).png";
+import img78 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Bread Basket-1 (3).png";
+import img79 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Bread Basket-1 (4).png";
+import img80 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Bread Basket-1.png";
+import img81 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/Bread Basket.png";
+import img82 from "../assets/SRI-ARASU-TEX/tablelinens/breadbasket/PCI6UI_NoColor_1_X.jpg";
+
+import img83 from "../assets/SRI-ARASU-TEX/tablelinens/coaster/97c09580c944b5c7269c25a27250a2df.jpg";
+import img84 from "../assets/SRI-ARASU-TEX/tablelinens/coaster/how-to-sew-fabric-coasters.webp";
+import img85 from "../assets/SRI-ARASU-TEX/tablelinens/coaster/il_794xN.2176249204_3k2j.jpg";
+import img86 from "../assets/SRI-ARASU-TEX/tablelinens/coaster/il_800x800.1526861177_73s5.webp";
+import img87 from "../assets/SRI-ARASU-TEX/tablelinens/coaster/il_fullxfull.2708322795_on9n.jpg";
+
+import img88 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/30-9-22..jpg";
+import img89 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/32209L.jpg";
+import img90 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/87321_XXX_v1.jpg";
+import img91 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/c3d4415e-f525-4f4d-a6c1-ba66b3705ba4.jpg";
+import img92 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/aa.jpg";
+import img93 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/CC1.JPG";
+import img94 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/coffee time.jpg";
+import img95 from "../assets/SRI-ARASU-TEX/tablelinens/cahirpad/Lunch time.jpg";
+
+import img96 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/MAT 007 CAD.png";
+import img97 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Place Mat (2).png";
+import img98 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Place Mat (3).png";
+import img99 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Place Mat (6).png";
+import img100 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Place Mat (8).png";
+import img101 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Place Mat-3.png";
+import img102 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Placemate (2).png";
+import img103 from "../assets/SRI-ARASU-TEX/tablelinens/placemat/Placemate (4).png";
+
+import img104 from "../assets/SRI-ARASU-TEX/livingroom/curtains/006 curtain-1.png";
+import img105 from "../assets/SRI-ARASU-TEX/livingroom/curtains/006 curtain.png";
+import img106 from "../assets/SRI-ARASU-TEX/livingroom/curtains/07.09.22.jpg";
+import img107 from "../assets/SRI-ARASU-TEX/livingroom/curtains/1015.jpg";
+import img108 from "../assets/SRI-ARASU-TEX/livingroom/curtains/31.08.2022.jpg";
+import img109 from "../assets/SRI-ARASU-TEX/livingroom/curtains/Curtain Mockup.jpg";
+
+import img110 from "../assets/SRI-ARASU-TEX/livingroom/cushions/001 CH.png";
+import img111 from "../assets/SRI-ARASU-TEX/livingroom/cushions/01 (2).jpg";
+import img112 from "../assets/SRI-ARASU-TEX/livingroom/cushions/01.jpg";
+import img113 from "../assets/SRI-ARASU-TEX/livingroom/cushions/016 -CH CAD-FRONT.png";
+import img114 from "../assets/SRI-ARASU-TEX/livingroom/cushions/03.09.22.jpg";
+import img115 from "../assets/SRI-ARASU-TEX/livingroom/cushions/03.jpg";
+import img116 from "../assets/SRI-ARASU-TEX/livingroom/cushions/05.09.22.jpg";
+import img117 from "../assets/SRI-ARASU-TEX/livingroom/cushions/10.jpg";
+
+import img118 from "../assets/SRI-ARASU-TEX/livingroom/throws/THR 01 (2).png";
+import img119 from "../assets/SRI-ARASU-TEX/livingroom/throws/1000008727538-1000008727537_01-2100 - Copy.jpg";
+import img120 from "../assets/SRI-ARASU-TEX/livingroom/throws/THR 01 (3).png";
+import img121 from "../assets/SRI-ARASU-TEX/livingroom/throws/THR 01 (4).png";
+import img122 from "../assets/SRI-ARASU-TEX/livingroom/throws/81iX+utTMcL._AC_SL1500_ - Copy.jpg";
+import img123 from "../assets/SRI-ARASU-TEX/livingroom/throws/THR 01-1 (5).png";
+import img124 from "../assets/SRI-ARASU-TEX/livingroom/throws/Throws-1 (4).png";
+import img125 from "../assets/SRI-ARASU-TEX/livingroom/throws/THR 01 (6).png";
+
+import img126 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/855d2008dbb32083bdf59658aa1f425a.jpeg";
+import img127 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/Blu_Ducks_Door_Stop_smw_1600x.webp";
+import img128 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/il_1588xN.4449959135_n0uh.webp";
+import img129 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/il_800x800.4180496953_b6ye.webp";
+import img130 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/il_fullxfull.2902439170_grml.jpg";
+import img131 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/OIP.webp";
+import img132 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/R (1).jpeg";
+import img133 from "../assets/SRI-ARASU-TEX/livingroom/doorstopper/R.jpeg";
+
+import img134 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/81gqeMyPr0L._AC_SL1500_.jpg";
+import img135 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/boho-floor-cushion.jpg";
+import img136 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/homescapes-morocco-striped-cotton-floor-cushion-blue~5055967422292_01c_MP.webp";
+import img137 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/il_fullxfull.4813869840_qt0o.webp";
+import img138 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/il_fullxfull.2969744050_5sip.webp";
+import img139 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/private-residence-west-vancouver-precisionwerkz-inc-img~2ad1e83d062eb028_14-1439-1-dabb67b.jpg";
+import img140 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/roche-boboismah-jong-modula-sofa-1112x685.jpg";
+import img141 from "../assets/SRI-ARASU-TEX/livingroom/floorcushions/Square-Tufted-Floor-Pillow.webp";
+
+import img142 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1 (2).png";
+import img143 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1 (3).png";
+import img144 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1 (4).png";
+import img145 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1 (5).png";
+import img146 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1 (6).png";
+import img147 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-1.png";
+import img148 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread-2.png";
+import img149 from "../assets/SRI-ARASU-TEX/bedding/flatbedcover/Bedspread.png";
+
+import img150 from "../assets/SRI-ARASU-TEX/bath/bath-towels/05cf80940766b98d882078d762f740c2.jpg";
+import img151 from "../assets/SRI-ARASU-TEX/bath/bath-towels/1000_F_94977987_yNRuSK9g4MKBGG0F3iAXHbgocnWSR75G.jpg";
+import img152 from "../assets/SRI-ARASU-TEX/bath/bath-towels/3.jpg";
+import img153 from "../assets/SRI-ARASU-TEX/bath/bath-towels/4.jpg";
+import img154 from "../assets/SRI-ARASU-TEX/bath/bath-towels/61jY0NCtZiL._SL1440_.jpg";
+import img155 from "../assets/SRI-ARASU-TEX/bath/bath-towels/download.webp";
+import img156 from "../assets/SRI-ARASU-TEX/bath/bath-towels/group_8b30c938-47b1-4f27-86bb-d67387908af0_800x.webp";
+import img157 from "../assets/SRI-ARASU-TEX/bath/bath-towels/Montauk_Beige_Grey_CleanStack.webp";
+
+import img158 from "../assets/SRI-ARASU-TEX/bath/bath-robe/OIP (1).webp";
+import img159 from "../assets/SRI-ARASU-TEX/bath/bath-robe/OIP (2).webp";
+import img160 from "../assets/SRI-ARASU-TEX/bath/bath-robe/OIP (3).webp";
+import img161 from "../assets/SRI-ARASU-TEX/bath/bath-robe/OIP.jpeg";
+import img162 from "../assets/SRI-ARASU-TEX/bath/bath-robe/OIP.webp";
+
+import img163 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/04d93f1c9340684d8007fb0f1ef080d4.jpg";
+import img164 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/1_eb9eeae43f693564634b11de0845e217.jpg";
+import img165 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/blue-laura-ashley-shower-curtains-216726-64_1000.jpg";
+import img166 from "../assets/SRI-ARASU-TEX/bath/bath-curtains/R.jpeg";
+
+import img167 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/11-04-2023.jpg";
+import img168 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/19-10-2023.jpg";
+import img169 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/25-04-2023.jpg";
+import img170 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/e875094c511b3343ab422792246839bb.jpg";
+import img171 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/FOUTA TOWEL REPEAT-1.jpg";
+import img172 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/FOUTA TOWEL REPEAT.jpg";
+import img173 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/PES-333_1200x.webp";
+import img174 from "../assets/SRI-ARASU-TEX/outdoor/FOUTA/Throws (2).png";
+
+import img175 from "../assets/SRI-ARASU-TEX/outdoor/bags/15405740985_577307d916_z.jpg";
+import img176 from "../assets/SRI-ARASU-TEX/outdoor/bags/2015-11-24-17.52.02-scaled.jpg";
+import img177 from "../assets/SRI-ARASU-TEX/outdoor/bags/back bag.png";
+import img178 from "../assets/SRI-ARASU-TEX/outdoor/bags/bag-1.jpg";
+import img179 from "../assets/SRI-ARASU-TEX/outdoor/bags/bag-2.jpg";
+import img180 from "../assets/SRI-ARASU-TEX/outdoor/bags/bag.jpg";
+import img181 from "../assets/SRI-ARASU-TEX/outdoor/bags/bag.png";
+import img182 from "../assets/SRI-ARASU-TEX/outdoor/bags/Carré Eponge.png";
+
+import img183 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/0244f0cf5ab19c60f658ad779973fb82.jpg";
+import img184 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/04.jpg";
+import img185 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/20326976-04-BK-XL.jpg";
+import img186 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/3927.jpg";
+import img187 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/57_11e3d1e3-a1f4-496d-b3bd-c14ba1d36a99_1024x1024.webp";
+import img188 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/B0ABECC5-F0C3-449E-AD24-068DA209A560_1_201_a.webp";
+import img189 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/Cotton-Mermaid-Pattern-Beach-Children-Towel-Baby-Hooded-Bath-Towel-Baby-Boys-Girls-Cartoon-Bath-Bathrobe.webp";
+import img190 from "../assets/SRI-ARASU-TEX/outdoor/beachwears/download.webp";
+
+import img191 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/81m6ej6YSNL._SL1259_.jpg";
+import img192 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/81wyaBo+soL._AC_SL1024_.jpg";
+import img193 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/917WFrr5D-L._AC_SL1500_.jpg";
+import img194 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/ambiance-jete-nappe-tradi-bleu-scaled.jpg";
+import img195 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/DSC08006_0.5x-square_1400x.webp";
+import img196 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/Hand-printed-linen-tablecloth-Flora-blue-navy-2-1024x1024.jpg";
+import img197 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/Hand-printed-linen-tablecloth-Giardino-31-768x768.jpg";
+import img198 from "../assets/SRI-ARASU-TEX/outdoor/outdoortablecloth/s658288879470577645_p1199_i37_w1378.jpeg";
+
+import img199 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/033 -CH CAD.jpg";
+import img200 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion (3).png";
+import img201 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1 (2).png";
+import img202 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1 (3).png";
+import img203 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1 (4).png";
+import img204 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1 (5).png";
+import img205 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1-1.png";
+import img206 from "../assets/SRI-ARASU-TEX/outdoor/outoorcushions/40X40 Cushion-1.png";
+
+// import img207 from "../assets/SRI-ARASU-TEX/";
+// import img208 from "../assets/SRI-ARASU-TEX/";
+// import img209 from "../assets/SRI-ARASU-TEX/";
+// import img210 from "../assets/SRI-ARASU-TEX/";
+// import img211 from "../assets/SRI-ARASU-TEX/";
+// import img212 from "../assets/SRI-ARASU-TEX/";
+// import img213 from "../assets/SRI-ARASU-TEX/";
+// import img214 from "../assets/SRI-ARASU-TEX/";
+// import img215 from "../assets/SRI-ARASU-TEX/";
+// import img216 from "../assets/SRI-ARASU-TEX/";
+// import img217 from "../assets/SRI-ARASU-TEX/";
+// import img218 from "../assets/SRI-ARASU-TEX/";
+// import img219 from "../assets/SRI-ARASU-TEX/";
+// import img220 from "../assets/SRI-ARASU-TEX/";
+// import img221 from "../assets/SRI-ARASU-TEX/";
+// import img222 from "../assets/SRI-ARASU-TEX/";
+// import img223 from "../assets/SRI-ARASU-TEX/";
+// import img224 from "../assets/SRI-ARASU-TEX/";
+// import img225 from "../assets/SRI-ARASU-TEX/";
+// import img226 from "../assets/SRI-ARASU-TEX/";
+// import img227 from "../assets/SRI-ARASU-TEX/";
+// import img228 from "../assets/SRI-ARASU-TEX/";
+// import img229 from "../assets/SRI-ARASU-TEX/";
+// import img230 from "../assets/SRI-ARASU-TEX/";
+// import img231 from "../assets/SRI-ARASU-TEX/";
+// import img232 from "../assets/SRI-ARASU-TEX/";
+// import img233 from "../assets/SRI-ARASU-TEX/";
+// import img234 from "../assets/SRI-ARASU-TEX/";
+// import img235 from "../assets/SRI-ARASU-TEX/";
+// import img236 from "../assets/SRI-ARASU-TEX/";
+// import img237 from "../assets/SRI-ARASU-TEX/";
+// import img238 from "../assets/SRI-ARASU-TEX/";
+// import img239 from "../assets/SRI-ARASU-TEX/";
+// import img240 from "../assets/SRI-ARASU-TEX/";
+// import img241 from "../assets/SRI-ARASU-TEX/";
+// import img242 from "../assets/SRI-ARASU-TEX/";
+// import img243 from "../assets/SRI-ARASU-TEX/";
+// import img244 from "../assets/SRI-ARASU-TEX/";
+// import img245 from "../assets/SRI-ARASU-TEX/";
+// import img246 from "../assets/SRI-ARASU-TEX/";
+// import img247 from "../assets/SRI-ARASU-TEX/";
+// import img248 from "../assets/SRI-ARASU-TEX/";
+// import img249 from "../assets/SRI-ARASU-TEX/";
+// import img250 from "../assets/SRI-ARASU-TEX/";
+// import img251 from "../assets/SRI-ARASU-TEX/";
+// import img252 from "../assets/SRI-ARASU-TEX/";
+// import img253 from "../assets/SRI-ARASU-TEX/";
+// import img254 from "../assets/SRI-ARASU-TEX/";
+// import img255 from "../assets/SRI-ARASU-TEX/";
+// import img256 from "../assets/SRI-ARASU-TEX/";
+// import img257 from "../assets/SRI-ARASU-TEX/";
+// import img258 from "../assets/SRI-ARASU-TEX/";
+// import img259 from "../assets/SRI-ARASU-TEX/";
+// import img260 from "../assets/SRI-ARASU-TEX/";
 
 export const IMAGE_HELPER = {
   //main images
@@ -531,4 +819,265 @@ export const IMAGE_HELPER = {
   CHAIR_COVER2: chaircover2,
   CHAIR_COVER3: chaircover3,
   CHAIR_COVER4: chaircover4,
+
+  IMG_1: img1,
+  IMG_2: img2,
+  IMG_3: img3,
+  IMG_4: img4,
+  IMG_5: img5,
+  IMG_6: img6,
+  IMG_7: img7,
+  IMG_8: img8,
+  IMG_9: img9,
+  IMG_10: img10,
+  IMG_11: img11,
+  IMG_12: img12,
+  IMG_13: img13,
+  IMG_14: img14,
+  IMG_15: img15,
+  IMG_16: img16,
+  IMG_17: img17,
+  IMG_18: img18,
+  IMG_19: img19,
+  IMG_20: img20,
+  IMG_21: img21,
+  IMG_22: img22,
+  IMG_23: img23,
+  IMG_24: img24,
+  IMG_25: img25,
+  IMG_26: img26,
+  IMG_27: img27,
+  IMG_28: img28,
+  IMG_29: img29,
+  IMG_30: img30,
+  IMG_31: img31,
+  IMG_32: img32,
+  IMG_33: img33,
+  IMG_34: img34,
+  IMG_35: img35,
+  IMG_36: img36,
+  IMG_37: img37,
+  IMG_38: img38,
+  IMG_39: img39,
+  IMG_40: img40,
+  IMG_41: img41,
+  IMG_42: img42,
+  IMG_43: img43,
+  IMG_44: img44,
+  IMG_45: img45,
+  IMG_46: img46,
+  IMG_47: img47,
+  IMG_48: img48,
+  IMG_49: img49,
+  IMG_50: img50,
+  IMG_51: img51,
+  IMG_52: img52,
+  IMG_53: img53,
+  IMG_54: img54,
+  IMG_55: img55,
+  IMG_56: img56,
+  IMG_57: img57,
+  IMG_58: img58,
+  IMG_59: img59,
+  IMG_60: img60,
+  IMG_61: img61,
+  IMG_62: img62,
+  IMG_63: img63,
+  IMG_64: img64,
+  IMG_65: img65,
+  IMG_66: img66,
+  IMG_67: img67,
+  IMG_68: img68,
+  IMG_69: img69,
+  IMG_70: img70,
+  IMG_71: img71,
+  IMG_72: img72,
+  IMG_73: img73,
+  IMG_74: img74,
+  IMG_75: img75,
+  IMG_76: img76,
+  IMG_77: img77,
+  IMG_78: img78,
+  IMG_79: img79,
+  IMG_80: img80,
+  IMG_81: img81,
+  IMG_82: img82,
+  IMG_83: img83,
+  IMG_84: img84,
+  IMG_85: img85,
+  IMG_86: img86,
+  IMG_87: img87,
+  IMG_88: img88,
+  IMG_89: img89,
+  IMG_90: img90,
+  IMG_91: img91,
+  IMG_92: img92,
+  IMG_93: img93,
+  IMG_94: img94,
+  IMG_95: img95,
+  IMG_96: img96,
+  IMG_97: img97,
+  IMG_98: img98,
+  IMG_99: img99,
+  IMG_100: img100,
+  IMG_101: img101,
+  IMG_102: img102,
+  IMG_103: img103,
+  IMG_104: img104,
+  IMG_105: img105,
+  IMG_106: img106,
+  IMG_107: img107,
+  IMG_108: img108,
+  IMG_109: img109,
+  IMG_110: img110,
+  IMG_111: img111,
+  IMG_112: img112,
+  IMG_113: img113,
+  IMG_114: img114,
+  IMG_115: img115,
+  IMG_116: img116,
+  IMG_117: img117,
+  IMG_118: img118,
+  IMG_119: img119,
+  IMG_120: img120,
+  IMG_121: img121,
+  IMG_122: img122,
+  IMG_123: img123,
+  IMG_124: img124,
+  IMG_125: img125,
+  IMG_126: img126,
+  IMG_127: img127,
+  IMG_128: img128,
+  IMG_129: img129,
+  IMG_130: img130,
+  IMG_131: img131,
+  IMG_132: img132,
+  IMG_133: img133,
+  IMG_134: img134,
+  IMG_135: img135,
+  IMG_136: img136,
+  IMG_137: img137,
+  IMG_138: img138,
+  IMG_139: img139,
+  IMG_140: img140,
+  IMG_141: img141,
+  IMG_142: img142,
+  IMG_143: img143,
+  IMG_144: img144,
+  IMG_145: img145,
+  IMG_146: img146,
+  IMG_147: img147,
+  IMG_148: img148,
+  IMG_149: img149,
+  IMG_150: img150,
+  IMG_151: img151,
+  IMG_152: img152,
+  IMG_153: img153,
+  IMG_154: img154,
+  IMG_155: img155,
+  IMG_156: img156,
+  IMG_157: img157,
+  IMG_158: img158,
+  IMG_159: img159,
+  IMG_160: img160,
+  IMG_161: img161,
+  IMG_162: img162,
+  IMG_163: img163,
+  IMG_164: img164,
+  IMG_165: img165,
+  IMG_166: img166,
+  IMG_167: img167,
+  IMG_168: img168,
+  IMG_169: img169,
+  IMG_170: img170,
+  IMG_171: img171,
+  IMG_172: img172,
+  IMG_173: img173,
+  IMG_174: img174,
+  IMG_175: img175,
+  IMG_176: img176,
+  IMG_177: img177,
+  IMG_178: img178,
+  IMG_179: img179,
+  IMG_180: img180,
+  IMG_181: img181,
+  IMG_182: img182,
+  IMG_183: img183,
+  IMG_184: img184,
+  IMG_185: img185,
+  IMG_186: img186,
+  IMG_187: img187,
+  IMG_188: img188,
+  IMG_189: img189,
+  IMG_190: img190,
+  IMG_191: img191,
+  IMG_192: img192,
+  IMG_193: img193,
+  IMG_194: img194,
+  IMG_195: img195,
+  IMG_196: img196,
+  IMG_197: img197,
+  IMG_198: img198,
+  IMG_199: img199,
+  IMG_200: img200,
+  IMG_201: img201,
+  IMG_202: img202,
+  IMG_203: img203,
+  IMG_204: img204,
+  IMG_205: img205,
+  IMG_206: img206,
+  // IMG_207: img207,
+  // IMG_208: img208,
+  // IMG_209: img209,
+  // IMG_210: img210,
+  // IMG_211: img211,
+  // IMG_212: img212,
+  // IMG_213: img213,
+  // IMG_214: img214,
+  // IMG_215: img215,
+  // IMG_216: img216,
+  // IMG_217: img217,
+  // IMG_218: img218,
+  // IMG_219: img219,
+  // IMG_220: img220,
+  // IMG_221: img221,
+  // IMG_222: img222,
+  // IMG_223: img223,
+  // IMG_224: img224,
+  // IMG_225: img225,
+  // IMG_226: img226,
+  // IMG_227: img227,
+  // IMG_228: img228,
+  // IMG_229: img229,
+  // IMG_230: img230,
+  // IMG_231: img231,
+  // IMG_232: img232,
+  // IMG_233: img233,
+  // IMG_234: img234,
+  // IMG_235: img235,
+  // IMG_236: img236,
+  // IMG_237: img237,
+  // IMG_238: img238,
+  // IMG_239: img239,
+  // IMG_240: img240,
+  // IMG_241: img241,
+  // IMG_242: img242,
+  // IMG_243: img243,
+  // IMG_244: img244,
+  // IMG_245: img245,
+  // IMG_246: img246,
+  // IMG_247: img247,
+  // IMG_248: img248,
+  // IMG_249: img249,
+  // IMG_250: img250,
+  // IMG_251: img251,
+  // IMG_252: img252,
+  // IMG_253: img253,
+  // IMG_254: img254,
+  // IMG_255: img255,
+  // IMG_256: img256,
+  // IMG_257: img257,
+  // IMG_258: img258,
+  // IMG_259: img259,
+  // IMG_260: img260,
 };
