@@ -1,13 +1,8 @@
 import React from "react";
 import CustomHero from "../components/CustomHero";
 import { IMAGE_HELPER } from "../helper/imagehelper";
-import { hero_about } from "../helper/datahelper";
 import DefaultHeader from "../components/DefaultHeader";
-import { Divider } from "antd";
-import { ICON_HELPER } from "../helper/iconhelper";
 import Services from "../pages/Services";
-import Blogs from "../pages/Blogs";
-import { FaHandHoldingHeart } from "react-icons/fa";
 import { TbActivityHeartbeat } from "react-icons/tb";
 
 const AboutLanding = () => {
@@ -23,7 +18,7 @@ const AboutLanding = () => {
             <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We specialize in the exclusive design and manufacture of a comprehensive range of home textile products. Our offerings encompass:</p>
 
             {/* Bullet Points */}
-            <ul className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify grid grid-cols-2 list-disc list-inside">
+            <ul className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify grid grid-cols-1 lg:grid-cols-2 list-disc list-inside">
               <li>Curtains & Draperies</li>
               <li>Bed Linen</li>
               <li>Kitchen Linens</li>
@@ -95,13 +90,13 @@ const AboutLanding = () => {
                 <img src={IMAGE_HELPER.ZIG_ZAG_IMAGES1} alt="Fabric selection" className="w-full h-[150px] object-cover rounded-xl shadow-lg brightness-60" />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2 rounded-md text-2xl font-bold shadow-md">Global Fabric Needs</div>
               </div>
-              <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-[150px]">
+              <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-auto lg:h-[150px]">
                 <p>We deliver globally trusted fabrics that combine quality, competitive pricing, innovation, and on-time delivery.</p>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-8 ">
-              <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-[150px]">
+              <div className=" border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-[612px] w-full h-auto lg:h-[150px]">
                 <p>Our manufacturing is based on client specifications, reflecting our commitment to quality and strong client relationships.</p>
               </div>
               <div className="relative w-full md:w-1/2 h-[150px]">
@@ -117,7 +112,7 @@ const AboutLanding = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2 rounded-md text-2xl font-bold shadow-md ">Reliable Production</div>
               </div>
 
-              <div className="bg-white border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-xl w-full">
+              <div className="bg-white border border-primary rounded-xl p-6 text-lg font-primary shadow-md max-w-xl w-full h-auto lg:h-[150px]">
                 <p>We have a skilled team dedicated to dyeing, weaving, and finishing. We handle large-volume orders with precision and consistently strive to meet deadlines.</p>
               </div>
             </div>

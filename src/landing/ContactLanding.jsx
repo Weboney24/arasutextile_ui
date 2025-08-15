@@ -48,33 +48,44 @@ const ContactLanding = () => {
       <CustomHero title=" " imagurl={IMAGE_HELPER.INSIDE_HERO1} />
 
       {/* Contact Form */}
-      <div className="bg-white shadow-lg relative z-30 -mt-[250px] h-auto mb-20 w-full md:w-[90%] xl:w-[80%] mx-auto p-5 md:p-10 rounded-lg">
-        <div className="pt-[20px] mb-6">
+      <div
+        className="bg-white shadow-lg relative z-30 
+  -mt-[150px] sm:-mt-[200px] md:-mt-[250px] 
+  h-auto mb-20 w-[95%] sm:w-[90%] xl:w-[80%] mx-auto 
+  p-4 sm:p-6 md:p-10 rounded-lg"
+      >
+        {/* Header */}
+        <div className="pt-5 sm:pt-[20px] mb-6">
           <DefaultHeader title="Contact Form" content="Feel free to contact us through Twitter or Facebook if you prefer." />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Name, Email, Phone, Company */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           <Input name="name" placeholder="Your Name*" value={form.name} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
           <Input name="email" placeholder="Your Email*" value={form.email} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
           <Input name="phone" placeholder="Phone Number*" value={form.phone} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
           <Input name="company" placeholder="Company Name*" value={form.company} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        {/* Subject */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6">
           <Input name="subject" placeholder="Subject*" value={form.subject} onChange={handleChange} className="!h-[50px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
+        {/* Message */}
         <div className="mt-6">
           <Input.TextArea name="message" rows={4} placeholder="Message*" value={form.message} onChange={handleChange} className="!h-[150px] !rounded-none !bg-gray-100 hover:!border-primary" />
         </div>
 
+        {/* Checkbox */}
         <div className="mt-4 flex items-start gap-2">
           <Checkbox name="agree" checked={form.agree} onChange={handleChange} />
-          <span className="text-gray-500 text-sm">I agree that my submitted data is being collected and stored.</span>
+          <span className="text-gray-500 text-xs sm:text-sm leading-tight">I agree that my submitted data is being collected and stored.</span>
         </div>
 
-        <div className="mt-10 flex items-center justify-center">
-          <Button type="primary" className="!bg-primary font-bold !rounded-none text-white w-[140px] h-12" onClick={handleSubmit} icon={<CiMail />}>
+        {/* Submit Button */}
+        <div className="mt-8 sm:mt-10 flex items-center justify-center">
+          <Button type="primary" className="!bg-primary font-bold !rounded-none text-white w-full sm:w-[140px] h-12" onClick={handleSubmit} icon={<CiMail />}>
             SEND NOW!
           </Button>
         </div>

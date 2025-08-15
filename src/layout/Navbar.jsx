@@ -100,9 +100,10 @@ const Navbar = () => {
           <>
             <Button type="primary" icon={<MenuOutlined />} onClick={() => setDrawerVisible(true)} className="!bg-primary" />
             <Drawer title="Menu" placement="left" onClose={() => setDrawerVisible(false)} open={drawerVisible}>
-              <Menu mode="vertical" selectable={false}>
+              <Menu mode="inline" selectable={false}>
                 {bottom_menu.map((res, index) => {
                   const isProductVault = res.name === "Product Vault";
+
                   if (!isProductVault) {
                     return (
                       <Menu.Item key={index} onClick={() => setDrawerVisible(false)}>
@@ -113,19 +114,17 @@ const Navbar = () => {
                     );
                   } else {
                     return (
-                      <Collapse key={index} ghost expandIconPosition="end" className="mb-2">
-                        <Panel header={res.name} className="!font-primary font-semibold !text-primary" key="1">
-                          {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, catIndex) => (
-                            <div key={catIndex} className="mb-2">
-                              <Link to="/collections" state={{ cat_id: res2.category_name }} onClick={() => setDrawerVisible(false)}>
-                                <Card className="hover:bg-primary !font-primary font-semibold !text-primary">
-                                  <Card.Meta avatar={<Avatar src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<span className="font-primary">{res2.name}</span>} />
-                                </Card>
-                              </Link>
-                            </div>
-                          ))}
-                        </Panel>
-                      </Collapse>
+                      <Menu.SubMenu key="product-vault" title={<span className="!font-primary font-semibold !text-primary">{res.name}</span>}>
+                        {PRODUCT_COLLECTIONS_CATEGORIES.map((res2, catIndex) => (
+                          <Menu.Item key={`cat-${catIndex}`}>
+                            <Link to="/collections" state={{ cat_id: res2.category_name }} onClick={() => setDrawerVisible(false)}>
+                              <Card className="hover:bg-primary !font-primary font-semibold !text-primary">
+                                <Card.Meta avatar={<Avatar src={GET_PRODUCT_IMAGE(GET_SUBCATEGORY_BY_CATEGORY(res2.category_name), true)} />} description={<span className="font-primary">{res2.name}</span>} />
+                              </Card>
+                            </Link>
+                          </Menu.Item>
+                        ))}
+                      </Menu.SubMenu>
                     );
                   }
                 })}
