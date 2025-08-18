@@ -1,5 +1,5 @@
 import { CiMail } from "react-icons/ci";
-import { FaFacebookF, FaHome, FaInstagram, FaPinterestP, FaRegClock, FaRegEdit, FaRegEye, FaWhatsapp } from "react-icons/fa";
+import { FaArrowUp, FaFacebookF, FaHome, FaInstagram, FaPinterestP, FaRegClock, FaRegEdit, FaRegEye, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { GiCottonFlower, GiRolledCloth, GiWorld, GiYarn } from "react-icons/gi";
@@ -33,4 +33,5 @@ export const ICON_HELPER = {
   LOGO_OUT: IoMdLogOut,
   EYE_ICON: FaRegEye,
   ADMIN_ICON: MdAdminPanelSettings,
+  UP_ARROE_ICON: FaArrowUp,
 };

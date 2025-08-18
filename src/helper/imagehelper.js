@@ -9,9 +9,9 @@ import ABOUT_IMAGE from "../assets/aboutimage.jpg";
 import HOME_COLLECTION1 from "../assets/livingroom.jpg";
 import HOME_COLLECTION2 from "../assets/tablelinen.jpg";
 import HOME_COLLECTION3 from "../assets/bedding.jpg";
-import HOME_COLLECTION4 from "../assets/baby.jpg";
+import HOME_COLLECTION4 from "../assets/images/babytow3.jpeg";
 import HOME_COLLECTION5 from "../assets/bath.jpg";
-import HOME_COLLECTION6 from "../assets/pillow-sofa.jpg";
+import HOME_COLLECTION6 from "../assets/images/lvcu1.jpg";
 import HOME_COLLECTION7 from "../assets/kitcenset.jpg";
 
 import PROCCESS1 from "../assets/process/20945983.jpg";
@@ -565,6 +565,8 @@ import img258 from "../assets/SRI-ARASU-TEX/baby/bib/Bib.png";
 import img259 from "../assets/SRI-ARASU-TEX/baby/bib/bibs.gif";
 import img260 from "../assets/SRI-ARASU-TEX/baby/bib/SwaddleDesigns_-_Muslin_Baby_Bibs_3pk_-_Pink_Thicket_-_SDM-521P_-_open.webp";
 
+import whatsapp from "../assets/icons8-whatsapp-100.png";
+
 export const IMAGE_HELPER = {
   //main images
 
@@ -615,6 +617,7 @@ export const IMAGE_HELPER = {
   hero2,
   hero3,
   hero4,
+  whatsapp,
 
   //glove
 
