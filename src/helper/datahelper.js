@@ -182,7 +182,7 @@ export const home_collections = [
 
 export const servicesData = [
   {
-    title: " Sourcing",
+    title: "customer requirement analysis",
     description: "We offer high-quality, sustainable fabrics from trusted global suppliers.",
     icon: IMAGE_HELPER.HOME_PROCESS1,
   },
@@ -197,12 +197,12 @@ export const servicesData = [
     icon: IMAGE_HELPER.HOME_PROCESS3,
   },
   {
-    title: "Manufacturing & Delivery",
+    title: "manufacturing and quality control",
     description: "Efficient production with on-time delivery and strict quality assurance.",
     icon: IMAGE_HELPER.HOME_PROCESS4,
   },
   {
-    title: "Quality Control & Support",
+    title: "logistics and support",
     description: "Comprehensive quality checks and ongoing support to ensure client satisfaction.",
     icon: IMAGE_HELPER.HOME_PROCESS5,
   },
@@ -267,6 +267,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "kitchen_set",
     imageurl: IMAGE_HELPER.HOME_COLLECTION7,
     heroimage: IMAGE_HELPER.KTOWEL1,
+    title: "Premium Kitchen Set – Crafted for Global Standards by Sri Arasu Tex",
     content: "Sri Arasu Tex introduces a meticulously crafted kitchen set made from premium, responsibly sourced, breathable material. The set features a coordinated selection of essentials including an adjustable apron, heat-resistant oven gloves, a matching pot holder, an ultra-absorbent kitchen towel, a decorative oven cover, a versatile dish cloth and so on. Each piece is thoughtfully designed for lasting durability and refined with precise craftsmanship and elegant detailing. ",
   },
   {
@@ -275,7 +276,8 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "table_line",
     imageurl: IMAGE_HELPER.HOME_COLLECTION2,
     heroimage: IMAGE_HELPER.OUT_TABLE2,
-    content: "Sri Arasu Tex introduces a meticulously crafted table linens collection made from premium, responsibly sourced, breathable material. The collection includes coordinated essentials such as tablecloths, runners, napkins, bread baskets, egg holders, coasters, chair pads, chair covers, placemats and so on. Each item is expertly engineered for strength, dimensional stability enduring aesthetic appeal and ensuring consistent performance across varied dining environments.",
+    title: "Refined Table Linens – Precision Crafted for Every Dining Experience",
+    content: "Discover the elegance of Sri Arasu Tex’s finely curated table linens collection, made from premium, responsibly sourced, breathable material. The collection includes coordinated essentials such as tablecloths, runners, napkins, bread baskets, egg holders, coasters, chair pads, chair covers, placemats and so on. Each item is expertly engineered for strength, dimensional stability, enduring aesthetic appeal and consistent performance across varied dining environments.",
   },
   {
     id: "3",
@@ -283,6 +285,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "living_room",
     imageurl: IMAGE_HELPER.HOME_COLLECTION1,
     heroimage: IMAGE_HELPER.HOME_COLLECTION1,
+    title: "Elevate your interiors with Sri Arasu Tex’s premium range of living room textiles",
     content: "The product line includes cushion, cushion covers, throws, curtains, floor cushions, door stopper and so on. Engineered for durability, comfort and aesthetic appeal. Using carefully selected fabrics with optimized weight and weave density ensure excellent colourfastness and long-lasting performance. Backed by rigorous quality control and expert craftsmanship, Sri Arasu Tex delivers reliable, globally competitive textile solutions designed to enhance your retail and decor collections.",
   },
 
@@ -292,6 +295,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "bedding",
     imageurl: IMAGE_HELPER.HOME_COLLECTION3,
     heroimage: IMAGE_HELPER.B_DEUVET1,
+    title: "Bedding Expertly Crafted for Cozy Evenings",
     content: "Sri Arasu Tex offers luxuriously soft bedding solutions crafted to meet international standards and ensure restful nights. Our collection includes bed sheets, duvet, duvet covers, pillowcases, comforters, fitted sheets and so on. All made from responsibly sourced cotton that provides unmatched comfort and durability. Trust Sri Arasu Tex to deliver elegance, comfort and reliability across global markets.",
   },
   {
@@ -300,6 +304,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "bath",
     imageurl: IMAGE_HELPER.HOME_COLLECTION4,
     heroimage: IMAGE_HELPER.BATH_CU1,
+    title: "Soft Cotton Bath Essentials – Softness, Absorbency & Durability",
     content: "Wrap yourself in everyday luxury with Sri Arasu Tex’s collection of premium bath textiles, crafted from ultra-soft, highly absorbent fabric. Our range includes bath towels, hand towels, facecloths, bath mats, robes, bath footwear and so on. Each designed for superior absorbency, fast drying and long-lasting performance. Combining comfort, functionality and sustainability Sri Arasu Tex delivers bath linen solutions tailored for modern and eco-conscious living.",
   },
   {
@@ -308,6 +313,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "outdoor",
     imageurl: IMAGE_HELPER.HOME_COLLECTION5,
     heroimage: IMAGE_HELPER.OUT_TABLE3,
+    title: "Weather-Resistant Essentials for Outdoor Comfort",
     content: "Sri Arasu Tex delivers durable and weather-resistant textiles designed for outdoor living. Our range includes picnic blankets, beach towels, outdoor cushions, fouta, bags, table cover, caps and so on. Crafted from rugged yet soft cotton fabrics with fade-resistant and water-repellent finishes. These textiles withstand exposure to sun, moisture and frequent use. Our products combine functional performance with stylish appeal.",
   },
   {
@@ -316,6 +322,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     category_name: "baby",
     imageurl: IMAGE_HELPER.HOME_COLLECTION6,
     heroimage: IMAGE_HELPER.BABY_BED1,
+    title: "Ultra-Soft Textiles Designed for Baby’s Delicate Skin",
     content: "Sri Arasu Tex offers a thoughtfully designed collection of baby products crafted from ultra-soft, breathable cotton to ensure gentle care and comfort. Our range includes cozy play mats, sleeping beds, breathable baby tents, absorbent bibs, plush towels, supportive pillows, soft cushions, comforting throws and so on. All made with hypoallergenic, skin-friendly fabrics. Each item is designed to provide a safe, soothing environment for babies, with easy-care features and eco-conscious materials.",
   },
 ];
@@ -641,14 +648,14 @@ export const PRODUCTS = [
   {
     id: 6,
     sub_category_id: "dish_cloth",
-    images: [IMAGE_HELPER.IMG_1, IMAGE_HELPER.IMG_2, IMAGE_HELPER.IMG_3, IMAGE_HELPER.IMG_4, IMAGE_HELPER.IMG_5, IMAGE_HELPER.IMG_6, IMAGE_HELPER.IMG_7, IMAGE_HELPER.IMG_8, IMAGE_HELPER.IMG_9, IMAGE_HELPER.IMG_10],
+    images: [IMAGE_HELPER.IMG_1, IMAGE_HELPER.IMG_2, IMAGE_HELPER.IMG_3, IMAGE_HELPER.IMG_4, IMAGE_HELPER.IMG_5, IMAGE_HELPER.IMG_6, IMAGE_HELPER.IMG_8, IMAGE_HELPER.IMG_9, IMAGE_HELPER.IMG_10],
     description: "Keep your kitchen spotless with our highly absorbent dish cloths, designed for efficient cleaning and drying. Made from soft, durable cotton blends, they offer excellent moisture absorption without leaving lint or streaks behind. Ideal for washing dishes, wiping counters, or handling spills, these cloths are a must-have for both home kitchens and professional environments. Available in various textures, patterns, and sizes — with options for customized branding, colors, and packaging for bulk or promotional needs.",
   },
   {
     id: 7,
     sub_category_id: "curtains",
     imageurl: [IMAGE_HELPER.MAIN_living],
-    images: [IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.IMG_104, IMAGE_HELPER.IMG_105, IMAGE_HELPER.IMG_106, IMAGE_HELPER.IMG_107, IMAGE_HELPER.IMG_108, IMAGE_HELPER.IMG_109],
+    images: [IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.IMG_104, IMAGE_HELPER.IMG_105, IMAGE_HELPER.IMG_106, IMAGE_HELPER.IMG_107, IMAGE_HELPER.IMG_108, IMAGE_HELPER.IMG_109],
     description: "Transform any room with our luxurious curtains, made from rich, flowing fabrics that offer privacy and ambient light control. Designed for both residential and commercial spaces, they are available in modern or traditional patterns. Sizes, lengths, and finishes can be customized to complement your interior decor.",
   },
   {
@@ -666,6 +673,7 @@ export const PRODUCTS = [
   {
     id: 10,
     sub_category_id: "beach_wears",
+    imageurl: [IMAGE_HELPER.MAIN_outdoor],
     images: [IMAGE_HELPER.IMG_183, IMAGE_HELPER.IMG_184, IMAGE_HELPER.IMG_185, IMAGE_HELPER.IMG_186, IMAGE_HELPER.IMG_187, IMAGE_HELPER.IMG_188, IMAGE_HELPER.IMG_189, IMAGE_HELPER.IMG_190],
     description: "Designed for floor seating or relaxed lounging, our fat cushions offer oversized comfort with extra-thick padding. Their durable construction and soft outer covers make them suitable for casual family rooms, kids’ zones, or guest lounges. Choose your preferred shapes, fabrics, and fillings for a fully personalized experience.",
   },
@@ -678,7 +686,7 @@ export const PRODUCTS = [
   {
     id: 12,
     sub_category_id: "door",
-    images: [IMAGE_HELPER.DOOR1, IMAGE_HELPER.DOOR2, IMAGE_HELPER.DOOR3, IMAGE_HELPER.IMG_126, IMAGE_HELPER.IMG_127, IMAGE_HELPER.IMG_128, IMAGE_HELPER.IMG_129, IMAGE_HELPER.IMG_130, IMAGE_HELPER.IMG_131, IMAGE_HELPER.IMG_132, IMAGE_HELPER.IMG_133],
+    images: [IMAGE_HELPER.DOOR1, IMAGE_HELPER.IMG_126, IMAGE_HELPER.IMG_127, IMAGE_HELPER.IMG_128, IMAGE_HELPER.IMG_129, IMAGE_HELPER.IMG_130, IMAGE_HELPER.IMG_131, IMAGE_HELPER.IMG_132, IMAGE_HELPER.IMG_133],
     description: "Our fabric door stoppers are more than just functional — they’re a stylish solution to keep doors steady and prevent them from slamming shut. Each piece is filled with just the right amount of weight to anchor your door in place without damaging floors. Ideal for homes with kids, pets, or breezy windows, these stoppers double as decorative accents and are available in custom fabrics and themes to suit any interior.",
   },
   {
@@ -715,13 +723,13 @@ export const PRODUCTS = [
   {
     id: 18,
     sub_category_id: "outdoor_cushions",
-    images: [IMAGE_HELPER.IMG_199, IMAGE_HELPER.IMG_200, IMAGE_HELPER.IMG_201, IMAGE_HELPER.IMG_202, IMAGE_HELPER.IMG_203, IMAGE_HELPER.IMG_204, IMAGE_HELPER.IMG_205, IMAGE_HELPER.IMG_206],
+    images: [IMAGE_HELPER.IMG_199, IMAGE_HELPER.IMG_200, IMAGE_HELPER.IMG_201, IMAGE_HELPER.IMG_202, IMAGE_HELPER.IMG_203, IMAGE_HELPER.IMG_204, IMAGE_HELPER.IMG_205, IMAGE_HELPER.IMG_206, IMAGE_HELPER.IMG_215, IMAGE_HELPER.IMG_216, IMAGE_HELPER.IMG_217, IMAGE_HELPER.IMG_218],
     description: "This unique fabric egg holder is a creative alternative to plastic trays. Designed with padded slots, it cradles each egg individually, reducing the risk of cracks during storage or transport. Ideal for kitchens that value both functionality and charm, this product is a favorite for home cooks, farmers’ markets, or gift hampers. Available in various sizes, it also makes for a lovely rustic table display during breakfast or brunch.",
   },
   {
     id: 19,
     sub_category_id: "coaster",
-    images: [IMAGE_HELPER.COASTER1, IMAGE_HELPER.COASTER2, IMAGE_HELPER.COASTER3, IMAGE_HELPER.COASTER4, IMAGE_HELPER.IMG_83, IMAGE_HELPER.IMG_84, IMAGE_HELPER.IMG_85, IMAGE_HELPER.IMG_86, IMAGE_HELPER.IMG_87],
+    images: [IMAGE_HELPER.IMG_83, IMAGE_HELPER.IMG_84, IMAGE_HELPER.IMG_85, IMAGE_HELPER.IMG_86, IMAGE_HELPER.IMG_87],
     description: "Our fabric coasters do more than just protect — they add personality to your table setup. Designed with absorbent materials and soft padding, they help catch drips, reduce noise, and prevent scratches on your furniture. Unlike ceramic or wood, they’re washable and easy to store. Whether you’re enjoying a hot cup of tea or a chilled glass of wine, these coasters offer a stylish, eco-friendly way to protect your surfaces.",
   },
   {
@@ -789,7 +797,7 @@ export const PRODUCTS = [
   {
     id: 30,
     sub_category_id: "bath_curtains",
-    images: [IMAGE_HELPER.BATH_CU1, IMAGE_HELPER.BATH_CU2, IMAGE_HELPER.BATH_CU3, IMAGE_HELPER.BATH_CU4, IMAGE_HELPER.IMG_163, IMAGE_HELPER.IMG_164, IMAGE_HELPER.IMG_165, IMAGE_HELPER.IMG_166],
+    images: [IMAGE_HELPER.BATH_CU3, IMAGE_HELPER.BATH_CU4, IMAGE_HELPER.IMG_163, IMAGE_HELPER.IMG_164, IMAGE_HELPER.IMG_165, IMAGE_HELPER.IMG_166],
     description: "Prevent water splashes in style with our durable bath curtains, made from water-resistant fabrics. Featuring reinforced rings and modern prints, they combine practicality with design appeal. Easy to clean and customizable in size, color, and branding.",
   },
   {
@@ -801,7 +809,6 @@ export const PRODUCTS = [
   {
     id: 32,
     sub_category_id: "outdoor_table_cloth",
-    imageurl: [IMAGE_HELPER.MAIN_outdoor],
     images: [IMAGE_HELPER.OUT_TABLE1, IMAGE_HELPER.OUT_TABLE2, IMAGE_HELPER.OUT_TABLE3, IMAGE_HELPER.OUT_TABLE4, IMAGE_HELPER.IMG_191, IMAGE_HELPER.IMG_192, IMAGE_HELPER.IMG_193, IMAGE_HELPER.IMG_194, IMAGE_HELPER.IMG_195, IMAGE_HELPER.IMG_196, IMAGE_HELPER.IMG_197, IMAGE_HELPER.IMG_198],
     description: "Built for the outdoors, our tablecloths combine style with durability. Made from water- and fade-resistant fabric, they enhance any patio, picnic, or garden setup. Choose from various prints and sizes with branding and packaging options tailored to your needs.",
   },
@@ -815,7 +822,7 @@ export const PRODUCTS = [
   {
     id: 34,
     sub_category_id: "bags",
-    images: [IMAGE_HELPER.OUT_BAG1, IMAGE_HELPER.OUT_BAG2, IMAGE_HELPER.OUT_BAG3, IMAGE_HELPER.OUT_BAG4, IMAGE_HELPER.IMG_175, IMAGE_HELPER.IMG_176, IMAGE_HELPER.IMG_177, IMAGE_HELPER.IMG_178, IMAGE_HELPER.IMG_179, IMAGE_HELPER.IMG_180, IMAGE_HELPER.IMG_181, IMAGE_HELPER.IMG_182],
+    images: [IMAGE_HELPER.IMG_175, IMAGE_HELPER.IMG_176, IMAGE_HELPER.IMG_177, IMAGE_HELPER.IMG_182, IMAGE_HELPER.OUT_BAG1, IMAGE_HELPER.OUT_BAG2, IMAGE_HELPER.OUT_BAG3, IMAGE_HELPER.OUT_BAG4, IMAGE_HELPER.IMG_178, IMAGE_HELPER.IMG_179, IMAGE_HELPER.IMG_180, IMAGE_HELPER.IMG_181],
     description: "Versatile and durable, our outdoor bags are crafted for active lifestyles. With roomy interiors and sturdy handles, they’re perfect for beach days, travel, or daily errands. Available in various materials and colors, with customizable branding and packaging.",
   },
   {
@@ -827,56 +834,56 @@ export const PRODUCTS = [
   {
     id: 36,
     sub_category_id: "caps",
-    images: [IMAGE_HELPER.CAPS4, ],
+    images: [IMAGE_HELPER.CAPS4],
     description: "Keep it casual and cool with our adjustable caps, crafted from breathable fabrics for daily wear. Ideal for brand promotions, events, or gifting, with embroidery and print options available for personalization.",
   },
   {
     id: 37,
     sub_category_id: "baby_towels",
     imageurl: [IMAGE_HELPER.MAIN_baby],
-    images: [IMAGE_HELPER.BABY_TOWEL1, IMAGE_HELPER.BABY_TOWEL2, IMAGE_HELPER.BABY_TOWEL3, IMAGE_HELPER.BABY_TOWEL4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.BABY_TOWEL1, IMAGE_HELPER.BABY_TOWEL2, IMAGE_HELPER.BABY_TOWEL3, IMAGE_HELPER.BABY_TOWEL4, IMAGE_HELPER.IMG_207, IMAGE_HELPER.IMG_208, IMAGE_HELPER.IMG_209, IMAGE_HELPER.IMG_210, IMAGE_HELPER.IMG_211, IMAGE_HELPER.IMG_212, IMAGE_HELPER.IMG_213, IMAGE_HELPER.IMG_214],
     description: "Gentle on baby’s skin, our hooded towels are made from soft, absorbent cotton. Designed to keep your little one warm and dry after bath time, with cute prints and embroidery options for gifting or nursery use.",
   },
   {
     id: 38,
     sub_category_id: "play_mats",
-    images: [IMAGE_HELPER.BABY_MATS1, IMAGE_HELPER.BABY_MATS2, IMAGE_HELPER.BABY_MATS3, IMAGE_HELPER.BABY_MATS4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.IMG_223, IMAGE_HELPER.BABY_MATS2, IMAGE_HELPER.BABY_MATS3, IMAGE_HELPER.IMG_230, IMAGE_HELPER.IMG_224, IMAGE_HELPER.IMG_225, IMAGE_HELPER.IMG_226, IMAGE_HELPER.IMG_227, IMAGE_HELPER.IMG_228, IMAGE_HELPER.IMG_229, IMAGE_HELPER.BABY_MATS1, IMAGE_HELPER.BABY_MATS4],
     description: "Create a safe and fun play zone with our cushioned play mats. Soft, colorful, and easy to clean, they support active play while protecting against hard floors. Great for nurseries or daycare use, with personalized design options.",
   },
   {
     id: 39,
     sub_category_id: "sleeping_bed",
-    images: [IMAGE_HELPER.BABY_BED1, IMAGE_HELPER.BABY_BED2, IMAGE_HELPER.BABY_BED3, IMAGE_HELPER.BABY_BED4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.IMG_231, IMAGE_HELPER.IMG_232, IMAGE_HELPER.IMG_233, IMAGE_HELPER.IMG_234, IMAGE_HELPER.IMG_235, IMAGE_HELPER.IMG_236],
     description: "Our baby sleeping beds offer comfort and security with soft padding and breathable materials. Lightweight and portable—perfect for naps at home or on the go. Available in multiple designs with customization for fabric, size, and branding.",
   },
   {
     id: 40,
     sub_category_id: "baby_throws",
-    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4],
     description: "Wrap your baby in warmth with our cozy throws, crafted from gentle fabrics ideal for cuddling or napping. Lightweight and soft to the touch, these throws come in charming prints and are ideal for gifting or nursery essentials.",
   },
   {
     id: 41,
     sub_category_id: "bib",
-    images: [IMAGE_HELPER.BABY_BIB1, IMAGE_HELPER.BABY_BIB2, IMAGE_HELPER.BABY_BIB3, IMAGE_HELPER.BABY_BIB4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.IMG_251, IMAGE_HELPER.IMG_252, IMAGE_HELPER.IMG_253, IMAGE_HELPER.IMG_254, IMAGE_HELPER.IMG_255, IMAGE_HELPER.IMG_256, IMAGE_HELPER.IMG_257, IMAGE_HELPER.IMG_258, IMAGE_HELPER.IMG_259, IMAGE_HELPER.IMG_260],
     description: "Keep clothes clean during feeding with our absorbent baby bibs. Made from soft, skin-friendly fabrics and easy to fasten, they’re perfect for everyday messes. Available in playful prints with full customization options.",
   },
   {
     id: 42,
     sub_category_id: "baby_pillows",
-    images: [IMAGE_HELPER.BABY_PILLOW1, IMAGE_HELPER.BABY_PILLOW2, IMAGE_HELPER.BABY_PILLOW3, IMAGE_HELPER.BABY_PILLOW4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.BABY_PILLOW1, IMAGE_HELPER.BABY_PILLOW2, IMAGE_HELPER.BABY_PILLOW3, IMAGE_HELPER.BABY_PILLOW4, IMAGE_HELPER.BABBY_CU1, IMAGE_HELPER.BABBY_CU2, IMAGE_HELPER.BABBY_CU3, IMAGE_HELPER.BABBY_CU4],
     description: "Support your baby’s head gently with our ergonomically designed pillows, made from breathable, hypoallergenic materials. Perfect for crib, travel, or nursing use. Custom options available for shape, fabric, and embroidery.",
   },
   {
     id: 43,
     sub_category_id: "baby_cushions",
-    images: [IMAGE_HELPER.BABBY_CU1, IMAGE_HELPER.BABBY_CU2, IMAGE_HELPER.BABBY_CU3, IMAGE_HELPER.BABBY_CU4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.IMG_237, IMAGE_HELPER.IMG_238, IMAGE_HELPER.IMG_239, IMAGE_HELPER.IMG_240, IMAGE_HELPER.IMG_241, IMAGE_HELPER.IMG_242, IMAGE_HELPER.IMG_243, IMAGE_HELPER.IMG_244],
     description: "Add softness and style to your nursery with our baby cushions. Made from plush materials and shaped in fun designs, they double as décor and comfort items. Great for play zones or gifting, with custom embroidery available.",
   },
   {
     id: 44,
     sub_category_id: "baby_tent",
-    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4, IMAGE_HELPER.LVCUR1, IMAGE_HELPER.LVCUR2, IMAGE_HELPER.LVCUR3, IMAGE_HELPER.LVCUR4],
+    images: [IMAGE_HELPER.IMG_245, IMAGE_HELPER.IMG_246, IMAGE_HELPER.IMG_247, IMAGE_HELPER.IMG_248, IMAGE_HELPER.IMG_249, IMAGE_HELPER.IMG_250],
     description: "Spark creativity with our indoor/outdoor baby tents, made from soft, breathable materials in playful shapes. Easy to set up and fold away, they offer kids a private space to play, read, or nap. Fully customizable for color, size, and design.",
   },
 ];
