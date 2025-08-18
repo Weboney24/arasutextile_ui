@@ -9,22 +9,22 @@ const Hero = () => {
 
   const HERO_IMAGES = [
     {
-      image: IMAGE_HELPER.MAIN_kitchen,
+      image: IMAGE_HELPER.hero1,
       title: "Decades of industry knowledge in",
       subtitle: "delivering precision-crafted textiles.",
     },
     {
-      image: IMAGE_HELPER.MAIN_outdoor,
+      image: IMAGE_HELPER.hero2,
       title: "We use only premium fabrics and",
       subtitle: "maintain strict quality control at every stage.",
     },
     {
-      image: IMAGE_HELPER.MAIN_BATH,
+      image: IMAGE_HELPER.hero3,
       title: "Get tailored designs to suit your",
       subtitle: "brand, market, and customer needs.",
     },
     {
-      image: IMAGE_HELPER.MAIN_baby,
+      image: IMAGE_HELPER.hero4,
       title: "Eco-conscious processes and fair labor",
       subtitle: "practices are at the heart of what we do.",
     },
@@ -72,8 +72,8 @@ const Hero = () => {
       <div className="relative bg-white mb-10 sm:mb-20 mt-10 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto shadow-lg p-5 sm:p-10 font-primary">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Image */}
-          <div className="w-full lg:w-1/2 relative flex justify-center">
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-white text-xs sm:text-sm font-bold px-3 py-1 rotate-[-90deg] origin-center">36+ Years Of Experience!</div>
+          <div className="w-full lg:w-1/2 relative flex flex-col justify-center items-center gap-2">
+            <div className="bg-primary text-white text-xs sm:text-sm font-bold px-3 py-1 w-fit">36+ Years Of Experience!</div>
             <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-full max-w-[500px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover border-white border-[6px] sm:border-[10px] shadow-lg" />
           </div>
 

@@ -30,7 +30,7 @@ const AboutLanding = () => {
               <li>Baby & Nursery Essentials</li>
             </ul>
 
-            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We are committed to delivering products that combine aesthetic appeal with functional excellence, ensuring comfort, quality, and style for every home.</p>
+            <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">We are committed to delivering products that combine aesthetic appeal with functional excellence, ensuring comfort, quality and style for every home.</p>
             <p className="text-[17px] sm:text-[18px] leading-relaxed text-gray-700 text-justify">Dedicated to continuous improvement, we stay well-informed of global design trends and adhere to international compliance standards. This commitment ensures that every product we deliver meets stringent quality benchmarks, aligning with the evolving preferences of our global clientele.</p>
           </div>
         </div>
@@ -131,7 +131,7 @@ const AboutLanding = () => {
           <div className="space-y-12">
             <div>
               <h2 className="text-4xl font-black text-primary mb-4">🌱 Our Mission</h2>
-              <p className="text-gray-800 leading-relaxed">‘Our goal is to create a sustainable future by addressing poverty, promoting environmental care, and empowering communities to thrive. Every donation plants a seed of hope and change. We plant trees, fight poverty, and change lives.’</p>
+              <p className="text-gray-800 leading-relaxed">‘Our goal is to create a sustainable future by addressing poverty, promoting environmental care, and empowering communities to thrive. Every donation plants a seed of hope and change. We plant trees, fight poverty and change lives.’</p>
             </div>
 
             {/* Stats Grid */}
