@@ -32,7 +32,7 @@ const CollectionLanding = () => {
   return (
     <div className="mb-32">
       {/* Hero */}
-      <CustomHero title={currentCategory?.name} imagurl={currentCategory?.heroimage || IMAGE_HELPER.INSIDE_HERO4} content={"Explore our beautiful collection"} />
+      <CustomHero title={currentCategory?.name} imagurl={currentCategory?.heroimage} content={"Explore our beautiful collection"} />
 
       <div className="flex w-[90%] mx-auto gap-8">
         {/* Sidebar */}
