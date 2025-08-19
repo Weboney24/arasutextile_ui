@@ -266,7 +266,7 @@ export const PRODUCT_COLLECTIONS_CATEGORIES = [
     name: "Kitchen Set",
     category_name: "kitchen_set",
     imageurl: IMAGE_HELPER.HOME_COLLECTION7,
-    heroimage: IMAGE_HELPER.KTOWEL1,
+    heroimage: IMAGE_HELPER.APRON3,
     title: "Premium Kitchen Set – Crafted for Global Standards by Sri Arasu Tex",
     content: "Sri Arasu Tex introduces a meticulously crafted kitchen set made from premium, responsibly sourced, breathable material. The set features a coordinated selection of essentials including an adjustable apron, heat-resistant oven gloves, a matching pot holder, an ultra-absorbent kitchen towel, a decorative oven cover, a versatile dish cloth and so on. Each piece is thoughtfully designed for lasting durability and refined with precise craftsmanship and elegant detailing. ",
   },
@@ -451,39 +451,39 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
   {
     id: 20,
     category_id: "bedding",
-    name: "Flat Bed Cover",
-    sub_category_id: "flat_bed",
+    name: "Duvet & Pillows",
+    sub_category_id: "pillows",
   },
   {
     id: 21,
     category_id: "bedding",
-    name: "Fitted Bed Cover",
-    sub_category_id: "fitted_bed",
+    name: "Flat Bed Cover",
+    sub_category_id: "flat_bed",
   },
   {
     id: 22,
     category_id: "bedding",
-    name: "Duvet",
+    name: "Kids Duvet & Pillows",
     sub_category_id: "duvet",
   },
-  {
-    id: 23,
-    category_id: "bedding",
-    name: "Duvet Cover",
-    sub_category_id: "duvet_cover",
-  },
-  {
-    id: 24,
-    category_id: "bedding",
-    name: "Pillows",
-    sub_category_id: "pillows",
-  },
-  {
-    id: 25,
-    category_id: "bedding",
-    name: "Pillows Cover",
-    sub_category_id: "pillow_cover",
-  },
+  // {
+  //   id: 23,
+  //   category_id: "bedding",
+  //   name: "Duvet Cover",
+  //   sub_category_id: "duvet_cover",
+  // },
+  // {
+  //   id: 24,
+  //   category_id: "bedding",
+  //   name: "Pillows",
+  //   sub_category_id: "pillows",
+  // },
+  // {
+  //   id: 25,
+  //   category_id: "bedding",
+  //   name: "Pillows Cover",
+  //   sub_category_id: "pillow_cover",
+  // },
   // {
   //   id: 27,
   //   category_id: "bedding",
@@ -693,7 +693,7 @@ export const PRODUCTS = [
     id: 13,
     sub_category_id: "table_cloth",
     imageurl: [IMAGE_HELPER.MAIN_table],
-    images: [IMAGE_HELPER.TABLE1, IMAGE_HELPER.TABLE2, IMAGE_HELPER.TABLE3, IMAGE_HELPER.TABLE4, IMAGE_HELPER.IMG_51, IMAGE_HELPER.IMG_52, IMAGE_HELPER.IMG_53, IMAGE_HELPER.IMG_54, IMAGE_HELPER.IMG_55, IMAGE_HELPER.IMG_56, IMAGE_HELPER.IMG_57, IMAGE_HELPER.IMG_58],
+    images: [IMAGE_HELPER.TABLE1, IMAGE_HELPER.TABLE4, IMAGE_HELPER.IMG_51, IMAGE_HELPER.IMG_52, IMAGE_HELPER.IMG_53, IMAGE_HELPER.IMG_54, IMAGE_HELPER.IMG_55, IMAGE_HELPER.IMG_56, IMAGE_HELPER.IMG_57, IMAGE_HELPER.IMG_58],
     description: "Our table cloths are designed to bring elegance and practicality to your dining space. Made from durable, easy-to-wash fabric blends, they serve as a protective layer against spills, heat, and scratches while enhancing the overall ambiance of your table. Whether you're setting up for everyday meals or special occasions, our table cloths are available in various sizes, colors, and textures to suit all décor styles.",
   },
   {
@@ -711,7 +711,7 @@ export const PRODUCTS = [
   {
     id: 16,
     sub_category_id: "napkins",
-    images: [IMAGE_HELPER.NAP1_MAGE, IMAGE_HELPER.NAP2_MAGE, IMAGE_HELPER.NAP3_MAGE, IMAGE_HELPER.NAP4_MAGE, IMAGE_HELPER.IMG_67, IMAGE_HELPER.IMG_68, IMAGE_HELPER.IMG_69, IMAGE_HELPER.IMG_70, IMAGE_HELPER.IMG_71, IMAGE_HELPER.IMG_72, IMAGE_HELPER.IMG_73, IMAGE_HELPER.IMG_74],
+    images: [IMAGE_HELPER.NAP1_MAGE, IMAGE_HELPER.NAP2_MAGE, IMAGE_HELPER.NAP3_MAGE, IMAGE_HELPER.NAP4_MAGE, IMAGE_HELPER.IMG_67, IMAGE_HELPER.IMG_68, IMAGE_HELPER.IMG_69, IMAGE_HELPER.IMG_72, IMAGE_HELPER.IMG_73, IMAGE_HELPER.IMG_74],
     description: "Unlike disposable alternatives, our reusable cloth napkins combine elegance with sustainability. Made from soft, absorbent materials, they're perfect for wiping hands and faces during meals without sacrificing class. Whether folded into intricate shapes for formal dinners or simply placed beside a plate, our napkins offer versatility for both casual and upscale settings. They're also great for custom embroidery, making them ideal for events or gifting.",
   },
   {
@@ -760,7 +760,7 @@ export const PRODUCTS = [
   {
     id: 24,
     sub_category_id: "duvet",
-    images: [IMAGE_HELPER.B_DEUVET1, IMAGE_HELPER.B_DEUVET2, IMAGE_HELPER.B_DEUVET3, IMAGE_HELPER.B_DEUVET4],
+    images: [IMAGE_HELPER.IMG_262, IMAGE_HELPER.IMG_263, IMAGE_HELPER.IMG_264, IMAGE_HELPER.IMG_265, IMAGE_HELPER.IMG_266, IMAGE_HELPER.IMG_267, IMAGE_HELPER.IMG_268, IMAGE_HELPER.IMG_269, IMAGE_HELPER.IMG_270],
     description: "Stay cozy in every season with our high-quality duvets, featuring lightweight yet insulating filling. Encased in soft fabric, they offer warmth without bulk. Perfect for both residential and hospitality use, with options to customize size, material, fill type, and packaging.",
   },
   {
@@ -772,7 +772,7 @@ export const PRODUCTS = [
   {
     id: 26,
     sub_category_id: "pillows",
-    images: [IMAGE_HELPER.B_PILLOWS1, IMAGE_HELPER.B_PILLOWS2, IMAGE_HELPER.B_PILLOWS3, IMAGE_HELPER.B_PILLOWS4],
+    images: [IMAGE_HELPER.B_PILLOWS1, IMAGE_HELPER.B_PILLOWS2, IMAGE_HELPER.B_PILLOWS3, IMAGE_HELPER.B_PILLOWS4, IMAGE_HELPER.IMG_219, IMAGE_HELPER.IMG_220, IMAGE_HELPER.IMG_221, IMAGE_HELPER.IMG_222, IMAGE_HELPER.IMG_261],
     description: "Designed for restful sleep, our pillows offer soft-to-firm support using resilient fillings that retain shape. They suit all sleep styles and are available in multiple sizes and finishes. Custom branding, embroidery, and packaging options available for retail, hotel, or promotional needs.",
   },
   {

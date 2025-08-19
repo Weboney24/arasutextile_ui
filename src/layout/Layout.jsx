@@ -53,9 +53,9 @@ const Layout = () => {
           </div>
         </div>
       )}
-      <div className={`fixed hover:animate-pulseBorder  ${after ? "bottom-20" : "bottom-4"} right-3 md:right-4 cursor-pointer z-50`}>
-        <a href="https://wa.me/+91 9677773551" target="_blank" rel="noopener noreferrer">
-          <img src={IMAGE_HELPER.whatsapp} alt="WhatsApp Icon" className="lg:w-16 sm:w-10 h-auto" />
+      <div className={`fixed hover:animate-pulseBorder ${after ? "bottom-20" : "bottom-4"} right-3 md:right-4 cursor-pointer z-50`}>
+        <a href="https://wa.me/919677773551" target="_blank" rel="noopener noreferrer">
+          <img src={IMAGE_HELPER.whatsapp} alt="WhatsApp Icon" className="w-12 h-auto md:w-14 lg:w-16 sm:w-10 " />
         </a>
       </div>
     </div>

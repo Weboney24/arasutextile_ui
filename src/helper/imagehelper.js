@@ -517,11 +517,6 @@ import img212 from "../assets/SRI-ARASU-TEX/baby/towels/Bath cape-1.png";
 import img213 from "../assets/SRI-ARASU-TEX/baby/towels/Bath cape.png";
 import img214 from "../assets/SRI-ARASU-TEX/baby/towels/ft-circus-panda.png";
 
-// import img219 from "../assets/SRI-ARASU-TEX/";
-// import img220 from "../assets/SRI-ARASU-TEX/";
-// import img221 from "../assets/SRI-ARASU-TEX/";
-// import img222 from "../assets/SRI-ARASU-TEX/";
-
 import img223 from "../assets/SRI-ARASU-TEX/baby/play-mat/01171943-1.jpg";
 import img224 from "../assets/SRI-ARASU-TEX/baby/play-mat/02.png";
 import img225 from "../assets/SRI-ARASU-TEX/baby/play-mat/03.png";
@@ -566,6 +561,22 @@ import img259 from "../assets/SRI-ARASU-TEX/baby/bib/bibs.gif";
 import img260 from "../assets/SRI-ARASU-TEX/baby/bib/SwaddleDesigns_-_Muslin_Baby_Bibs_3pk_-_Pink_Thicket_-_SDM-521P_-_open.webp";
 
 import whatsapp from "../assets/icons8-whatsapp-100.png";
+
+import img219 from "../assets/SRI-ARASU-TEX/bedding/duvet&pillows/572569a39563c1ae6578b0ce283fd8d0.jpg";
+import img220 from "../assets/SRI-ARASU-TEX/bedding/duvet&pillows/CUSHION 2.jpg";
+import img221 from "../assets/SRI-ARASU-TEX/bedding/duvet&pillows/Duvet_5_-_Shams_d5bc8764-3453-4ef0-9d5e-7f654e77aa81.jpg";
+import img222 from "../assets/SRI-ARASU-TEX/bedding/duvet&pillows/L12481P-F_2.webp";
+import img261 from "../assets/SRI-ARASU-TEX/bedding/duvet&pillows/TARGET-CPP-CBR-C2-3.webp";
+
+import img262 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/31.08.22 kids bed.jpg";
+import img263 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/31.08.22 kids.jpg";
+import img264 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/bed cushion-1.png";
+import img265 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/bed cushion.png";
+import img266 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/bed cushion.png";
+import img267 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT (2).png";
+import img268 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT-1 (2).png";
+import img269 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT.jpg";
+import img270 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT.png";
 
 export const IMAGE_HELPER = {
   //main images
@@ -1056,10 +1067,10 @@ export const IMAGE_HELPER = {
   IMG_216: img216,
   IMG_217: img217,
   IMG_218: img218,
-  // IMG_219: img219,
-  // IMG_220: img220,
-  // IMG_221: img221,
-  // IMG_222: img222,
+  IMG_219: img219,
+  IMG_220: img220,
+  IMG_221: img221,
+  IMG_222: img222,
   IMG_223: img223,
   IMG_224: img224,
   IMG_225: img225,
@@ -1098,4 +1109,14 @@ export const IMAGE_HELPER = {
   IMG_258: img258,
   IMG_259: img259,
   IMG_260: img260,
+  IMG_261: img261,
+  IMG_262: img262,
+  IMG_263: img263,
+  IMG_264: img264,
+  IMG_265: img265,
+  IMG_266: img266,
+  IMG_267: img267,
+  IMG_268: img268,
+  IMG_269: img269,
+  IMG_270: img270,
 };

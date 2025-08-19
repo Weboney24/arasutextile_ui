@@ -72,8 +72,8 @@ const Hero = () => {
       <div className="relative bg-white mb-10 sm:mb-20 mt-10 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto shadow-lg p-5 sm:p-10 font-primary">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Image */}
-          <div className="w-full lg:w-1/2 relative flex flex-col justify-center items-center gap-2">
-            <div className="bg-primary text-white text-xs sm:text-sm font-bold px-3 py-1 w-fit">36+ Years Of Experience!</div>
+          <div className="w-full lg:w-1/2 relative flex flex-col justify-center items-center gap-2 lg:gap-0">
+            <div className="bg-primary lg:absolute lg:-right-[116px] text-white text-xs sm:text-sm font-bold lg:rotate-90 px-3 py-1 w-fit">36+ Years Of Experience!</div>
             <img src={IMAGE_HELPER.ABOUT_IMAGE} alt="Textile Machinery" className="w-full max-w-[500px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover border-white border-[6px] sm:border-[10px] shadow-lg" />
           </div>
 
