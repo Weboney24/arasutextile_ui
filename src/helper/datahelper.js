@@ -936,8 +936,8 @@ export const GET_PRODUCT_IMAGE = (value, custom = false) => {
 
     let index = custom && result.images[1] ? 1 : 0;
     return result.images[index];
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    console.log(error);
   }
 };
 
