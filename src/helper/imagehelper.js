@@ -61,6 +61,12 @@ import ktowe2 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT C
 import ktowe3 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD (6).png";
 import ktowe4 from "../assets/SRI-ARASU-TEX/kitchenlinens/kitchentowel/001 -KT CAD (7).png";
 
+//others
+import others1 from "../assets/SRI-ARASU-TEX/baby/others/Padded Sleeping Bag.png";
+import others2 from "../assets/SRI-ARASU-TEX/baby/others/Rainbow Swaddle  0-6 months from (2).png";
+import others3 from "../assets/SRI-ARASU-TEX/baby/others/Rainbow Swaddle  0-6 months from-1.png";
+import others4 from "../assets/SRI-ARASU-TEX/baby/others/Rainbow Swaddle  0-6 months from.png";
+
 import oven1 from "../assets/images/oven1.webp";
 import oven2 from "../assets/images/oven2.jpg";
 import oven3 from "../assets/images/oven3.jpg";
@@ -246,10 +252,16 @@ import handle2 from "../assets/images/handle2.jpg";
 import handle3 from "../assets/images/handle3.jpg";
 import handle4 from "../assets/images/handle4.jpg";
 
-import babythrows1 from "../assets/images/babythrows1.jpg";
-import babythrows2 from "../assets/images/babythrows2.jpg";
-import babythrows3 from "../assets/images/babythrows3.jpg";
-import babythrows4 from "../assets/images/babythrows4.jpg";
+import babythrows1 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/1.avif";
+import babythrows2 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/127525_2.avif";
+import babythrows3 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/127527_1.avif";
+import babythrows4 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/81FpdFl6+uL._AC_SL1500_.jpg";
+import babythrows5 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/86b87ffdf4f6c07f7ed8374ca955007b.jpg";
+import babythrows6 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/E270813.jpg";
+import babythrows7 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/greenwhitebubaba-by-freeon-tetra-plenica-1.jpg";
+import babythrows8 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/Swaddle (2).png";
+import babythrows9 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/Swaddle-1.png";
+import babythrows10 from "../assets/SRI-ARASU-TEX/baby/baby-wrap/Swaddle.png";
 
 import place1 from "../assets/images/place1.webp";
 import place2 from "../assets/images/place2.jpg";
@@ -578,6 +590,17 @@ import img268 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED R
 import img269 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT.jpg";
 import img270 from "../assets/SRI-ARASU-TEX/bedding/Kids-duvet-and-Pillows/BED REPEAT.png";
 
+import img271 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat (2).png";
+import img272 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat (3).png";
+import img273 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-1 (2).png";
+import img274 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-1-1 (2).png";
+import img275 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-1-1.png";
+import img276 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-1-2.png";
+import img277 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-1.png";
+import img278 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-2 (2).png";
+import img279 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat-2.png";
+import img280 from "../assets/SRI-ARASU-TEX/kitchenlinens/chef-hat/Hat.png";
+
 export const IMAGE_HELPER = {
   //main images
 
@@ -629,6 +652,12 @@ export const IMAGE_HELPER = {
   hero3,
   hero4,
   whatsapp,
+
+
+  others1,
+  others2,
+  others3,
+  others4,
 
   //glove
 
@@ -828,6 +857,12 @@ export const IMAGE_HELPER = {
   BABY_THROWS2: babythrows2,
   BABY_THROWS3: babythrows3,
   BABY_THROWS4: babythrows4,
+  BABY_THROWS5: babythrows5,
+  BABY_THROWS6: babythrows6,
+  BABY_THROWS7: babythrows7,
+  BABY_THROWS8: babythrows8,
+  BABY_THROWS9: babythrows9,
+  BABY_THROWS10: babythrows10,
 
   DUVET_COVER1: duvetcover1,
   DUVET_COVER2: duvetcover2,
@@ -1119,4 +1154,14 @@ export const IMAGE_HELPER = {
   IMG_268: img268,
   IMG_269: img269,
   IMG_270: img270,
+  IMG_271: img271,
+  IMG_272: img272,
+  IMG_273: img273,
+  IMG_274: img274,
+  IMG_275: img275,
+  IMG_276: img276,
+  IMG_277: img277,
+  IMG_278: img278,
+  IMG_279: img279,
+  IMG_280: img280,
 };

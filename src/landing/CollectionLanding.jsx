@@ -29,6 +29,10 @@ const CollectionLanding = () => {
   // Selected subcategory product
   const selectedProduct = activeSubCategory ? PRODUCTS.find((prod) => String(prod.sub_category_id).toLowerCase() === String(activeSubCategory).toLowerCase()) : null;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [cat_id]);
+
   return (
     <div className="mb-32">
       {/* Hero */}
