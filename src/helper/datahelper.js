@@ -569,12 +569,12 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     name: "Towels",
     sub_category_id: "baby_towels",
   },
-  {
-    id: 38,
-    category_id: "baby",
-    name: "Pillows",
-    sub_category_id: "baby_pillows",
-  },
+  // {
+  //   id: 38,
+  //   category_id: "baby",
+  //   name: "Pillows",
+  //   sub_category_id: "baby_pillows",
+  // },
   {
     id: 39,
     category_id: "baby",
@@ -590,8 +590,8 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
   {
     id: 41,
     category_id: "baby",
-    name: "Throws",
-    sub_category_id: "baby_throws",
+    name: "Baby Wrap",
+    sub_category_id: "baby_wrap",
   },
   {
     id: 42,
@@ -610,6 +610,18 @@ export const PRODUCT_COLLECTIONS_SUB_CATEGORIES = [
     category_id: "baby",
     name: "Cushions",
     sub_category_id: "baby_cushions",
+  },
+  {
+    id: 45,
+    category_id: "kitchen_set",
+    name: "Chef Hat",
+    sub_category_id: "chef_hat",
+  },
+  {
+    id: 46,
+    category_id: "baby",
+    name: "Others",
+    sub_category_id: "others",
   },
 ];
 
@@ -858,8 +870,8 @@ export const PRODUCTS = [
   },
   {
     id: 40,
-    sub_category_id: "baby_throws",
-    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4],
+    sub_category_id: "baby_wrap",
+    images: [IMAGE_HELPER.BABY_THROWS1, IMAGE_HELPER.BABY_THROWS2, IMAGE_HELPER.BABY_THROWS3, IMAGE_HELPER.BABY_THROWS4, IMAGE_HELPER.BABY_THROWS5, IMAGE_HELPER.BABY_THROWS6, IMAGE_HELPER.BABY_THROWS7, IMAGE_HELPER.BABY_THROWS8, IMAGE_HELPER.BABY_THROWS9, IMAGE_HELPER.BABY_THROWS10],
     description: "Wrap your baby in warmth with our cozy throws, crafted from gentle fabrics ideal for cuddling or napping. Lightweight and soft to the touch, these throws come in charming prints and are ideal for gifting or nursery essentials.",
   },
   {
@@ -884,6 +896,18 @@ export const PRODUCTS = [
     id: 44,
     sub_category_id: "baby_tent",
     images: [IMAGE_HELPER.IMG_245, IMAGE_HELPER.IMG_246, IMAGE_HELPER.IMG_247, IMAGE_HELPER.IMG_248, IMAGE_HELPER.IMG_249, IMAGE_HELPER.IMG_250],
+    description: "Spark creativity with our indoor/outdoor baby tents, made from soft, breathable materials in playful shapes. Easy to set up and fold away, they offer kids a private space to play, read, or nap. Fully customizable for color, size, and design.",
+  },
+  {
+    id: 45,
+    sub_category_id: "chef_hat",
+    images: [IMAGE_HELPER.IMG_271, IMAGE_HELPER.IMG_272, IMAGE_HELPER.IMG_273, IMAGE_HELPER.IMG_274, IMAGE_HELPER.IMG_275, IMAGE_HELPER.IMG_276, IMAGE_HELPER.IMG_277, IMAGE_HELPER.IMG_278, IMAGE_HELPER.IMG_279, IMAGE_HELPER.IMG_280],
+    description: "Spark creativity with our indoor/outdoor baby tents, made from soft, breathable materials in playful shapes. Easy to set up and fold away, they offer kids a private space to play, read, or nap. Fully customizable for color, size, and design.",
+  },
+  {
+    id: 46,
+    sub_category_id: "others",
+    images: [IMAGE_HELPER.others1, IMAGE_HELPER.others2, IMAGE_HELPER.others3, IMAGE_HELPER.others4],
     description: "Spark creativity with our indoor/outdoor baby tents, made from soft, breathable materials in playful shapes. Easy to set up and fold away, they offer kids a private space to play, read, or nap. Fully customizable for color, size, and design.",
   },
 ];
