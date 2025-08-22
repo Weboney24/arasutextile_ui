@@ -190,8 +190,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="text-center py-6 mt-10 border-t border-gray-700 text-sm">
-        © 2025 Designed & Developed by <span className="text-yellow-400 font-semibold">Weboney</span>
+      <div className="text-center py-6 mt-10 border-t border-gray-200 dark:border-gray-700 text-sm text-gray-600 dark:text-gray-400">
+        © {new Date().getFullYear()} <span className="text-primary font-semibold"> Arasu Tex </span> All rights reserved.
       </div>
     </footer>
   );
