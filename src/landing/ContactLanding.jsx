@@ -92,7 +92,7 @@ const ContactLanding = () => {
       </div>
 
       {/* Contact Info + Map Section */}
-      <div className="w-full xl:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 md:px-0 !mb-[200px]">
+      <div className="w-full xl:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 px-4 xl:px-0 !mb-[200px]">
         {/* Google Map */}
         <div className="w-full h-[400px]">
           <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3544.662484428933!2d78.06712927504458!3d10.964915889195582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU3JzUzLjciTiA3OMKwMDQnMTAuOSJF!5e1!3m2!1sen!2sin!4v1747457215313!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
